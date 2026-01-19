@@ -176,27 +176,36 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Smooth scrolling
+// Smart navigation - handles both page links and section scrolling
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
+        const href = link.getAttribute('href');
 
-        if (targetSection) {
-            const offsetTop = targetSection.offsetTop - 80;
-            window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-            });
+        // If it's a hash link (starts with #), scroll to section
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const targetSection = document.querySelector(href);
 
+            if (targetSection) {
+                const offsetTop = targetSection.offsetTop - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+
+                // Update active link
+                navLinks.forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            }
+        } else {
+            // For page links (.html files), just let them navigate normally
             // Close mobile menu
             hamburger.classList.remove('active');
             navMenu.classList.remove('active');
-
-            // Update active link
-            navLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
         }
     });
 });

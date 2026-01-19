@@ -1,0 +1,477 @@
+/* ==========================================
+   Wire Harness Animations & Effects
+   ========================================== */
+
+/* Floating Wire Animation */
+@keyframes float-wire {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Pulse Glow Effect */
+@keyframes pulse-glow {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.8;
+    }
+}
+
+/* Wire Connection Indicator */
+#wire-indicator {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#wire-indicator.active {
+    opacity: 1;
+}
+
+.wire-connector {
+    position: relative;
+}
+
+.connector-dot {
+    width: 12px;
+    height: 12px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--primary-color);
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 20px var(--primary-color);
+    }
+    50% {
+        transform: scale(1.3);
+        box-shadow: 0 0 30px var(--primary-color), 0 0 40px rgba(0, 212, 255, 0.5);
+    }
+}
+
+.wire-line {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), transparent);
+    transform: translateY(-50%);
+}
+
+/* Draggable Wire Elements */
+.draggable-wire {
+    cursor: grab;
+    transition: transform 0.2s ease;
+    user-select: none;
+}
+
+.draggable-wire:hover {
+    transform: scale(1.05);
+}
+
+.draggable-wire:active {
+    cursor: grabbing;
+}
+
+/* Wire Card with Animated Border */
+.wire-card {
+    position: relative;
+    padding: 30px;
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.wire-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    animation: wire-scan 3s linear infinite;
+}
+
+@keyframes wire-scan {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 200%;
+    }
+}
+
+/* Sticky Wire Navigation Dots */
+.wire-nav-dots {
+    position: fixed;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.wire-dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(0, 212, 255, 0.3);
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.wire-dot::after {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transform: translateY(-50%);
+    transition: width 0.3s ease;
+}
+
+.wire-dot:hover::after,
+.wire-dot.active::after {
+    width: 50px;
+}
+
+.wire-dot.active {
+    background: var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+/* Parallax Wire Elements */
+.parallax-wire {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.2;
+    transition: transform 0.1s ease-out;
+}
+
+.parallax-wire-1 {
+    top: 10%;
+    left: 5%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, var(--primary-color) 0%, transparent 70%);
+}
+
+.parallax-wire-2 {
+    top: 50%;
+    right: 10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, var(--secondary-color) 0%, transparent 70%);
+}
+
+.parallax-wire-3 {
+    bottom: 20%;
+    left: 30%;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, var(--accent-color) 0%, transparent 70%);
+}
+
+/* Wire Connection Lines */
+.wire-connection {
+    position: relative;
+}
+
+.wire-connection::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    animation: wire-pulse 2s ease-in-out infinite;
+}
+
+@keyframes wire-pulse {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+        box-shadow: 0 0 10px var(--primary-color);
+    }
+}
+
+/* Animate on Scroll */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Wire Glow Effect on Hover */
+.wire-glow-hover {
+    transition: all 0.3s ease;
+}
+
+.wire-glow-hover:hover {
+    box-shadow: 0 0 30px rgba(0, 212, 255, 0.5),
+                inset 0 0 20px rgba(0, 212, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Rotating Wire Frame */
+.wire-frame {
+    position: relative;
+    padding: 40px;
+}
+
+.wire-frame::before,
+.wire-frame::after {
+    content: '';
+    position: absolute;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.wire-frame::before {
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 50%;
+    animation: rotate-frame-1 10s linear infinite;
+}
+
+.wire-frame::after {
+    top: 50%;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    animation: rotate-frame-2 10s linear infinite reverse;
+}
+
+@keyframes rotate-frame-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate-frame-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+/* Circuit Board Pattern */
+.circuit-pattern {
+    position: relative;
+    overflow: hidden;
+}
+
+.circuit-pattern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image:
+        linear-gradient(90deg, rgba(0, 212, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(rgba(0, 212, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: circuit-move 20s linear infinite;
+    opacity: 0.3;
+}
+
+@keyframes circuit-move {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+/* Electric Current Effect */
+.electric-current {
+    position: relative;
+    overflow: hidden;
+}
+
+.electric-current::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+        transparent,
+        rgba(0, 212, 255, 0.4),
+        rgba(255, 0, 255, 0.4),
+        transparent
+    );
+    animation: electric-flow 2s ease-in-out infinite;
+}
+
+@keyframes electric-flow {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 200%;
+    }
+}
+
+/* Wire Connector Nodes */
+.connector-node {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+.connector-node::before,
+.connector-node::after {
+    content: '';
+    position: absolute;
+    background: var(--primary-color);
+}
+
+.connector-node::before {
+    top: 50%;
+    left: 100%;
+    width: 50px;
+    height: 2px;
+    transform: translateY(-50%);
+}
+
+.connector-node::after {
+    top: 100%;
+    left: 50%;
+    width: 2px;
+    height: 50px;
+    transform: translateX(-50%);
+}
+
+/* Glitch Effect for Wire Text */
+.wire-glitch {
+    position: relative;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0%, 100% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+}
+
+/* 3D Wire Perspective */
+.wire-3d {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.wire-3d-element {
+    transform: rotateY(20deg) rotateX(10deg);
+    transition: transform 0.5s ease;
+}
+
+.wire-3d:hover .wire-3d-element {
+    transform: rotateY(-20deg) rotateX(-10deg);
+}
+
+/* Loading Wire Animation */
+.loading-wire {
+    position: relative;
+    width: 100%;
+    height: 4px;
+    background: rgba(0, 212, 255, 0.2);
+    overflow: hidden;
+}
+
+.loading-wire::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+    animation: loading-slide 1.5s ease-in-out infinite;
+}
+
+@keyframes loading-slide {
+    0% {
+        left: -30%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .wire-nav-dots {
+        display: none;
+    }
+
+    #wire-indicator {
+        right: 15px;
+    }
+
+    .parallax-wire {
+        display: none;
+    }
+}
