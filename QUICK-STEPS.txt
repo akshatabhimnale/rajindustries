@@ -1,0 +1,30 @@
+═══════════════════════════════════════════════════════════
+  ENABLE GITHUB PAGES - QUICK STEPS
+═══════════════════════════════════════════════════════════
+
+YOUR CODE IS ON GITHUB! Now make it live:
+
+STEP 1: Open this link in your browser
+→ https://github.com/akshatabhimnale/rajindustries/settings/pages
+
+STEP 2: Under "Build and deployment"
+→ Source: Select "Deploy from a branch"
+→ Branch: Select "main"
+→ Folder: Select "/ (root)"
+→ Click "Save"
+
+STEP 3: Wait 2-3 minutes
+
+STEP 4: Your website will be live at:
+→ https://akshatabhimnale.github.io/rajindustries/
+
+STEP 5: Share this link with your client!
+
+═══════════════════════════════════════════════════════════
+
+IMPORTANT: You MUST do Step 2 manually in your browser.
+I cannot enable it automatically without your GitHub login.
+
+Just go to the link above and follow the 5 steps!
+
+═══════════════════════════════════════════════════════════
