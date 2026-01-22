@@ -250,7 +250,8 @@ a:hover {
     z-index: 1;
 }
 
-.hero-slide__img {
+.hero-slide__img,
+.hero-slide__video {
     position: absolute;
     top: 0;
     left: 0;
@@ -261,8 +262,20 @@ a:hover {
     transition: transform 8s ease-out;
 }
 
-.swiper-slide-active .hero-slide__img {
+.swiper-slide-active .hero-slide__img,
+.swiper-slide-active .hero-slide__video {
     transform: scale(1.05);
+}
+
+/* Video specific styles */
+.hero-slide__video {
+    z-index: 0;
+}
+
+@media(min-width: 1200px) {
+    .hero-slide__video {
+        height: 100%;
+    }
 }
 
 /* Text Box */

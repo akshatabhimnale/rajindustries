@@ -50,12 +50,16 @@
     <div class="hero-stage">
         <div class="swiper hero-slider">
             <div class="swiper-wrapper">
-                <!-- Slide 1 -->
-                <div class="swiper-slide hero-slide">
+                <!-- Slide 1 - Video -->
+                <div class="swiper-slide hero-slide is-dark">
                     <div class="hero-slide__media">
-                        <img src="https://images.unsplash.com/photo-1581092918484-8313e36605d6?w=1920&h=1080&fit=crop"
-                             alt="Wire Harness Manufacturing"
-                             class="hero-slide__img">
+                        <video id="stage-video" class="hero-slide__video" autoplay loop muted playsinline
+                               poster="https://images.unsplash.com/photo-1581092918484-8313e36605d6?w=1920&h=1080&fit=crop">
+                            <source src="images/251126-WeWi-Animation_Automobilwoche-1.mp4" type="video/mp4">
+                            <!-- Fallback image if video doesn't load -->
+                            <img src="https://images.unsplash.com/photo-1581092918484-8313e36605d6?w=1920&h=1080&fit=crop"
+                                 alt="Wire Harness Manufacturing">
+                        </video>
                     </div>
                     <div class="hero-slide__content">
                         <div class="hero-slide__text">

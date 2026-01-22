@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-        // Pause on hover
+        // Pause on hover and handle video playback
         on: {
             init: function() {
                 const swiper = this;
@@ -38,6 +38,32 @@ document.addEventListener('DOMContentLoaded', function() {
                 swiper.el.addEventListener('mouseleave', function() {
                     swiper.autoplay.start();
                 });
+
+                // Play video on first slide if exists
+                const firstSlide = swiper.slides[swiper.activeIndex];
+                const video = firstSlide?.querySelector('video');
+                if (video) {
+                    video.play().catch(err => console.log('Video autoplay prevented:', err));
+                }
+            },
+            slideChange: function() {
+                const swiper = this;
+
+                // Pause all videos
+                swiper.slides.forEach(slide => {
+                    const video = slide.querySelector('video');
+                    if (video) {
+                        video.pause();
+                    }
+                });
+
+                // Play video on active slide
+                const activeSlide = swiper.slides[swiper.activeIndex];
+                const activeVideo = activeSlide?.querySelector('video');
+                if (activeVideo) {
+                    activeVideo.currentTime = 0;
+                    activeVideo.play().catch(err => console.log('Video autoplay prevented:', err));
+                }
             }
         }
     });
