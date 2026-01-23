@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Raj Industries - Leading manufacturer of wire harnesses for automotive, industrial and special applications">
+    <meta name="description" content="Raj Industries - Leading manufacturer of wire harnesses for automotive, industrial and special applications. We develop customized wire harness solutions worldwide.">
     <title>Raj Industries - Wire Harness Manufacturing Excellence</title>
 
     <!-- Fonts -->
@@ -18,300 +18,442 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header__container">
-            <div class="header__brand">
-                <a href="index.html" class="logo">
-                    <span class="logo__text">Raj Industries</span>
-                    <span class="logo__tagline">Wire Harness Solutions</span>
-                </a>
+    <div class="c-page js-page">
+
+        <!-- Header -->
+        <header class="c-page-head" role="banner">
+            <div class="c-page-head__top js-page-head">
+                <div class="c-page-head__box">
+                    <div class="header__container">
+                        <div class="header__brand">
+                            <a href="index.html" class="logo">
+                                <span class="logo__text">Raj Industries</span>
+                                <span class="logo__tagline">Wire Harness Solutions</span>
+                            </a>
+                        </div>
+
+                        <nav class="nav" role="navigation">
+                            <ul class="nav__list">
+                                <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Home</a></li>
+                                <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                                <li class="nav__item"><a href="products.html" class="nav__link">Products</a></li>
+                                <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
+                                <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="header__actions">
+                            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                                <svg class="theme-toggle__icon theme-toggle__icon--sun" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.66 4.34L14.24 5.76M5.76 14.24L4.34 15.66M15.66 15.66L14.24 14.24M5.76 5.76L4.34 4.34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <svg class="theme-toggle__icon theme-toggle__icon--moon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M17.66 11.2C17.1 13.15 15.66 14.74 13.8 15.61C11.93 16.48 9.78 16.56 7.86 15.82C5.94 15.08 4.41 13.58 3.58 11.68C2.75 9.78 2.69 7.63 3.42 5.68C4.05 4 5.23 2.64 6.77 1.84C6.42 3.6 6.75 5.43 7.69 6.97C8.63 8.51 10.12 9.63 11.84 10.09C13.56 10.54 15.39 10.3 16.94 9.41C17.66 9.91 17.66 10.62 17.66 11.2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                            <button class="mobile-toggle" aria-label="Toggle menu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </header>
 
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link nav__link--active">Home</a></li>
-                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="products.html" class="nav__link">Products</a></li>
-                    <li class="nav__item"><a href="services.html" class="nav__link">Services</a></li>
-                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
-                </ul>
-            </nav>
+        <!-- Hero Stage -->
+        <div class="c-stage c-stage--large">
+            <div class="o-module">
+                <div class="o-module__body">
+                    <div class="c-slider c-slider--stage">
+                        <div class="c-slider__container-wrap">
+                            <div class="c-slider__container swiper-container js-slider" id="c-672" data-js-props='{"loop":"1","autoplay":{"delay":"10000"}}'>
+                                <div class="c-slider__wrapper swiper-wrapper">
 
-            <div class="header__actions">
-                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                    <svg class="theme-toggle__icon theme-toggle__icon--sun" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
-                        <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.66 4.34L14.24 5.76M5.76 14.24L4.34 15.66M15.66 15.66L14.24 14.24M5.76 5.76L4.34 4.34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    <svg class="theme-toggle__icon theme-toggle__icon--moon" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <path d="M17.66 11.2C17.1 13.15 15.66 14.74 13.8 15.61C11.93 16.48 9.78 16.56 7.86 15.82C5.94 15.08 4.41 13.58 3.58 11.68C2.75 9.78 2.69 7.63 3.42 5.68C4.05 4 5.23 2.64 6.77 1.84C6.42 3.6 6.75 5.43 7.69 6.97C8.63 8.51 10.12 9.63 11.84 10.09C13.56 10.54 15.39 10.3 16.94 9.41C17.66 9.91 17.66 10.62 17.66 11.2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-                <button class="mobile-toggle" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+                                    <!-- Slide 1 - Video -->
+                                    <div class="c-stage__item swiper-slide is-dark">
+                                        <div class="c-stage__media-box">
+                                            <figure class="c-stage__media o-media__media">
+                                                <video id="stage-video" class="c-stage__video" autoplay loop muted playsinline poster="images/csm_210906-WeWi-Bereichsbild-2021-81456__1__2a75260749.jpg" width="1024" height="576">
+                                                    <source src="images/251126-WeWi-Animation_Automobilwoche-1.mp4" type="video/mp4">
+                                                </video>
+                                            </figure>
+                                        </div>
+                                        <div class="c-stage__text-box">
+                                            <div class="c-stage__text">
+                                                <h3 class="c-stage__headline">
+                                                    <small class="c-stage__topline">Products</small>
+                                                    Integrated system technology for the automotive industry
+                                                </h3>
+                                                <a class="o-link o-link--highlight" href="products.html" target="" title="">Find out more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 2 - Production Image -->
+                                    <div class="c-stage__item swiper-slide is-dark">
+                                        <div class="c-stage__media-box">
+                                            <figure class="c-stage__media o-media__media">
+                                                <picture class="c-stage__img-wrap">
+                                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-lazy="images/csm_unternehmen-polen-produktion-leitungssaetze_7e2de82c95.jpg"
+                                                         data-sizes="auto"
+                                                         data-srcset="images/csm_unternehmen-polen-produktion-leitungssaetze_7e2de82c95.jpg"
+                                                         alt="Production hall of wire harnesses"
+                                                         class="c-stage__img u-lazyload js-lazyload">
+                                                </picture>
+                                                <noscript>
+                                                    <picture class="c-stage__img-wrap">
+                                                        <img src="images/csm_unternehmen-polen-produktion-leitungssaetze_7e2de82c95.jpg" alt="Production hall of wire harnesses" class="c-stage__img">
+                                                    </picture>
+                                                </noscript>
+                                            </figure>
+                                        </div>
+                                        <div class="c-stage__text-box">
+                                            <div class="c-stage__text">
+                                                <h3 class="c-stage__headline">
+                                                    <small class="c-stage__topline">About us</small>
+                                                    We develop and produce customized wire harnesses
+                                                </h3>
+                                                <a class="o-link o-link--highlight" href="about.html" target="" title="">Find out more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 3 - Components Image -->
+                                    <div class="c-stage__item swiper-slide is-dark">
+                                        <div class="c-stage__media-box">
+                                            <figure class="c-stage__media o-media__media">
+                                                <picture class="c-stage__img-wrap">
+                                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                         data-lazy="images/csm_210906-WeWi-Bereichsbild-2021-81456__1__2a75260749.jpg"
+                                                         data-sizes="auto"
+                                                         data-srcset="images/csm_210906-WeWi-Bereichsbild-2021-81456__1__2a75260749.jpg"
+                                                         alt="Wire harness components and assemblies"
+                                                         class="c-stage__img u-lazyload js-lazyload">
+                                                </picture>
+                                                <noscript>
+                                                    <picture class="c-stage__img-wrap">
+                                                        <img src="images/csm_210906-WeWi-Bereichsbild-2021-81456__1__2a75260749.jpg" alt="Wire harness components and assemblies" class="c-stage__img">
+                                                    </picture>
+                                                </noscript>
+                                            </figure>
+                                        </div>
+                                        <div class="c-stage__text-box">
+                                            <div class="c-stage__text">
+                                                <h3 class="c-stage__headline">
+                                                    <small class="c-stage__topline">Products</small>
+                                                    Cable connections, components and comprehensive solutions
+                                                </h3>
+                                                <a class="o-link o-link--highlight" href="products.html" target="" title="">Find out more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- Slider Controls -->
+                                <div class="c-slider__controls">
+                                    <div class="c-slider__button-wrap">
+                                        <button class="c-slider__button swiper-button-prev" type="button" aria-label="Previous slide">
+                                            <svg role="img" class="o-icon" viewbox="0 0 48 48">
+                                                <polyline points="30,14 18,24 30,34" fill="none" stroke="currentColor" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                        <button class="c-slider__button swiper-button-next" type="button" aria-label="Next slide">
+                                            <svg role="img" class="o-icon" viewbox="0 0 48 48">
+                                                <polyline points="18,14 30,24 18,34" fill="none" stroke="currentColor" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="c-slider__pagination-wrap">
+                                        <div class="c-slider__pagination swiper-pagination"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
 
-    <!-- Hero Stage -->
-    <div class="c-stage c-stage--large">
-        <div class="c-slider c-slider--stage">
-            <div class="c-slider__container-wrap">
-                <div class="c-slider__container swiper-container js-slider" id="hero-slider">
-                    <div class="c-slider__wrapper swiper-wrapper">
+        <!-- Main Content -->
+        <div class="o-section">
+            <div class="o-section__content">
 
-                        <!-- Slide 1 - Video -->
-                        <div class="c-stage__item swiper-slide is-dark">
-                            <div class="c-stage__media-box">
-                                <figure class="c-stage__media o-media__media">
-                                    <video id="stage-video" class="c-stage__video" autoplay loop muted playsinline
-                                           poster="images/csm_210906-WeWi-Bereichsbild-2021-81456__1__2a75260749.jpg">
-                                        <source src="images/251126-WeWi-Animation_Automobilwoche-1.mp4" type="video/mp4">
-                                    </video>
-                                </figure>
-                            </div>
-                            <div class="c-stage__text-box">
-                                <div class="c-stage__text">
-                                    <p class="c-stage__topline">Products</p>
-                                    <h1 class="c-stage__headline">Integrated system technology for automotive industry</h1>
-                                    <a href="products.html" class="c-button c-button--primary">Find out more</a>
+                <!-- Page Intro -->
+                <div class="o-module" id="o-673">
+                    <div class="o-module__body">
+                        <div class="c-page-intro" id="c-673">
+                            <div class="c-page-intro__text-box-wrap">
+                                <div class="c-page-intro__text-box">
+                                    <div class="c-page-intro__text-box-inner">
+                                        <h1 class="c-page-intro__headline">
+                                            <span class="c-page-intro__topline">Cable harnesses for automotive and industrial applications</span>
+                                            From development to delivery - Your partner for excellence
+                                        </h1>
+                                        <div class="c-page-intro__text">
+                                            Raj Industries works worldwide on creating innovative wire harness solutions for the automotive and industrial sectors. With state-of-the-art production facilities and experienced engineers, we are your reliable partner. Both major manufacturers and specialized companies rely on our broad range of wire harnesses. At the same time, our customers appreciate our service philosophy and the wealth of problem-solving expertise that our engineers have gained through many years of experience.
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Slide 2 -->
-                        <div class="c-stage__item swiper-slide is-dark">
-                            <div class="c-stage__media-box">
-                                <figure class="c-stage__media o-media__media">
-                                    <picture class="c-stage__img-wrap">
-                                        <img src="images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg"
-                                             alt="Wire Harness Manufacturing"
-                                             class="c-stage__img">
-                                    </picture>
-                                </figure>
-                            </div>
-                            <div class="c-stage__text-box">
-                                <div class="c-stage__text">
-                                    <p class="c-stage__topline">About us</p>
-                                    <h2 class="c-stage__headline">We develop and produce customized wire harnesses</h2>
-                                    <a href="about.html" class="c-button c-button--primary">Find out more</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="c-stage__item swiper-slide is-dark">
-                            <div class="c-stage__media-box">
-                                <figure class="c-stage__media o-media__media">
-                                    <picture class="c-stage__img-wrap">
-                                        <img src="images/csm_hochvolt-leitungsaetze-eingebaut_ddc1ff0a82.png"
-                                             alt="High-Voltage Wire Harnesses"
-                                             class="c-stage__img">
-                                    </picture>
-                                </figure>
-                            </div>
-                            <div class="c-stage__text-box">
-                                <div class="c-stage__text">
-                                    <p class="c-stage__topline">Quality</p>
-                                    <h2 class="c-stage__headline">Excellence in manufacturing and quality assurance</h2>
-                                    <a href="services.html" class="c-button c-button--primary">Find out more</a>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
-            </div>
 
-            <!-- Slider Controls -->
-            <div class="c-slider__controls c-slider__controls--show">
-                <div class="c-slider__button-wrap">
-                    <button class="c-slider__button swiper-button-prev" aria-label="Previous slide">
-                        <svg class="o-icon" width="66" height="66" viewBox="0 0 66 66">
-                            <polyline points="40,20 26,33 40,46" fill="none" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </button>
-                    <button class="c-slider__button swiper-button-next" aria-label="Next slide">
-                        <svg class="o-icon" width="66" height="66" viewBox="0 0 66 66">
-                            <polyline points="26,20 40,33 26,46" fill="none" stroke="currentColor" stroke-width="2"/>
-                        </svg>
-                    </button>
+                <!-- Single Content Teaser -->
+                <div class="o-module" id="o-674">
+                    <div class="o-module__body">
+                        <a class="c-content-teaser c-content-teaser--single-left" id="c-8903" href="products.html">
+
+                            <div class="c-content-teaser__image-box">
+                                <picture class="c-content-teaser__img-wrap">
+                                    <source media="(min-width: 755px)" srcset="images/csm_radhausverkabelung-wewire_cac06634ef.jpg">
+                                    <source media="(min-width: 480px)" srcset="images/csm_radhausverkabelung-wewire_cac06634ef.jpg">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                         data-lazy="images/csm_radhausverkabelung-wewire_cac06634ef.jpg"
+                                         data-sizes="auto"
+                                         data-srcset="images/csm_radhausverkabelung-wewire_cac06634ef.jpg"
+                                         alt="Automotive wire harnesses"
+                                         class="c-content-teaser__img u-lazyload js-lazyload">
+                                </picture>
+                                <noscript>
+                                    <picture class="c-content-teaser__img-wrap">
+                                        <img src="images/csm_radhausverkabelung-wewire_cac06634ef.jpg" alt="Automotive wire harnesses" class="c-content-teaser__img">
+                                    </picture>
+                                </noscript>
+                            </div>
+
+                            <div class="c-content-teaser__text-box-wrap">
+                                <div class="c-content-teaser__text-box">
+                                    <div class="c-content-teaser__text-box-inner">
+                                        <h2 class="c-content-teaser__headline">
+                                            <span class="c-content-teaser__topline">Products</span>
+                                            Our core competence lies in automotive applications
+                                        </h2>
+                                        <div class="c-content-teaser__text">
+                                            Driver assistance systems and automated driving lead to more and more technology in modern vehicles - and thus also in the wiring: we develop suitable solutions for tomorrow's mobility.
+                                        </div>
+                                        <strong class="c-content-teaser__icon">Read more</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </a>
+                    </div>
                 </div>
-                <div class="c-slider__pagination-wrap">
-                    <div class="swiper-pagination"></div>
+
+                <!-- Content Teaser List -->
+                <div class="o-module" id="o-675">
+                    <div class="o-module__body">
+                        <div class="c-content-teaser-list is-double" id="c-675">
+
+                            <h2 class="c-content-teaser-list__header">More Raj Industries Products</h2>
+
+                            <!-- Teaser Item 1 -->
+                            <div class="c-content-teaser-list__item">
+                                <a class="c-content-teaser c-content-teaser--image" id="c-661" href="products.html">
+
+                                    <div class="c-content-teaser__image-box">
+                                        <picture class="c-content-teaser__img-wrap">
+                                            <source media="(min-width: 755px)" srcset="images/csm_wewire-cn-injection-mouled-components-brown_5982f7a478.jpg">
+                                            <source media="(min-width: 480px)" srcset="images/csm_wewire-cn-injection-mouled-components-brown_5982f7a478.jpg">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-lazy="images/csm_wewire-cn-injection-mouled-components-brown_5982f7a478.jpg"
+                                                 data-sizes="auto"
+                                                 data-srcset="images/csm_wewire-cn-injection-mouled-components-brown_5982f7a478.jpg"
+                                                 alt="Injection-molded components"
+                                                 class="c-content-teaser__img u-lazyload js-lazyload">
+                                        </picture>
+                                        <noscript>
+                                            <picture class="c-content-teaser__img-wrap">
+                                                <img src="images/csm_wewire-cn-injection-mouled-components-brown_5982f7a478.jpg" alt="Injection-molded components" class="c-content-teaser__img">
+                                            </picture>
+                                        </noscript>
+                                    </div>
+
+                                    <div class="c-content-teaser__text-box-wrap">
+                                        <div class="c-content-teaser__text-box">
+                                            <div class="c-content-teaser__text-box-inner">
+                                                <h3 class="c-content-teaser__headline">
+                                                    <span class="c-content-teaser__topline">Products</span>
+                                                    System expertise for injection molding components
+                                                </h3>
+                                                <div class="c-content-teaser__text">
+                                                    Regardless of whether directly molded onto the cable or as a separate part, Raj Industries develops demanding system solutions for modern applications.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <strong class="c-content-teaser__icon">Read more</strong>
+                                </a>
+                            </div>
+
+                            <!-- Teaser Item 2 -->
+                            <div class="c-content-teaser-list__item">
+                                <a class="c-content-teaser c-content-teaser--image" id="c-4405" href="products.html">
+
+                                    <div class="c-content-teaser__image-box">
+                                        <picture class="c-content-teaser__img-wrap">
+                                            <source media="(min-width: 755px)" srcset="images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg">
+                                            <source media="(min-width: 480px)" srcset="images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-lazy="images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg"
+                                                 data-sizes="auto"
+                                                 data-srcset="images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg"
+                                                 alt="Stand-alone wiring harnesses"
+                                                 class="c-content-teaser__img u-lazyload js-lazyload">
+                                        </picture>
+                                        <noscript>
+                                            <picture class="c-content-teaser__img-wrap">
+                                                <img src="images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg" alt="Stand-alone wiring harnesses" class="c-content-teaser__img">
+                                            </picture>
+                                        </noscript>
+                                    </div>
+
+                                    <div class="c-content-teaser__text-box-wrap">
+                                        <div class="c-content-teaser__text-box">
+                                            <div class="c-content-teaser__text-box-inner">
+                                                <h3 class="c-content-teaser__headline">
+                                                    <span class="c-content-teaser__topline">Products</span>
+                                                    Stand-alone wiring harnesses for all applications
+                                                </h3>
+                                                <div class="c-content-teaser__text">
+                                                    From the engine compartment to the interior: Raj Industries wire harnesses are used wherever reliable electrical connections are required.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <strong class="c-content-teaser__icon">Read more</strong>
+                                </a>
+                            </div>
+
+                            <!-- Teaser Item 3 -->
+                            <div class="c-content-teaser-list__item">
+                                <a class="c-content-teaser c-content-teaser--image" id="c-9081" href="products.html">
+
+                                    <div class="c-content-teaser__image-box">
+                                        <picture class="c-content-teaser__img-wrap">
+                                            <source media="(min-width: 755px)" srcset="images/csm_hochvolt-leitungsaetze-eingebaut_ddc1ff0a82.png">
+                                            <source media="(min-width: 480px)" srcset="images/csm_hochvolt-leitungsaetze-eingebaut_ddc1ff0a82.png">
+                                            <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                                                 data-lazy="images/csm_hochvolt-leitungsaetze-eingebaut_ddc1ff0a82.png"
+                                                 data-sizes="auto"
+                                                 data-srcset="images/csm_hochvolt-leitungsaetze-eingebaut_ddc1ff0a82.png"
+                                                 alt="High-voltage wire harnesses"
+                                                 class="c-content-teaser__img u-lazyload js-lazyload">
+                                        </picture>
+                                        <noscript>
+                                            <picture class="c-content-teaser__img-wrap">
+                                                <img src="images/csm_hochvolt-leitungsaetze-eingebaut_ddc1ff0a82.png" alt="High-voltage wire harnesses" class="c-content-teaser__img">
+                                            </picture>
+                                        </noscript>
+                                    </div>
+
+                                    <div class="c-content-teaser__text-box-wrap">
+                                        <div class="c-content-teaser__text-box">
+                                            <div class="c-content-teaser__text-box-inner">
+                                                <h3 class="c-content-teaser__headline">
+                                                    <span class="c-content-teaser__topline">Products</span>
+                                                    High-voltage technology for e-mobility
+                                                </h3>
+                                                <div class="c-content-teaser__text">
+                                                    Electric mobility requires sophisticated high-voltage solutions. Raj Industries develops and manufactures safe, reliable wire harnesses for modern electric vehicles.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <strong class="c-content-teaser__icon">Read more</strong>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+
+                <!-- CTA Section -->
+                <div class="o-module" id="o-679">
+                    <div class="o-module__body">
+                        <section class="section section--cta">
+                            <div class="container">
+                                <div class="cta-box">
+                                    <h2 class="cta-box__title">Need a Custom Wire Harness Solution?</h2>
+                                    <p class="cta-box__text">Our team of experts is ready to help you design and manufacture the perfect wire harness for your specific application. Contact us today to discuss your project requirements.</p>
+                                    <div class="cta-box__actions">
+                                        <a href="contact.html" class="c-button c-button--white">Get in Touch</a>
+                                        <a href="products.html" class="c-button c-button--outline">View Products</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
 
-    <!-- Main Content -->
-    <main class="main-content">
-
-        <!-- Services Section -->
-        <section class="section section--services">
-            <div class="container">
-                <div class="section__header">
-                    <p class="section__topline">Our Expertise</p>
-                    <h2 class="section__title">Comprehensive Wire Harness Solutions</h2>
-                    <p class="section__text">From development to production - we are your reliable partner</p>
-                </div>
-
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-card__image">
-                            <img src="images/csm_200224-WeWire-Leitungssatz-2_65c8147dde.png" alt="Automotive Wire Harnesses">
-                        </div>
-                        <div class="service-card__content">
-                            <h3 class="service-card__title">Automotive Wire Harnesses</h3>
-                            <p class="service-card__text">High-performance wiring solutions for modern vehicles with highest quality standards</p>
-                            <a href="products.html" class="service-card__link">Learn more →</a>
-                        </div>
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="footer__container">
+                <div class="footer__grid">
+                    <div class="footer__col">
+                        <h4 class="footer__title">Raj Industries</h4>
+                        <p class="footer__text">Excellence in Wire Harness Manufacturing</p>
+                        <p class="footer__text">Your reliable partner for automotive and industrial wiring solutions worldwide.</p>
                     </div>
 
-                    <div class="service-card">
-                        <div class="service-card__image">
-                            <img src="images/csm_wewire-cn-injection-mouled-components-brown_5982f7a478.jpg" alt="Injection Molded Components">
-                        </div>
-                        <div class="service-card__content">
-                            <h3 class="service-card__title">Injection Molded Components</h3>
-                            <p class="service-card__text">Custom plastic components and overmolded connectors for optimal integration</p>
-                            <a href="products.html" class="service-card__link">Learn more →</a>
-                        </div>
-                    </div>
-
-                    <div class="service-card">
-                        <div class="service-card__image">
-                            <img src="images/csm_radhausverkabelung-wewire_cac06634ef.jpg" alt="Special Applications">
-                        </div>
-                        <div class="service-card__content">
-                            <h3 class="service-card__title">Special Applications</h3>
-                            <p class="service-card__text">Customized solutions for unique requirements and challenging environments</p>
-                            <a href="products.html" class="service-card__link">Learn more →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Section -->
-        <section class="section section--stats">
-            <div class="container">
-                <div class="stats-grid">
-                    <div class="stat">
-                        <p class="stat__number" data-target="25">25+</p>
-                        <p class="stat__label">Years Experience</p>
-                    </div>
-                    <div class="stat">
-                        <p class="stat__number" data-target="500">500+</p>
-                        <p class="stat__label">Satisfied Clients</p>
-                    </div>
-                    <div class="stat">
-                        <p class="stat__number" data-target="1000">1000+</p>
-                        <p class="stat__label">Projects Delivered</p>
-                    </div>
-                    <div class="stat">
-                        <p class="stat__number" data-target="50">50+</p>
-                        <p class="stat__label">Countries Worldwide</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Company Overview Section -->
-        <section class="section section--company">
-            <div class="container">
-                <div class="company-grid">
-                    <div class="company-content">
-                        <p class="section__topline">About Raj Industries</p>
-                        <h2 class="section__title">Your Partner for Wire Harness Solutions</h2>
-                        <p class="section__text">As a leading manufacturer of wire harnesses, we combine decades of experience with innovative production methods. Our focus is on quality, reliability and customer satisfaction.</p>
-                        <ul class="company-list">
-                            <li>ISO certified production processes</li>
-                            <li>State-of-the-art manufacturing technology</li>
-                            <li>Experienced engineering team</li>
-                            <li>Flexible production capacities</li>
-                            <li>Worldwide delivery</li>
+                    <div class="footer__col">
+                        <h4 class="footer__title">Products</h4>
+                        <ul class="footer__links">
+                            <li><a href="products.html">Automotive Harnesses</a></li>
+                            <li><a href="products.html">Industrial Solutions</a></li>
+                            <li><a href="products.html">Custom Assemblies</a></li>
+                            <li><a href="products.html">High-Voltage Systems</a></li>
                         </ul>
-                        <a href="about.html" class="c-button c-button--primary">More about us</a>
                     </div>
-                    <div class="company-image">
-                        <img src="images/csm_unternehmen-polen-produktion-leitungssaetze_7e2de82c95.jpg"
-                             alt="Production Facility">
+
+                    <div class="footer__col">
+                        <h4 class="footer__title">Company</h4>
+                        <ul class="footer__links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="about.html">Careers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__col">
+                        <h4 class="footer__title">Contact</h4>
+                        <p class="footer__text">
+                            Industrial Area, Phase 2<br>
+                            Manufacturing Hub, India<br>
+                            <br>
+                            Email: info@rajindustries.com<br>
+                            Phone: +91 XXX XXX XXXX
+                        </p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- CTA Section -->
-        <section class="section section--cta">
-            <div class="container">
-                <div class="cta-box">
-                    <h2 class="cta-box__title">Need a Custom Wire Harness Solution?</h2>
-                    <p class="cta-box__text">Our team of experts is ready to help you design and manufacture the perfect wire harness for your specific application.</p>
-                    <div class="cta-box__actions">
-                        <a href="contact.html" class="c-button c-button--white">Get in Touch</a>
-                        <a href="products.html" class="c-button c-button--outline">View Products</a>
-                    </div>
+                <div class="footer__bottom">
+                    <p>&copy; 2026 Raj Industries. All rights reserved.</p>
                 </div>
             </div>
-        </section>
+        </footer>
 
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__grid">
-                <div class="footer__col">
-                    <h4 class="footer__title">Raj Industries</h4>
-                    <p class="footer__text">Excellence in Wire Harness Manufacturing</p>
-                    <p class="footer__text">Your reliable partner for automotive and industrial wiring solutions.</p>
-                </div>
-
-                <div class="footer__col">
-                    <h4 class="footer__title">Products</h4>
-                    <ul class="footer__links">
-                        <li><a href="products.html">Automotive Harnesses</a></li>
-                        <li><a href="products.html">Industrial Solutions</a></li>
-                        <li><a href="products.html">Custom Assemblies</a></li>
-                        <li><a href="products.html">Special Applications</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__col">
-                    <h4 class="footer__title">Company</h4>
-                    <ul class="footer__links">
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="about.html">Careers</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__col">
-                    <h4 class="footer__title">Contact</h4>
-                    <p class="footer__text">
-                        Industrial Area, Phase 2<br>
-                        Manufacturing Hub, India<br>
-                        <br>
-                        Email: info@rajindustries.com<br>
-                        Phone: +91 XXX XXX XXXX
-                    </p>
-                </div>
-            </div>
-
-            <div class="footer__bottom">
-                <p>&copy; 2026 Raj Industries. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
+    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- LazyLoad Script -->
+    <script src="https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js"></script>
+    <!-- Main JS -->
     <script src="main.js"></script>
 </body>
 </html>
