@@ -12,6 +12,29 @@
     --gray: #6c757d;
     --gray-light: #e6e6e6;
     --font-family-sans-serif: "helvetica-neue-lt-pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    /* Light mode (default) */
+    --bg-color: #ffffff;
+    --text-color: #212529;
+    --header-bg: rgba(255, 255, 255, 0.98);
+    --card-bg: #ffffff;
+    --border-color: #e6e6e6;
+    --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* Dark mode */
+body.dark-mode {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --header-bg: rgba(26, 26, 26, 0.98);
+    --card-bg: #1e1e1e;
+    --border-color: #333333;
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode {
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 *,
@@ -33,9 +56,10 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    color: #212529;
+    color: var(--text-color);
     text-align: left;
-    background-color: #fff;
+    background-color: var(--bg-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img {
@@ -77,9 +101,9 @@ a:hover {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.98);
+    background: var(--header-bg);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px var(--shadow);
     transition: all 0.3s ease;
 }
 
@@ -175,8 +199,55 @@ a:hover {
 .mobile-toggle span {
     width: 25px;
     height: 2px;
-    background: var(--dark);
+    background: var(--text-color);
     transition: all 0.3s ease;
+}
+
+/* Header Actions */
+.header__actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--text-color);
+}
+
+.theme-toggle:hover {
+    border-color: var(--red);
+    transform: rotate(20deg);
+}
+
+.theme-toggle__icon {
+    transition: all 0.3s ease;
+}
+
+.theme-toggle__icon--sun {
+    display: block;
+}
+
+.theme-toggle__icon--moon {
+    display: none;
+}
+
+body.dark-mode .theme-toggle__icon--sun {
+    display: none;
+}
+
+body.dark-mode .theme-toggle__icon--moon {
+    display: block;
 }
 
 @media(max-width: 768px) {
@@ -186,6 +257,51 @@ a:hover {
 
     .mobile-toggle {
         display: flex;
+    }
+
+    .nav.nav--active {
+        display: flex;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: var(--header-bg);
+        padding: 20px;
+        box-shadow: 0 4px 20px var(--shadow);
+        animation: slideDown 0.3s ease-out;
+    }
+
+    .nav--active .nav__list {
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+    }
+
+    .nav--active .nav__item {
+        width: 100%;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .nav--active .nav__link {
+        display: block;
+        padding: 15px 10px;
+        font-size: 16px;
+    }
+
+    .theme-toggle {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -507,16 +623,16 @@ a:hover {
 }
 
 .service-card {
-    background: #ffffff;
+    background: var(--card-bg);
     padding: 40px 30px;
     text-align: center;
     transition: all 0.3s ease;
-    border: 1px solid var(--gray-light);
+    border: 1px solid var(--border-color);
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 20px 40px var(--shadow);
     border-color: var(--red);
 }
 
@@ -531,7 +647,7 @@ a:hover {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 15px;
-    color: var(--dark);
+    color: var(--text-color);
 }
 
 .service-card__text {
