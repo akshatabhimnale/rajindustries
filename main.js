@@ -6,7 +6,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // Initialize hero slider with reference configuration
-    const heroSwiper = new Swiper('.hero-slider', {
+    const heroSwiper = new Swiper('.js-slider', {
         loop: true,
         autoplay: {
             delay: 10000, // 10 seconds like reference
