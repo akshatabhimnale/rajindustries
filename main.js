@@ -215,9 +215,25 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ==========================================
-    // Image Lazy Loading Enhancement
+    // Image Lazy Loading Enhancement & Fix
     // ==========================================
 
+    // Immediately load all slider images to prevent visibility issues
+    const lazyImages = document.querySelectorAll('img[data-lazy], img[data-srcset]');
+    lazyImages.forEach(img => {
+        // Set the actual src from data-lazy or data-srcset
+        if (img.dataset.lazy) {
+            img.src = img.dataset.lazy;
+            img.srcset = img.dataset.srcset || img.dataset.lazy;
+        }
+        // Remove lazy loading class to show image immediately
+        img.classList.remove('u-lazyload', 'js-lazyload');
+        img.classList.add('lazyloaded');
+        // Ensure image is visible
+        img.style.opacity = '1';
+    });
+
+    // Standard lazy loading for other images
     if ('loading' in HTMLImageElement.prototype) {
         const images = document.querySelectorAll('img[loading="lazy"]');
         images.forEach(img => {

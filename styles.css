@@ -31308,3 +31308,325 @@ body.dark-mode .theme-toggle__icon--moon {
     width: 100%;
     height: 100%;
 }
+/* ============================================
+   RAJ INDUSTRIES - BUG FIXES & IMPROVEMENTS
+   ============================================ */
+
+/* Fix slider controls positioning - center vertically */
+.c-slider--stage .c-slider__controls {
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    width: 100%;
+    max-width: 1600px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+@media(min-width: 576px) {
+    .c-slider--stage .c-slider__controls {
+        padding: 0 45px;
+    }
+}
+
+@media(min-width: 1600px) {
+    .c-slider--stage .c-slider__controls {
+        left: 50%;
+        max-width: 1600px;
+    }
+}
+
+/* Fix slider button wrap positioning */
+.c-slider--stage .c-slider__button-wrap {
+    margin: 0;
+    justify-self: flex-start;
+}
+
+/* Ensure slider buttons are visible and properly styled */
+.c-slider__button {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #1a1a1a !important;
+    width: 50px;
+    height: 50px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.c-slider__button:hover {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+    border-color: #dc3545;
+    transform: scale(1.1);
+}
+
+@media(min-width: 576px) {
+    .c-slider__button {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media(min-width: 768px) {
+    .c-slider__button {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media(min-width: 992px) {
+    .c-slider__button {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/* Dark mode button styling */
+body.dark-mode .c-slider__button {
+    background-color: rgba(26, 26, 26, 0.9) !important;
+    color: #fff !important;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .c-slider__button:hover {
+    background-color: #dc3545 !important;
+    border-color: #dc3545;
+}
+
+/* Fix image lazy loading visibility */
+.c-stage__img.u-lazyload {
+    opacity: 1 !important;
+}
+
+.c-stage__img.lazyloaded {
+    opacity: 1 !important;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Ensure images fill container properly */
+.c-stage__img,
+.c-stage__video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 1;
+}
+
+/* Fix pagination visibility */
+.c-slider__pagination-wrap {
+    display: none !important;
+}
+
+@media(max-width: 575px) {
+    .c-slider__pagination-wrap {
+        display: flex !important;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    
+    .c-slider__button-wrap {
+        display: none !important;
+    }
+}
+
+/* Improve text visibility on slider */
+.c-stage__headline {
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    font-weight: 600;
+}
+
+.c-stage__topline {
+    color: #dc3545;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 700;
+}
+
+.o-link--highlight {
+    color: #fff;
+    background-color: #dc3545;
+    padding: 12px 30px;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    text-shadow: none;
+}
+
+.o-link--highlight:hover {
+    background-color: #c02d3f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+}
+
+/* Fix stage text box visibility */
+.c-stage__text-box {
+    z-index: 5;
+}
+
+/* Remove duplicate/conflicting slider height rules */
+.c-slider .swiper-slide {
+    display: flex;
+    height: 100% !important;
+}
+
+.c-slider__wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+/* Clean slider container */
+.c-slider__container {
+    width: 100%;
+    height: 100%;
+}
+
+/* Fix swiper pagination bullets color */
+.swiper-pagination-bullet {
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 0.5;
+}
+
+.swiper-pagination-bullet-active {
+    background: #dc3545;
+    opacity: 1;
+}
+
+/* Ensure proper z-index stacking */
+.c-stage__media-box::after {
+    z-index: 1;
+}
+
+.c-stage__media {
+    z-index: 0;
+}
+
+.c-stage__text-box {
+    z-index: 5;
+}
+
+.c-slider__controls {
+    z-index: 10 !important;
+}
+
+/* Fix header color visibility */
+.c-meta-nav__title {
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+body.dark-mode .c-meta-nav__title {
+    color: #e0e0e0;
+}
+
+.c-meta-nav__subtitle {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+body.dark-mode .c-meta-nav__subtitle {
+    color: #ff4444;
+}
+
+/* Fix main nav link visibility */
+.c-main-nav__link--l1 {
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.c-main-nav__link--l1:hover,
+.c-main-nav__link--l1.is-active {
+    color: #dc3545;
+}
+
+body.dark-mode .c-main-nav__link--l1 {
+    color: #e0e0e0;
+}
+
+body.dark-mode .c-main-nav__link--l1:hover,
+body.dark-mode .c-main-nav__link--l1.is-active {
+    color: #ff4444;
+}
+
+/* Mobile navigation styling */
+.c-mobile-nav {
+    position: fixed;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 110px);
+    background-color: #fff;
+    z-index: 999;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.c-mobile-nav.is-open {
+    transform: translateX(0);
+    display: block;
+}
+
+body.dark-mode .c-mobile-nav {
+    background-color: #2d2d2d;
+}
+
+.c-accordion-nav__list {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+
+.c-accordion-nav__item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.dark-mode .c-accordion-nav__item {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.c-accordion-nav__link {
+    display: block;
+    padding: 15px 10px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.c-accordion-nav__link:hover {
+    color: #dc3545;
+    padding-left: 20px;
+}
+
+body.dark-mode .c-accordion-nav__link {
+    color: #e0e0e0;
+}
+
+body.dark-mode .c-accordion-nav__link:hover {
+    color: #ff4444;
+}
+
+/* Fix body scroll when nav is open */
+body.nav-is-open {
+    overflow: hidden;
+}
