@@ -318,6 +318,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // ==========================================
+    // Scroll to Top Button
+    // ==========================================
+
+    // Create scroll to top button if it doesn't exist
+    let scrollTopBtn = document.querySelector('.footer__scroll-top');
+    if (!scrollTopBtn) {
+        scrollTopBtn = document.createElement('button');
+        scrollTopBtn.className = 'footer__scroll-top';
+        scrollTopBtn.innerHTML = '↑';
+        scrollTopBtn.setAttribute('aria-label', 'Scroll to top');
+        document.body.appendChild(scrollTopBtn);
+    }
+
+    // Show/hide scroll to top button
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
+    }, { passive: true });
+
+    // Scroll to top on click
+    scrollTopBtn.addEventListener('click', function() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // ==========================================
     // Console Log (Development)
     // ==========================================
 
