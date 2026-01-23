@@ -31272,3 +31272,39 @@ body.dark-mode .theme-toggle__icon--moon {
         height: 80px;
     }
 }
+
+/* Ensure consistent sizing for all slider media */
+.c-stage__img,
+.c-stage__video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.c-stage__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.c-stage__img-wrap {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Ensure swiper container maintains height */
+.c-slider__container {
+    width: 100%;
+    height: 100%;
+}
+
+.c-stage__item {
+    width: 100%;
+    height: 100%;
+}

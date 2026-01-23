@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize hero slider with reference configuration
     const heroSwiper = new Swiper('.js-slider', {
         loop: true,
+        autoHeight: false, // Disable auto-height to ensure consistent height
         autoplay: {
             delay: 10000, // 10 seconds like reference
             disableOnInteraction: false,
