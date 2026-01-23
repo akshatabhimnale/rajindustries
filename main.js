@@ -73,38 +73,33 @@ document.addEventListener('DOMContentLoaded', function() {
     // ==========================================
 
     // Mobile menu toggle
-    const mobileToggle = document.querySelector('.mobile-toggle');
-    const nav = document.querySelector('.nav');
+    const mobileToggle = document.querySelector('.js-mobile-nav-toggle');
+    const mobileNav = document.querySelector('.js-mobile-nav');
 
-    if (mobileToggle && nav) {
+    if (mobileToggle && mobileNav) {
         mobileToggle.addEventListener('click', function() {
-            nav.classList.toggle('nav--active');
+            mobileNav.classList.toggle('is-open');
             mobileToggle.classList.toggle('is-active');
-
-            // Animate hamburger
-            const spans = mobileToggle.querySelectorAll('span');
-            if (mobileToggle.classList.contains('is-active')) {
-                spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-                spans[1].style.opacity = '0';
-                spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
-            } else {
-                spans[0].style.transform = '';
-                spans[1].style.opacity = '';
-                spans[2].style.transform = '';
-            }
+            document.body.classList.toggle('nav-is-open');
         });
 
         // Close mobile menu when clicking outside
         document.addEventListener('click', function(event) {
-            if (!nav.contains(event.target) && !mobileToggle.contains(event.target)) {
-                nav.classList.remove('nav--active');
+            if (!mobileNav.contains(event.target) && !mobileToggle.contains(event.target)) {
+                mobileNav.classList.remove('is-open');
                 mobileToggle.classList.remove('is-active');
-
-                const spans = mobileToggle.querySelectorAll('span');
-                spans[0].style.transform = '';
-                spans[1].style.opacity = '';
-                spans[2].style.transform = '';
+                document.body.classList.remove('nav-is-open');
             }
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = mobileNav.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileNav.classList.remove('is-open');
+                mobileToggle.classList.remove('is-active');
+                document.body.classList.remove('nav-is-open');
+            });
         });
     }
 
@@ -116,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault();
                 const target = document.querySelector(href);
                 if (target) {
-                    const headerHeight = document.querySelector('.header')?.offsetHeight || 80;
+                    const headerHeight = document.querySelector('.c-page-head')?.offsetHeight || 80;
                     const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
 
                     window.scrollTo({
@@ -132,17 +127,20 @@ document.addEventListener('DOMContentLoaded', function() {
     // Header Scroll Effects
     // ==========================================
 
-    const header = document.querySelector('.header');
+    const header = document.querySelector('.c-page-head');
+    const stickyHeader = document.querySelector('.js-sticky-header');
 
-    if (header) {
+    if (header && stickyHeader) {
         window.addEventListener('scroll', function() {
             const currentScroll = window.pageYOffset;
 
-            // Add shadow on scroll
+            // Add sticky and shrunk states on scroll
             if (currentScroll > 100) {
-                header.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
+                header.classList.add('header-is-sticky', 'header-is-shrunk');
+                stickyHeader.classList.add('is-sticky', 'is-shrunk');
             } else {
-                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.05)';
+                header.classList.remove('header-is-sticky', 'header-is-shrunk');
+                stickyHeader.classList.remove('is-sticky', 'is-shrunk');
             }
         }, { passive: true });
     }
