@@ -2290,3 +2290,216 @@ h4, .h4 {
         margin-bottom: 100px;
     }
 }
+
+/* ==========================================
+   Critical Missing Classes from Reference
+   ========================================== */
+
+/* o-btn - Button Object (Reusable Base) */
+.o-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: none;
+    border-radius: 0;
+    transition: all 0.2s ease-in-out;
+    background-color: transparent;
+    color: inherit;
+}
+
+.o-btn:hover,
+.o-btn:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+.o-btn::-moz-focus-inner {
+    padding: 0;
+    border-style: none;
+}
+
+.o-btn--icon {
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+}
+
+@media(min-width: 768px) {
+    .o-btn--icon {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media(min-width: 992px) {
+    .o-btn--icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.o-btn__text-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* u-sr-only - Screen Reader Only */
+.u-sr-only {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* c-sticky-header - Sticky Header Wrapper */
+.c-sticky-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.c-sticky-header__default {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.c-sticky-header__alternate {
+    display: none;
+}
+
+@media(max-width: 1199px) {
+    .c-sticky-header__default {
+        display: none;
+    }
+
+    .c-sticky-header__alternate {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.c-sticky-header__identifier {
+    display: flex;
+    align-items: center;
+}
+
+.c-sticky-header__brand {
+    display: flex;
+    align-items: center;
+}
+
+.c-sticky-header__toggle {
+    display: flex;
+    align-items: center;
+}
+
+/* Slider Button Modifiers */
+.c-slider__button--prev,
+.c-slider__button--next {
+    position: relative;
+    color: var(--text-color, #1a1a1a);
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.c-slider__button--prev:hover,
+.c-slider__button--prev:focus,
+.c-slider__button--next:hover,
+.c-slider__button--next:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--red);
+}
+
+.is-dark .c-slider__button--prev,
+.is-dark .c-slider__button--next {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.is-dark .c-slider__button--prev:hover,
+.is-dark .c-slider__button--prev:focus,
+.is-dark .c-slider__button--next:hover,
+.is-dark .c-slider__button--next:focus {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.c-slider__button--next {
+    margin-left: 1px;
+}
+
+/* o-icon - Icon sizing */
+.o-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+@media(min-width: 992px) {
+    .o-icon {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+/* is-fff - Full Width First Fold variant */
+.c-page.is-fff .c-stage {
+    margin-top: 0;
+}
+
+.c-page.is-fff .c-stage--large {
+    margin-top: 0;
+}
+
+/* Header Sticky States */
+body.header-is-sticky .c-page-head {
+    box-shadow: 0 5px 15px 0 rgba(26, 26, 26, 0.2);
+}
+
+body.header-is-shrunk .c-page-head {
+    transform: translateY(-100%);
+    box-shadow: 0 5px 15px 0 rgba(26, 26, 26, 0) !important;
+}
+
+/* c-page-head__top background fix for is-fff */
+.is-fff .c-page-head__top {
+    background: var(--bg-color, #fff);
+}
+
+@media(min-width: 1200px) {
+    .is-fff .c-page-head__top {
+        background: var(--bg-color, #fff);
+    }
+}
