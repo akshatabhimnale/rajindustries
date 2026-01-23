@@ -33626,3 +33626,230 @@ body.dark-mode .c-accordion-nav__link:focus {
         display: none !important;
     }
 }
+
+/* ==========================================
+   HAMBURGER MENU ICON - ENSURE VISIBILITY
+   ========================================== */
+
+/* Force mobile toggle button to be visible and properly styled */
+.mobile-toggle,
+.c-main-nav__toggle,
+.js-mobile-nav-toggle {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 35px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: auto;
+    position: relative;
+    z-index: 1001;
+    transition: all 0.3s ease;
+}
+
+/* Hide on desktop only */
+@media (min-width: 992px) {
+    .mobile-toggle,
+    .c-main-nav__toggle,
+    .js-mobile-nav-toggle {
+        display: none !important;
+    }
+}
+
+/* Show on mobile and tablet */
+@media (max-width: 991.98px) {
+    .mobile-toggle,
+    .c-main-nav__toggle,
+    .js-mobile-nav-toggle {
+        display: flex !important;
+    }
+
+    /* Hide desktop navigation */
+    .c-main-nav,
+    .js-main-nav {
+        display: none !important;
+    }
+}
+
+/* Hamburger bars - highly visible */
+.mobile-toggle span,
+.c-main-nav__toggle span,
+.js-mobile-nav-toggle span {
+    display: block !important;
+    width: 100%;
+    height: 3px;
+    background-color: #1a1a1a !important;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border-radius: 3px;
+    position: relative;
+}
+
+/* Dark mode hamburger bars */
+body.dark-mode .mobile-toggle span,
+body.dark-mode .c-main-nav__toggle span,
+body.dark-mode .js-mobile-nav-toggle span {
+    background-color: #fff !important;
+}
+
+/* Active state - transform to X */
+.mobile-toggle.is-active span:nth-child(1),
+.c-main-nav__toggle.is-active span:nth-child(1),
+.js-mobile-nav-toggle.is-active span:nth-child(1) {
+    transform: rotate(45deg) translate(9px, 9px);
+    background-color: #dc3545 !important;
+}
+
+.mobile-toggle.is-active span:nth-child(2),
+.c-main-nav__toggle.is-active span:nth-child(2),
+.js-mobile-nav-toggle.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.mobile-toggle.is-active span:nth-child(3),
+.c-main-nav__toggle.is-active span:nth-child(3),
+.js-mobile-nav-toggle.is-active span:nth-child(3) {
+    transform: rotate(-45deg) translate(9px, -9px);
+    background-color: #dc3545 !important;
+}
+
+/* Dark mode active state */
+body.dark-mode .mobile-toggle.is-active span,
+body.dark-mode .c-main-nav__toggle.is-active span,
+body.dark-mode .js-mobile-nav-toggle.is-active span {
+    background-color: #ff4444 !important;
+}
+
+/* Hover effect on mobile toggle */
+.mobile-toggle:hover,
+.c-main-nav__toggle:hover,
+.js-mobile-nav-toggle:hover {
+    transform: scale(1.05);
+}
+
+.mobile-toggle:active,
+.c-main-nav__toggle:active,
+.js-mobile-nav-toggle:active {
+    transform: scale(0.95);
+}
+
+/* Ensure proper positioning in header */
+.c-page-head__brand {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+}
+
+@media (max-width: 991.98px) {
+    .c-page-head__brand {
+        padding: 0 15px;
+    }
+}
+
+/* Focus state for accessibility */
+.mobile-toggle:focus,
+.c-main-nav__toggle:focus,
+.js-mobile-nav-toggle:focus {
+    outline: 2px solid #dc3545;
+    outline-offset: 4px;
+}
+
+body.dark-mode .mobile-toggle:focus,
+body.dark-mode .c-main-nav__toggle:focus,
+body.dark-mode .js-mobile-nav-toggle:focus {
+    outline-color: #ff4444;
+}
+
+/* Mobile specific adjustments */
+@media (max-width: 575.98px) {
+    .mobile-toggle,
+    .c-main-nav__toggle,
+    .js-mobile-nav-toggle {
+        width: 30px;
+        height: 26px;
+    }
+
+    .mobile-toggle span,
+    .c-main-nav__toggle span,
+    .js-mobile-nav-toggle span {
+        height: 2.5px;
+    }
+
+    .mobile-toggle.is-active span:nth-child(1),
+    .c-main-nav__toggle.is-active span:nth-child(1),
+    .js-mobile-nav-toggle.is-active span:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    .mobile-toggle.is-active span:nth-child(3),
+    .c-main-nav__toggle.is-active span:nth-child(3),
+    .js-mobile-nav-toggle.is-active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+}
+
+/* Tablet specific */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .mobile-toggle,
+    .c-main-nav__toggle,
+    .js-mobile-nav-toggle {
+        width: 38px;
+        height: 32px;
+    }
+
+    .mobile-toggle span,
+    .c-main-nav__toggle span,
+    .js-mobile-nav-toggle span {
+        height: 3.5px;
+    }
+}
+
+/* Ensure button is clickable and visible */
+.mobile-toggle,
+.c-main-nav__toggle,
+.js-mobile-nav-toggle {
+    -webkit-tap-highlight-color: rgba(220, 53, 69, 0.3);
+    touch-action: manipulation;
+    user-select: none;
+}
+
+/* Animation for appearance */
+@media (max-width: 991.98px) {
+    .mobile-toggle,
+    .c-main-nav__toggle,
+    .js-mobile-nav-toggle {
+        animation: slideInRight 0.3s ease;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Override any conflicting styles */
+.c-page-head__brand .mobile-toggle,
+.c-page-head__brand .c-main-nav__toggle,
+.c-page-head__brand .js-mobile-nav-toggle {
+    margin-left: 20px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Ensure visibility over everything */
+.mobile-toggle,
+.c-main-nav__toggle,
+.js-mobile-nav-toggle {
+    visibility: visible !important;
+    opacity: 1 !important;
+}
