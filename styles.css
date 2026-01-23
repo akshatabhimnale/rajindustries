@@ -33342,3 +33342,287 @@ body.dark-mode .section--cta {
         max-height: 500px;
     }
 }
+
+/* ==========================================
+   MOBILE MENU VISIBILITY FIX
+   ========================================== */
+
+/* Mobile Toggle Button - Always visible on mobile */
+.mobile-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 32px;
+    height: 28px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 20px;
+    position: relative;
+    z-index: 1001;
+}
+
+.mobile-toggle span {
+    width: 100%;
+    height: 3px;
+    background-color: #1a1a1a;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border-radius: 2px;
+    display: block;
+}
+
+body.dark-mode .mobile-toggle span {
+    background-color: #fff;
+}
+
+/* Show mobile toggle on tablets and mobile */
+@media (max-width: 991.98px) {
+    .mobile-toggle {
+        display: flex !important;
+    }
+
+    .c-main-nav {
+        display: none !important;
+    }
+}
+
+/* Hamburger Animation */
+.mobile-toggle.is-active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+    background-color: #dc3545;
+}
+
+.mobile-toggle.is-active span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.mobile-toggle.is-active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+    background-color: #dc3545;
+}
+
+body.dark-mode .mobile-toggle.is-active span {
+    background-color: #ff4444;
+}
+
+/* Mobile Navigation - Fixed positioning */
+.c-mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffffff;
+    z-index: 1000;
+    overflow-y: auto;
+    transform: translateX(-100%);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    padding-top: 120px;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.1);
+    display: block !important;
+}
+
+body.dark-mode .c-mobile-nav {
+    background: #2d2d2d;
+    box-shadow: 2px 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.c-mobile-nav.is-open {
+    transform: translateX(0) !important;
+}
+
+/* Hide mobile nav on desktop */
+@media (min-width: 992px) {
+    .c-mobile-nav {
+        display: none !important;
+    }
+}
+
+/* Accordion Navigation Styling */
+.c-accordion-nav {
+    padding: 20px;
+}
+
+.c-accordion-nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.c-accordion-nav__item {
+    margin-bottom: 5px;
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+.c-mobile-nav.is-open .c-accordion-nav__item {
+    animation: slideInLeft 0.5s ease forwards;
+}
+
+.c-accordion-nav__item:nth-child(1) { animation-delay: 0.1s; }
+.c-accordion-nav__item:nth-child(2) { animation-delay: 0.15s; }
+.c-accordion-nav__item:nth-child(3) { animation-delay: 0.2s; }
+.c-accordion-nav__item:nth-child(4) { animation-delay: 0.25s; }
+.c-accordion-nav__item:nth-child(5) { animation-delay: 0.3s; }
+.c-accordion-nav__item:nth-child(6) { animation-delay: 0.35s; }
+
+.c-accordion-nav__link {
+    display: block;
+    padding: 18px 25px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+body.dark-mode .c-accordion-nav__link {
+    color: #fff;
+}
+
+.c-accordion-nav__link:hover,
+.c-accordion-nav__link:focus {
+    background: #f5f5f5;
+    border-left-color: #dc3545;
+    padding-left: 30px;
+    color: #dc3545;
+}
+
+body.dark-mode .c-accordion-nav__link:hover,
+body.dark-mode .c-accordion-nav__link:focus {
+    background: #3d3d3d;
+    color: #ff4444;
+    border-left-color: #ff4444;
+}
+
+/* Active link styling */
+.c-accordion-nav__link.is-active {
+    background: #dc3545;
+    color: #fff;
+    border-left-color: #a60d2e;
+}
+
+body.dark-mode .c-accordion-nav__link.is-active {
+    background: #ff4444;
+    color: #fff;
+}
+
+/* Overlay when mobile menu is open */
+body.nav-is-open::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+/* Prevent body scroll when menu is open */
+body.nav-is-open {
+    overflow: hidden;
+}
+
+/* Slide in animation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mobile responsiveness adjustments */
+@media (max-width: 575.98px) {
+    .c-mobile-nav {
+        padding-top: 100px;
+    }
+
+    .mobile-toggle {
+        width: 28px;
+        height: 24px;
+    }
+
+    .mobile-toggle span {
+        height: 2px;
+    }
+
+    .c-accordion-nav__link {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
+
+    .mobile-toggle.is-active span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    .mobile-toggle.is-active span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 576px) and (max-width: 991.98px) {
+    .c-accordion-nav {
+        padding: 30px;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .c-accordion-nav__link {
+        font-size: 20px;
+        padding: 20px 30px;
+    }
+}
+
+/* Accessibility - Focus states */
+.mobile-toggle:focus {
+    outline: 2px solid #dc3545;
+    outline-offset: 4px;
+}
+
+.c-accordion-nav__link:focus {
+    outline: 2px solid #dc3545;
+    outline-offset: 2px;
+}
+
+body.dark-mode .mobile-toggle:focus,
+body.dark-mode .c-accordion-nav__link:focus {
+    outline-color: #ff4444;
+}
+
+/* Ensure mobile menu appears above everything */
+.c-mobile-nav {
+    isolation: isolate;
+}
+
+/* Fix for iOS momentum scrolling */
+.c-mobile-nav {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Print - hide mobile nav */
+@media print {
+    .mobile-toggle,
+    .c-mobile-nav {
+        display: none !important;
+    }
+}
