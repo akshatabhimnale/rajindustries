@@ -18731,7 +18731,7 @@ head {
 .is-fff .c-main-nav,
 .is-cv .c-main-nav {
     align-items: flex-end;
-    padding-top: 30px
+  
 }
 
 .c-main-nav__list {
@@ -32450,7 +32450,7 @@ body.dark-mode .c-page-head__top {
 /* Header Bottom Section */
 .c-page-head__bottom {
     background: #fff;
-    padding: 20px 0;
+   
     transition: all 0.3s ease;
 }
 
