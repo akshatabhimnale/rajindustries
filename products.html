@@ -5,304 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore our wide range of wire harness products for automotive, industrial, and aerospace applications">
     <title>Products - Raj Industries</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar scrolled" id="navbar">
-        <div class="container">
-            <div class="nav-brand">
-                <h1>Raj Industries</h1>
-                <span class="tagline">Wire Harness Solutions</span>
-            </div>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="products.html" class="nav-link active">Products</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <div class="c-page js-page is-fff">
 
-    <!-- Page Header -->
-    <section class="page-header">
-        <div class="container">
-            <h1 class="page-title fade-in">Our Products</h1>
-            <p class="page-subtitle fade-in-delay">Comprehensive Wire Harness Solutions for Every Industry</p>
-        </div>
-    </section>
+        <!-- Header Placeholder - Loaded from header.html -->
+        <div id="header-placeholder"></div>
 
-    <!-- Product Categories -->
-    <section class="section products-showcase">
-        <div class="container">
-            <!-- Automotive Harnesses -->
-            <div class="product-category">
-                <div class="category-header">
-                    <div class="category-icon">🚗</div>
-                    <div>
-                        <h2>Automotive Wire Harnesses</h2>
-                        <p>High-performance wiring solutions for modern vehicles</p>
-                    </div>
-                </div>
-                <div class="product-showcase-grid">
-                    <div class="product-item">
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title fade-in">Our Products</h1>
+                <p class="page-subtitle fade-in-delay">Comprehensive Wire Harness Solutions for Every Industry</p>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="section products-section">
+            <div class="container">
+                <div class="products-grid">
+                    <div class="product-card">
                         <div class="product-image">
-                            <img src="images/products/automotive-harness-1.jpg" alt="Engine Wiring Harness" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600&h=400&fit=crop'">
-                            <div class="product-badge">Featured</div>
+                            <img src="images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg" alt="Automotive Wire Harnesses">
                         </div>
-                        <div class="product-info">
-                            <h3>Engine Wiring Harness</h3>
-                            <p>Complete engine management system wiring with high-temperature resistant cables and precision connectors.</p>
-                            <ul class="product-specs">
-                                <li>Temperature Range: -40°C to +125°C</li>
-                                <li>Voltage Rating: Up to 600V</li>
-                                <li>EMI/RFI Shielded</li>
+                        <div class="product-content">
+                            <h3>Automotive Wire Harnesses</h3>
+                            <p>High-quality harnesses designed for automotive applications, meeting international safety standards.</p>
+                            <ul>
+                                <li>Engine compartment harnesses</li>
+                                <li>Interior dashboard harnesses</li>
+                                <li>Body and chassis harnesses</li>
+                                <li>Trailer and towing harnesses</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-primary">Request Quote</a>
                         </div>
                     </div>
-                    <div class="product-item">
+
+                    <div class="product-card">
                         <div class="product-image">
-                            <img src="images/products/automotive-harness-2.jpg" alt="Dashboard Harness" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=600&h=400&fit=crop'">
+                            <img src="images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg" alt="Industrial Solutions">
                         </div>
-                        <div class="product-info">
-                            <h3>Dashboard Wiring Harness</h3>
-                            <p>Integrated dashboard electronics wiring for instrumentation, controls, and infotainment systems.</p>
-                            <ul class="product-specs">
-                                <li>Custom Connector Options</li>
-                                <li>UV Resistant Insulation</li>
-                                <li>Flexible Routing Design</li>
+                        <div class="product-content">
+                            <h3>Industrial Solutions</h3>
+                            <p>Robust harnesses for industrial machinery and automation systems.</p>
+                            <ul>
+                                <li>Control panel wiring</li>
+                                <li>Machine tool harnesses</li>
+                                <li>Conveyor systems</li>
+                                <li>Robotics and automation</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-primary">Request Quote</a>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Industrial Harnesses -->
-            <div class="product-category">
-                <div class="category-header">
-                    <div class="category-icon">⚙️</div>
-                    <div>
-                        <h2>Industrial Wire Harnesses</h2>
-                        <p>Robust solutions for heavy-duty industrial equipment</p>
-                    </div>
-                </div>
-                <div class="product-showcase-grid">
-                    <div class="product-item">
+                    <div class="product-card">
                         <div class="product-image">
-                            <img src="images/products/industrial-harness-1.jpg" alt="Control Panel Harness" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=600&h=400&fit=crop'">
-                            <div class="product-badge">Best Seller</div>
+                            <img src="images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg" alt="Custom Assemblies">
                         </div>
-                        <div class="product-info">
-                            <h3>Control Panel Harness</h3>
-                            <p>Heavy-duty wiring for industrial control panels and automation systems with superior durability.</p>
-                            <ul class="product-specs">
-                                <li>Oil & Chemical Resistant</li>
-                                <li>High Flex Life Cables</li>
-                                <li>IP67 Rated Connectors</li>
+                        <div class="product-content">
+                            <h3>Custom Assemblies</h3>
+                            <p>Tailored solutions designed to meet your specific requirements.</p>
+                            <ul>
+                                <li>Project consultation</li>
+                                <li>Prototype development</li>
+                                <li>Custom design services</li>
+                                <li>Small to large volume production</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-primary">Request Quote</a>
                         </div>
                     </div>
-                    <div class="product-item">
+
+                    <div class="product-card">
                         <div class="product-image">
-                            <img src="images/products/industrial-harness-2.jpg" alt="Machinery Harness" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1565043666747-69f6646db940?w=600&h=400&fit=crop'">
+                            <img src="images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg" alt="High-Voltage Systems">
                         </div>
-                        <div class="product-info">
-                            <h3>Machinery Wiring Harness</h3>
-                            <p>Customized wiring assemblies for manufacturing equipment and heavy machinery applications.</p>
-                            <ul class="product-specs">
-                                <li>Abrasion Resistant Sleeving</li>
-                                <li>Color Coded Wiring</li>
-                                <li>Easy Maintenance Design</li>
+                        <div class="product-content">
+                            <h3>High-Voltage Systems</h3>
+                            <p>Advanced harnesses for electric and hybrid vehicle applications.</p>
+                            <ul>
+                                <li>EV battery harnesses</li>
+                                <li>Charging system cables</li>
+                                <li>Power distribution harnesses</li>
+                                <li>High-voltage safety systems</li>
                             </ul>
-                            <a href="contact.html" class="btn btn-primary">Request Quote</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Aerospace Harnesses -->
-            <div class="product-category">
-                <div class="category-header">
-                    <div class="category-icon">✈️</div>
-                    <div>
-                        <h2>Aerospace Wire Harnesses</h2>
-                        <p>Precision-engineered for aerospace applications</p>
-                    </div>
-                </div>
-                <div class="product-showcase-grid">
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/products/aerospace-harness-1.jpg" alt="Avionics Harness" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop'">
-                            <div class="product-badge">Premium</div>
-                        </div>
-                        <div class="product-info">
-                            <h3>Avionics Wiring Harness</h3>
-                            <p>Lightweight, high-reliability wiring solutions for aircraft avionics and navigation systems.</p>
-                            <ul class="product-specs">
-                                <li>AS9100 Certified</li>
-                                <li>Lightweight Materials</li>
-                                <li>Flame Retardant</li>
-                                <li>EMI Shielded</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary">Request Quote</a>
-                        </div>
-                    </div>
-                    <div class="product-item">
-                        <div class="product-image">
-                            <img src="images/products/custom-harness-1.jpg" alt="Flight Control Harness" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600&h=400&fit=crop'">
-                        </div>
-                        <div class="product-info">
-                            <h3>Flight Control Harness</h3>
-                            <p>Critical wiring assemblies for flight control systems with redundancy and fail-safe features.</p>
-                            <ul class="product-specs">
-                                <li>Triple Redundancy</li>
-                                <li>Vibration Resistant</li>
-                                <li>Extreme Temperature Rated</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary">Request Quote</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- Footer Placeholder - Loaded from footer.html -->
+        <div id="footer-placeholder"></div>
 
-            <!-- Custom Solutions -->
-            <div class="product-category">
-                <div class="category-header">
-                    <div class="category-icon">🔌</div>
-                    <div>
-                        <h2>Custom Wire Harness Solutions</h2>
-                        <p>Tailored designs for unique applications</p>
-                    </div>
-                </div>
-                <div class="custom-solutions-content">
-                    <div class="custom-info">
-                        <h3>Design Your Perfect Solution</h3>
-                        <p>Our engineering team works closely with you to design and manufacture custom wire harnesses that meet your exact specifications and requirements.</p>
-                        <div class="custom-features">
-                            <div class="feature-item">
-                                <span class="feature-icon">📐</span>
-                                <div>
-                                    <h4>Custom Design</h4>
-                                    <p>CAD modeling and engineering support</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon">🔬</span>
-                                <div>
-                                    <h4>Prototyping</h4>
-                                    <p>Rapid prototyping and testing</p>
-                                </div>
-                            </div>
-                            <div class="feature-item">
-                                <span class="feature-icon">📦</span>
-                                <div>
-                                    <h4>Production</h4>
-                                    <p>Low to high volume manufacturing</p>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="btn btn-primary">Discuss Your Project</a>
-                    </div>
-                    <div class="custom-image">
-                        <img src="images/gallery/manufacturing-1.jpg" alt="Custom Manufacturing" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=600&h=400&fit=crop'">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
-    <!-- Product Gallery -->
-    <section class="section product-gallery-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Product Gallery</h2>
-                <div class="title-underline"></div>
-                <p class="section-subtitle">Our Manufacturing Excellence</p>
-            </div>
-            <div class="product-gallery-grid">
-                <div class="gallery-img-item">
-                    <img src="images/gallery/quality-check-1.jpg" alt="Quality Inspection" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581092162384-8987c1d64718?w=400&h=300&fit=crop'">
-                    <div class="gallery-caption">Quality Inspection Process</div>
-                </div>
-                <div class="gallery-img-item">
-                    <img src="images/products/automotive-harness-1.jpg" alt="Wire Assembly" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=300&fit=crop'">
-                    <div class="gallery-caption">Precision Wire Assembly</div>
-                </div>
-                <div class="gallery-img-item">
-                    <img src="images/gallery/manufacturing-1.jpg" alt="Production Line" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?w=400&h=300&fit=crop'">
-                    <div class="gallery-caption">Modern Production Line</div>
-                </div>
-                <div class="gallery-img-item">
-                    <img src="images/products/industrial-harness-1.jpg" alt="Testing Equipment" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=400&h=300&fit=crop'">
-                    <div class="gallery-caption">Advanced Testing Equipment</div>
-                </div>
-                <div class="gallery-img-item">
-                    <img src="images/gallery/factory-1.jpg" alt="Assembly Floor" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=400&h=300&fit=crop'">
-                    <div class="gallery-caption">Assembly Floor Operations</div>
-                </div>
-                <div class="gallery-img-item">
-                    <img src="images/products/custom-harness-1.jpg" alt="Custom Design" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&h=300&fit=crop'">
-                    <div class="gallery-caption">Custom Design Solutions</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="section cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Need a Custom Wire Harness Solution?</h2>
-                <p>Our experts are ready to help you design and manufacture the perfect wire harness for your application.</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Get Started</a>
-                    <a href="services.html" class="btn btn-secondary">View Services</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <h3>Raj Industries</h3>
-                    <p>Excellence in Wire Harness Manufacturing</p>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="LinkedIn">in</a>
-                        <a href="#" aria-label="Twitter">𝕏</a>
-                        <a href="#" aria-label="Facebook">f</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Raj Industries. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- LazyLoad Script -->
+    <script src="https://cdn.jsdelivr.net/npm/lazysizes@5/lazysizes.min.js"></script>
+    <!-- Components Loader - Load header and footer -->
+    <script src="components-loader.js"></script>
+    <!-- Main JS -->
     <script src="main.js"></script>
 </body>
 </html>

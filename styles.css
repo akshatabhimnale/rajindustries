@@ -32756,7 +32756,7 @@ body.dark-mode .mobile-toggle:focus {
    ========================================== */
 
 .section--cta {
-    background: linear-gradient(rgba(26, 26, 26, 0.85), rgba(45, 45, 45, 0.85)),
+    background: 
                 url('images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg') center/cover no-repeat !important;
     padding: 80px 0;
     margin: 60px 0;
@@ -32780,7 +32780,7 @@ body.dark-mode .mobile-toggle:focus {
 }
 
 body.dark-mode .section--cta {
-    background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(26, 26, 26, 0.9)),
+    background: 
                 url('images/csm_wewire-cn-wire-harnesses-engine-wiring_b21976de92.jpg') center/cover no-repeat !important;
 }
 
