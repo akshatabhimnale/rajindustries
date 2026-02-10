@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #00d4ff;
+  --secondary-color: #ff00ff;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--dark-bg);
+  color: var(--primary-color);
+  font-family: 'Space Grotesk', 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+}
