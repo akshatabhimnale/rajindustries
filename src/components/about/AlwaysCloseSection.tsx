@@ -60,13 +60,11 @@ const AlwaysCloseSection: FC = () => {
             {features.map((f, i) => (
               <div 
                 key={i}
-                className="group p-5 bg-white rounded-xl shadow-sm 
-                           hover:shadow-lg transition-all duration-300 
-                           border border-gray-100 hover:border-pink-200"
+                className="group p-5 bg-white rounded-xl border border-gray-100 
+                           float-card card-shadow hover:border-[var(--primary-color)]/40"
               >
                 <div className="w-12 h-12 flex items-center justify-center 
-                                bg-gradient-to-br from-pink-600 to-red-600 
-                                text-white rounded-lg mb-4 
+                                icon-box rounded-lg mb-4 
                                 group-hover:scale-105 transition-transform">
                   {f.icon}
                 </div>
@@ -83,7 +81,7 @@ const AlwaysCloseSection: FC = () => {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="relative rounded-2xl overflow-hidden shadow-xl">
+        <div className="relative rounded-2xl overflow-hidden float-card card-shadow border border-black/5">
           <img
             src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80"
             alt="Wire harness assembly line"

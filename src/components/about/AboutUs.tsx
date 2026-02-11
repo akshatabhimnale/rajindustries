@@ -45,7 +45,7 @@ const AboutUs: React.FC = () => {
         </div>
 
         {/* RIGHT: FACTORY IMAGE */}
-        <div className="relative rounded-2xl overflow-hidden shadow-xl">
+        <div className="relative rounded-2xl overflow-hidden float-card card-shadow border border-black/5">
           <img
             src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80"
             alt="Wire harness manufacturing facility"

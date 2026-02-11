@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesHero: React.FC = () => {
   return (
-    <section className="relative w-full h-[70vh] md:h-screen overflow-hidden">
+    <section className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
 
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -14,12 +14,12 @@ const ServicesHero: React.FC = () => {
       </div>
 
       {/* Dark overlay for readability */}
-      <div className="absolute inset-0 bg-black/65" />
+      <div className="absolute inset-0 bg-black/60" />
 
       {/* Content */}
       <div className="relative z-10 h-full flex flex-col justify-center items-start px-8 md:px-16 lg:px-24 max-w-7xl mx-auto">
 
-        <span className="text-sm md:text-base tracking-widest text-pink-500 font-semibold mb-4">
+        <span className="text-sm md:text-base tracking-widest text-[var(--primary-color)] font-semibold mb-4">
           OUR SERVICES
         </span>
 
@@ -37,7 +37,7 @@ const ServicesHero: React.FC = () => {
         <div className="flex flex-wrap gap-4">
           <a
             href="#core-services"
-            className="px-8 py-4 bg-gradient-to-r from-pink-600 to-red-600 
+            className="px-8 py-4 bg-[var(--primary-color)] 
                        text-white font-semibold rounded-lg shadow-lg 
                        hover:shadow-xl transition-all duration-300"
           >
@@ -55,8 +55,7 @@ const ServicesHero: React.FC = () => {
       </div>
 
       {/* Bottom gradient fade to next section */}
-      <div className="absolute bottom-0 left-0 w-full h-28 
-                      bg-gradient-to-t from-gray-50 to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-[var(--primary-color)]" />
     </section>
   );
 };

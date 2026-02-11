@@ -66,7 +66,7 @@ const FacilityGallery: React.FC = () => {
           {galleryItems.map((item, index) => (
             <div
               key={index}
-              className="group relative overflow-hidden rounded-2xl shadow-lg"
+              className="group relative overflow-hidden rounded-2xl float-card card-shadow border border-black/5"
             >
               {/* Image */}
               <img
@@ -79,7 +79,7 @@ const FacilityGallery: React.FC = () => {
               <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {/* Brand accent line */}
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-pink-600 to-red-600" />
+              <div className="absolute top-0 left-0 w-full h-1 bg-[var(--primary-color)]" />
 
               {/* Hover content */}
               <div className="absolute inset-0 flex flex-col justify-end p-6 text-white transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
@@ -88,7 +88,7 @@ const FacilityGallery: React.FC = () => {
               </div>
 
               {/* Subtle glow effect on hover */}
-              <div className="absolute inset-0 bg-gradient-to-t from-red-600/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-[var(--primary-color)]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
           ))}
         </div>

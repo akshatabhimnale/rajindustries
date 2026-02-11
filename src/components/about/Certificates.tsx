@@ -140,20 +140,20 @@ const Certificates: React.FC = () => {
         onTouchEnd={handleTouchEnd}
       >
         {/* Fade edges */}
-        <div className="absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-gray-50 to-transparent z-10" />
-        <div className="absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-gray-50 to-transparent z-10" />
+        <div className="absolute left-0 top-0 h-full w-24 bg-white/70 z-10" />
+        <div className="absolute right-0 top-0 h-full w-24 bg-white/70 z-10" />
 
         {/* Arrows */}
         <button
           onClick={moveLeft}
-          className="absolute left-4 top-1/2 -translate-y-1/2 bg-white shadow-md p-3 rounded-full z-20"
+          className="absolute left-4 top-1/2 -translate-y-1/2 icon-box p-3 rounded-full z-20"
         >
           ◀
         </button>
 
         <button
           onClick={moveRight}
-          className="absolute right-4 top-1/2 -translate-y-1/2 bg-white shadow-md p-3 rounded-full z-20"
+          className="absolute right-4 top-1/2 -translate-y-1/2 icon-box p-3 rounded-full z-20"
         >
           ▶
         </button>
@@ -166,9 +166,8 @@ const Certificates: React.FC = () => {
           {[...certificates, ...certificates].map((cert, i) => (
             <div
               key={i}
-              className="min-w-[320px] bg-white rounded-xl shadow-md border border-gray-200 
-                         transition-all duration-500 ease-out overflow-hidden cursor-pointer
-                         hover:shadow-2xl hover:-translate-y-1"
+              className="min-w-[320px] bg-white rounded-xl border border-gray-200 
+                         float-card card-shadow transition-all duration-500 ease-out overflow-hidden cursor-pointer"
               onClick={() => setSelectedImage(cert.image)}
             >
               {/* IMAGE WITH ZOOM */}
@@ -189,12 +188,12 @@ const Certificates: React.FC = () => {
                 <p className="text-sm text-gray-600 mb-2">
                   Issued by: {cert.issuedBy}
                 </p>
-                <span className="text-sm font-semibold text-pink-600">
+                <span className="text-sm font-semibold text-[var(--primary-color)]">
                   Year: {cert.year}
                 </span>
               </div>
 
-              <div className="w-full h-1 bg-gradient-to-r from-pink-600 to-red-600" />
+              <div className="w-full h-1 bg-[var(--primary-color)]" />
             </div>
           ))}
         </div>
@@ -208,7 +207,7 @@ const Certificates: React.FC = () => {
             onClick={() => setActiveDot(i)}
             className={`w-3 h-3 rounded-full transition-all ${
               activeDot === i
-                ? "bg-gradient-to-r from-pink-600 to-red-600 scale-125"
+                ? "bg-[var(--primary-color)] scale-125"
                 : "bg-gray-400"
             }`}
           />

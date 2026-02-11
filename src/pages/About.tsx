@@ -5,7 +5,6 @@ import Certificates from '../components/about/Certificates'
 import CoreCompetencies from '../components/about/CoreCompetencies'
 import FacilityGallery from '../components/about/FacilityGallery'
 import MissionVision from '../components/about/MissonVision'
-import QuoteSection from '../components/about/QuoteSection'
 import StatCounters from '../components/about/StatCounter'
 
 const About = () => {
@@ -19,7 +18,6 @@ const About = () => {
       <CoreCompetencies />
       <FacilityGallery />
       <Certificates />
-      <QuoteSection />
     </>
   )
 }

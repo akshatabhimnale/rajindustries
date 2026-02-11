@@ -3,7 +3,7 @@ import React from "react";
 const QuoteSection: React.FC = () => {
   return (
     <section className="w-full bg-[#f2f2f2] py-20 px-6">
-      <div className="max-w-5xl mx-auto flex gap-8">
+      <div className="max-w-5xl mx-auto flex gap-8 bg-white rounded-2xl p-8 md:p-10 float-card card-shadow border border-black/5">
 
         {/* Big red quotation mark */}
         <div className="text-[#e31b3b] text-7xl leading-none font-serif">

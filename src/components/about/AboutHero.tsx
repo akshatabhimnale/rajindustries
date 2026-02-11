@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutHero: React.FC = () => {
   return (
-    <section className="relative w-full h-[75vh] md:h-screen overflow-hidden">
+    <section className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -51,9 +51,7 @@ const AboutHero: React.FC = () => {
         </div>
       </div>
 
-      {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 w-full h-24 
-                      bg-[var(--primary-color)]  " />
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-[var(--primary-color)]" />
     </section>
   );
 };

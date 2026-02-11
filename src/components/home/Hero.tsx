@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <div className="relative w-full min-h-[100svh] overflow-hidden bg-black">
+    <div className="relative w-full h-[75vh] md:h-[85vh] lg:h-[90vh] overflow-hidden bg-black">
 
       {/* ===================== VIDEO BACKGROUND (CLEAN - NO COLOR) ===================== */}
       {slides.map((slide, index) => (

@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductsHero: React.FC = () => {
   return (
-    <section className="relative w-full h-[85vh] md:h-screen overflow-hidden">
+    <section className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
 
       {/* Background Image */}
       <div className="absolute inset-0">
@@ -20,13 +20,13 @@ const ProductsHero: React.FC = () => {
       <div className="relative z-10 h-full flex items-center">
         <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
 
-          <span className="inline-block text-sm font-semibold tracking-widest text-pink-400 uppercase mb-4">
+          <span className="inline-block text-sm font-semibold tracking-widest text-[var(--primary-color)] uppercase mb-4">
             Our Products
           </span>
 
           <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight max-w-3xl">
             Comprehensive Wire Harness Solutions  
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-red-500">
+            <span className="text-[var(--primary-color)]">
               {" "}
               for Every Industry
             </span>
@@ -42,7 +42,7 @@ const ProductsHero: React.FC = () => {
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
             <a
               href="#categories"
-              className="px-8 py-4 bg-gradient-to-r from-pink-600 to-red-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all"
+              className="px-8 py-4 bg-[var(--primary-color)] text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
             >
               Explore Categories →
             </a>
@@ -59,7 +59,7 @@ const ProductsHero: React.FC = () => {
       </div>
 
       {/* Bottom accent line */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-[var(--primary-color)]" />
     </section>
   );
 };
