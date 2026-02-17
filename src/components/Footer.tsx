@@ -4,157 +4,149 @@ import {
   FaYoutube,
   FaXing,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const productLinks = [
+    { label: "Automotive Harnesses", to: "/products" },
+    { label: "Industrial Solutions", to: "/products" },
+    { label: "Aerospace Wiring Systems", to: "/products" },
+  ];
+
+  const aboutLinks = [
+    { label: "Who We Are", to: "/about" },
+    { label: "Quality & Certificates", to: "/about" },
+    { label: "Contact", to: "/contact" },
+  ];
+
+  const serviceLinks = [
+    { label: "Design & Engineering", to: "/services" },
+    { label: "Manufacturing", to: "/services" },
+    { label: "Technical Support", to: "/services" },
+  ];
+
+  const legalLinks = ["Imprint", "Data Privacy", "Terms & Conditions", "Cookie Settings"];
+
   return (
-    <footer className="w-full">
-      {/* Main Footer */}
-      <div className="bg-gray-700 text-white px-6 sm:px-10 lg:px-16 py-12 sm:py-14 lg:py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-14">
+    <footer className="w-full overflow-hidden bg-[#666666] text-white">
+      <div className="mx-auto w-full max-w-[1600px] px-6">
+        <div className="grid grid-cols-1 gap-0 lg:grid-cols-12">
+          <div className="order-2 py-10 lg:order-1 lg:col-span-8 lg:py-12">
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              <div>
+                <h4 className="mb-4 text-[13px] font-bold uppercase tracking-[0.15em]">Products</h4>
+                <ul className="space-y-3 text-[15px] leading-relaxed text-white/85">
+                  {productLinks.map((item) => (
+                    <li key={item.label}>
+                      <Link className="transition-colors hover:text-[#d60f3c]" to={item.to}>
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-        {/* Column 1 - RAJ INDUSTRIES */}
-        <div>
-          <h4 className="
-            text-sm uppercase tracking-wide mb-4 
-            inline-block relative group
-          ">
-            RAJ INDUSTRIES
-            <span className="
-              absolute left-0 bottom-0 w-0 h-[2px] bg-[#d60f3c]
-              group-hover:w-full transition-all duration-300
-            "></span>
-          </h4>
+              <div>
+                <h4 className="mb-4 text-[13px] font-bold uppercase tracking-[0.15em]">About Us</h4>
+                <ul className="space-y-3 text-[15px] leading-relaxed text-white/85">
+                  {aboutLinks.map((item) => (
+                    <li key={item.label}>
+                      <Link className="transition-colors hover:text-[#d60f3c]" to={item.to}>
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-          <p className="text-[#d60f3c] mb-2 font-semibold tracking-wide">
-            Connect to Future
-          </p>
+              <div>
+                <h4 className="mb-4 text-[13px] font-bold uppercase tracking-[0.15em]">Services</h4>
+                <ul className="space-y-3 text-[15px] leading-relaxed text-white/85">
+                  {serviceLinks.map((item) => (
+                    <li key={item.label}>
+                      <Link className="transition-colors hover:text-[#d60f3c]" to={item.to}>
+                        {item.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
 
-          <p className="text-sm opacity-80 leading-relaxed">
-            Your reliable partner for automotive and industrial wiring
-            solutions worldwide, delivering innovation, precision, and trust.
-          </p>
-        </div>
+          <div className="order-1 bg-[#d60f3c] px-6 py-10 lg:order-2 lg:col-span-4 lg:px-8 lg:py-12">
+            <div className="space-y-8">
+              <div>
+                <Link to="/" className="inline-block">
+                  <span className="text-[30px] font-light tracking-wide text-white">
+                    <span className="font-semibold">Raj</span> Industries
+                  </span>
+                </Link>
+                <address className="mt-5 not-italic text-[15px] leading-relaxed text-white/95">
+                  Raj Industries
+                  <br />
+                  Industrial Area, Phase 2
+                  <br />
+                  Pune, Maharashtra, India
+                </address>
+              </div>
 
-        {/* Column 2 - PRODUCTS */}
-        <div>
-          <h4 className="
-            text-sm uppercase tracking-wide mb-4 
-            inline-block relative group
-          ">
-            Products
-            <span className="
-              absolute left-0 bottom-0 w-0 h-[2px] bg-[#d60f3c]
-              group-hover:w-full transition-all duration-300
-            "></span>
-          </h4>
+              <div>
+                <h4 className="mb-3 text-[13px] font-bold uppercase tracking-[0.15em]">
+                  Do you have any questions?
+                </h4>
+                <p className="mb-4 text-sm leading-relaxed text-white/95">
+                  Please call or write to us for product, engineering, or manufacturing inquiries.
+                </p>
+                <a
+                  href="tel:+91XXXXXXXXXX"
+                  className="mb-2 block w-fit border-b border-white/80 pb-1 text-[15px] transition-colors hover:text-black"
+                >
+                  T +91 XXX XXX XXXX
+                </a>
+                <a
+                  href="mailto:info@rajindustries.com"
+                  className="block w-fit border-b border-white/80 pb-1 text-[15px] transition-colors hover:text-black"
+                >
+                  info@rajindustries.com
+                </a>
+              </div>
 
-          <ul className="space-y-3 text-sm opacity-80">
-            {[
-              "Automotive Harnesses",
-              "Industrial Solutions",
-              "Custom Assemblies",
-            ].map((item) => (
-              <li
-                key={item}
-                className="
-                  cursor-pointer
-                  hover:text-[#d60f3c]
-                  transition-colors duration-200
-                "
-              >
-                — {item}
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        {/* Column 3 - COMPANY + SOCIAL */}
-        <div>
-          <h4 className="
-            text-sm uppercase tracking-wide mb-4 
-            inline-block relative group
-          ">
-            Company
-            <span className="
-              absolute left-0 bottom-0 w-0 h-[2px] bg-[#d60f3c]
-              group-hover:w-full transition-all duration-300
-            "></span>
-          </h4>
-
-          <ul className="space-y-3 text-sm opacity-80 mb-6">
-            {["About Us", "Services", "Contact", "Careers"].map((item) => (
-              <li
-                key={item}
-                className="
-                  cursor-pointer
-                  hover:text-[#d60f3c]
-                  transition-colors duration-200
-                "
-              >
-                → {item}
-              </li>
-            ))}
-          </ul>
-
-        
-        </div>
-
-        {/* Column 4 - CONTACT */}
-        <div>
-          <h4 className="
-            text-sm uppercase tracking-wide mb-4 
-            inline-block relative group
-          ">
-            Contact
-            <span className="
-              absolute left-0 bottom-0 w-0 h-[2px] bg-[#d60f3c]
-              group-hover:w-full transition-all duration-300
-            "></span>
-          </h4>
-
-          <p className="text-sm opacity-80 leading-relaxed mb-3">
-            Industrial Area, Phase 2 <br />
-            Manufacturing Hub, India
-          </p>
-
-          <p className="text-sm opacity-80 mb-1">
-            Email:{" "}
-            <a
-              href="mailto:info@rajindustries.com"
-              className="underline hover:text-[#d60f3c] transition-colors"
-            >
-              info@rajindustries.com
-            </a>
-          </p>
-
-          <p className="text-sm opacity-80">
-            Phone: +91 XXX XXX XXXX
-          </p>
-              <div className="mt-6"></div>
-
-            <h4 className="
-            text-sm uppercase tracking-wide mb-4 
-            inline-block relative group
-          ">
-            Follow Us
-            <span className="
-              absolute left-0 bottom-0 w-0 h-[2px] bg-[#d60f3c]
-              group-hover:w-full transition-all duration-300
-            "></span>
-          </h4>
-
-          <div className="flex items-center gap-5 text-lg">
-            <FaLinkedin className="cursor-pointer hover:text-[#d60f3c] transition-transform transform hover:scale-110" />
-            <FaFacebookF className="cursor-pointer hover:text-[#d60f3c] transition-transform transform hover:scale-110" />
-            <FaYoutube className="cursor-pointer hover:text-[#d60f3c] transition-transform transform hover:scale-110" />
-            <FaXing className="cursor-pointer hover:text-[#d60f3c] transition-transform transform hover:scale-110" />
+              <div>
+                <h4 className="mb-3 text-[13px] font-bold uppercase tracking-[0.15em]">Follow us</h4>
+                <div className="flex items-center gap-4 text-base">
+                  <a href="#" aria-label="LinkedIn" className="transition-colors hover:text-black">
+                    <FaLinkedin />
+                  </a>
+                  <a href="#" aria-label="Facebook" className="transition-colors hover:text-black">
+                    <FaFacebookF />
+                  </a>
+                  <a href="#" aria-label="YouTube" className="transition-colors hover:text-black">
+                    <FaYoutube />
+                  </a>
+                  <a href="#" aria-label="Xing" className="transition-colors hover:text-black">
+                    <FaXing />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-         
       </div>
 
-      {/* Bottom Bar */}
-      <div className="bg-black text-gray-300 text-sm px-6 sm:px-10 lg:px-16 py-4 text-center tracking-wide">
-        © 2026 Raj Industries. All rights reserved.
+      <div className="bg-[#1a1a1a]">
+        <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-4 px-6 py-5 text-sm text-gray-300 md:flex-row md:items-center md:justify-between">
+          <ul className="flex flex-wrap gap-x-6 gap-y-2">
+            {legalLinks.map((item) => (
+              <li key={item}>
+                <a href="#" className="transition-colors hover:text-[#d60f3c]">
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="text-xs tracking-wide text-gray-400 md:text-sm">© 2026 Raj Industries. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );

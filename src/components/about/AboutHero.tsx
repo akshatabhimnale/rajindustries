@@ -2,56 +2,47 @@ import React from "react";
 
 const AboutHero: React.FC = () => {
   return (
-    <section className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1503387837-b154d5074bd2?w=1600&q=80"
-          alt="About Raj Industries"
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-      {/* Dark overlay for readability */}
+    <section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
+      <img
+        src="https://www.wewire-harness.com/fileadmin/_processed_/4/a/csm_ww-entwicklungskompetenz_d3781af347.jpg"
+        alt="About Raj Industries"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
       <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/20" />
+      <div className="absolute top-0 h-[3px] w-full bg-[#d60f3c]" />
 
-      {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center items-start px-8 md:px-16 lg:px-24 max-w-7xl mx-auto">
-        <span className="text-sm md:text-base tracking-widest text-[var(--primary-color)] font-semibold mb-4">
-          ABOUT US
-        </span>
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-[1600px] items-end px-6 pb-16 md:pb-20">
+        <div className="max-w-4xl">
+          <small className="mb-5 block text-[12px] font-bold uppercase tracking-[0.18em] text-[#d9d9d9] md:text-[13px]">
+            About Us
+          </small>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-          Building Trust <br />
-          Through Precision
-        </h1>
+          <h1 className="text-4xl font-bold leading-[1.05] text-white md:text-6xl lg:text-7xl">
+            Engineering Partnerships Built for Long-Term Programs
+          </h1>
 
-        <p className="text-gray-200 text-lg max-w-2xl mb-8">
-          Raj Industries delivers reliable wire harness and cable assembly
-          solutions for automotive, industrial, and custom applications —
-          engineered with quality, safety, and consistency at the core.
-        </p>
+          <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/85 md:text-lg">
+            Raj Industries designs and manufactures wire harness systems for automotive,
+            industrial, and custom applications with a process focused on quality and consistency.
+          </p>
 
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="#about-overview"
-            className="px-8 py-4 bg-[var(--primary-color)]                        text-white font-semibold rounded-lg shadow-lg 
-                       hover:shadow-xl transition-all duration-300"
-          >
-            Our Story
-          </a>
-
-          <a
-            href="#certifications"
-            className="px-8 py-4 border border-white text-white font-semibold 
-                       rounded-lg hover:bg-white/10 transition-all duration-300"
-          >
-            Certifications
-          </a>
+          <div className="mt-8 flex flex-wrap items-center gap-5">
+            <a
+              href="#about-overview"
+              className="inline-flex border-b-2 border-[#d60f3c] pb-1 text-[13px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:text-[#d60f3c]"
+            >
+              Our Profile
+            </a>
+            <a
+              href="#certifications"
+              className="inline-flex border-b border-white/60 pb-1 text-[13px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:border-[#d60f3c] hover:text-[#d60f3c]"
+            >
+              Certificates
+            </a>
+          </div>
         </div>
       </div>
-
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-[var(--primary-color)]" />
     </section>
   );
 };

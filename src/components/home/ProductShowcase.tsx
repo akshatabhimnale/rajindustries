@@ -1,111 +1,83 @@
+import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
+
+type ProductItem = {
+  title: string;
+  description: string;
+  image: string;
+  to: string;
+};
+
+const products: ProductItem[] = [
+  {
+    title: "System expertise for injection molding components",
+    description:
+      "Regardless of whether directly molded onto the cable or as a falling part, WeWire develops demanding system solutions.",
+    image:
+      "https://www.wewire-harness.com/fileadmin/_processed_/b/5/csm_wewire-cn-injection-mouled-components-brown_dcc07d1080.jpg",
+    to: "/products",
+  },
+  {
+    title: "Wiring harnesses",
+    description:
+      "We have many years of experience in the production of cable harnesses.",
+    image:
+      "https://www.wewire-harness.com/fileadmin/_processed_/e/4/csm_wewire-cn-wire-harnesses-engine-wiring_143a9e96f0.jpg",
+    to: "/products",
+  },
+  {
+    title: "High-Voltage Vehicle EDS",
+    description:
+      "Our high-voltage vehicle electrical distribution systems connect vehicle-specific applications of electrified vehicles and consequently support the growing market for electric mobility.",
+    image:
+      "https://www.wewire-harness.com/fileadmin/_processed_/4/3/csm_hochvolt-leitungsaetze-eingebaut_e27e71a866.png",
+    to: "/products",
+  },
+  {
+    title: "Wheel arch and axle wiring",
+    description:
+      "Integrated system technology for wheel arch applications with high routing density and robust vehicle integration.",
+    image:
+      "https://www.wewire-harness.com/fileadmin/_processed_/a/f/csm_radhausverkabelung-wewire_911845d2a5.jpg",
+    to: "/products",
+  },
+];
 
 export default function ProductShowcase() {
-  const products = [
-    {
-      image: 'https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80',
-      title: 'System expertise for injection molding components',
-      description:
-        'Regardless of whether directly molded onto the cable or as a falling part, WeWire develops demanding system solutions.',
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-      title: 'Wiring harnesses',
-      description: 'We have many years of experience in the production of cable harnesses.',
-    },
-  ];
-
   return (
-    <div className="bg-gray-50 py-12 sm:py-16 px-4">
-      <div className="mx-auto max-w-7xl">
-        <h2 className="mb-8 sm:mb-12 text-2xl sm:text-3xl md:text-4xl font-bold text-gray-700">
-          More WeWire Products
-        </h2>
+    <section className="home-list-section home-ref-font">
+      <div className="home-list-wrap">
+        <h2 className="home-list-title">More WeWire Products</h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
-          {products.map((product, index) => (
-            <div
-              key={index}
-              className="
-                group relative overflow-hidden rounded-lg shadow-lg
-                transition-all duration-300 hover:shadow-2xl
-                min-h-[420px] sm:min-h-[460px] md:min-h-[500px]
-              "
-            >
-              <div className="relative h-full w-full flex flex-col">
-
-                {/* IMAGE */}
-                <div className="
-                  relative w-full overflow-hidden
-                  aspect-[16/10]
-                ">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+        <div className="home-teaser-grid-2">
+          {products.map((product) => (
+            <div key={product.title}>
+              <Link to={product.to} className="home-teaser-card">
+                <div className="relative">
+                  <img src={product.image} alt={product.title} className="home-teaser-image" />
                 </div>
 
-                {/* CONTENT */}
-                <div className="
-                  relative bg-white p-5 flex flex-col justify-center flex-1
-                ">
-                  <div className="
-                    absolute inset-0 
-                    bg-gradient-to-br from-pink-600 to-red-600 
-                    opacity-0 transition-opacity duration-300 
-                    group-hover:opacity-100
-                  " />
-
-                  <div className="relative z-10">
-                    <p className="
-                      mb-1 text-[10px] sm:text-xs font-semibold 
-                      uppercase tracking-wider text-gray-400 
-                      group-hover:text-white/80
-                    ">
-                      Products
-                    </p>
-
-                    <h3 className="
-                      mb-2 text-base sm:text-lg md:text-xl font-bold 
-                      text-gray-900 group-hover:text-white line-clamp-2
-                    ">
+                <div className="home-teaser-text-wrap">
+                  <div className="home-teaser-text-box">
+                    <h3 className="home-teaser-headline">
+                      <span className="home-teaser-topline">Products</span>
                       {product.title}
                     </h3>
 
-                    <p className="
-                      mb-3 text-xs sm:text-sm text-gray-600 
-                      group-hover:text-white/90 line-clamp-2
-                    ">
-                      {product.description}
-                    </p>
+                    <p className="home-teaser-copy">{product.description}</p>
 
-                    <button className="
-                      flex items-center gap-2 text-xs sm:text-sm 
-                      font-semibold text-gray-900 group-hover:text-white
-                    ">
-                      READ MORE
-                      <svg
-                        className="h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                      </svg>
-                    </button>
+                    <strong className="home-teaser-cta">
+                      <span className="home-teaser-cta-line" />
+                      Read more
+                      <ArrowRight className="h-[14px] w-[14px]" />
+                    </strong>
                   </div>
                 </div>
-
-              </div>
+              </Link>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

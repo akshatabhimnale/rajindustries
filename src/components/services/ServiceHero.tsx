@@ -2,60 +2,47 @@ import React from "react";
 
 const ServicesHero: React.FC = () => {
   return (
-    <section className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
-
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&q=80"
-          alt="Wire harness manufacturing facility"
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-      {/* Dark overlay for readability */}
+    <section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
+      <img
+        src="https://www.wewire-harness.com/fileadmin/_processed_/a/f/csm_coroplast-group-wuppertal-laborsituation_01_f6bc7c6663.jpg"
+        alt="Wire harness manufacturing facility"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
       <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/20" />
+      <div className="absolute top-0 h-[3px] w-full bg-[#d60f3c]" />
 
-      {/* Content */}
-      <div className="relative z-10 h-full flex flex-col justify-center items-start px-8 md:px-16 lg:px-24 max-w-7xl mx-auto">
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-[1600px] items-end px-6 pb-16 md:pb-20">
+        <div className="max-w-4xl">
+          <small className="mb-5 block text-[12px] font-bold uppercase tracking-[0.18em] text-[#d9d9d9] md:text-[13px]">
+            Services
+          </small>
 
-        <span className="text-sm md:text-base tracking-widest text-[var(--primary-color)] font-semibold mb-4">
-          OUR SERVICES
-        </span>
+          <h1 className="text-4xl font-bold leading-[1.05] text-white md:text-6xl lg:text-7xl">
+            Design, Validation, and Scalable Production in One Flow
+          </h1>
 
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-          End-to-End <br />
-          Wire Harness Solutions
-        </h1>
+          <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/85 md:text-lg">
+            We support programs from requirements and prototyping through testing,
+            manufacturing, and lifecycle technical support.
+          </p>
 
-        <p className="text-gray-200 text-lg max-w-2xl mb-8">
-          From concept to series production, we deliver high-precision wiring systems
-          for automotive, EV, and industrial applications — engineered for reliability,
-          performance, and scalability.
-        </p>
-
-        <div className="flex flex-wrap gap-4">
-          <a
-            href="#core-services"
-            className="px-8 py-4 bg-[var(--primary-color)] 
-                       text-white font-semibold rounded-lg shadow-lg 
-                       hover:shadow-xl transition-all duration-300"
-          >
-            Explore Services
-          </a>
-
-          <a
-            href="#process"
-            className="px-8 py-4 border border-white text-white font-semibold 
-                       rounded-lg hover:bg-white/10 transition-all duration-300"
-          >
-            Our Process
-          </a>
+          <div className="mt-8 flex flex-wrap items-center gap-5">
+            <a
+              href="#core-services"
+              className="inline-flex border-b-2 border-[#d60f3c] pb-1 text-[13px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:text-[#d60f3c]"
+            >
+              Core Services
+            </a>
+            <a
+              href="#process"
+              className="inline-flex border-b border-white/60 pb-1 text-[13px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:border-[#d60f3c] hover:text-[#d60f3c]"
+            >
+              Process Steps
+            </a>
+          </div>
         </div>
       </div>
-
-      {/* Bottom gradient fade to next section */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-[var(--primary-color)]" />
     </section>
   );
 };

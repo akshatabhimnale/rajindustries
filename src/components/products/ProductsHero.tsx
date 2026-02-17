@@ -2,64 +2,47 @@ import React from "react";
 
 const ProductsHero: React.FC = () => {
   return (
-    <section className="relative w-full h-[60vh] md:h-[75vh] lg:h-[85vh] overflow-hidden">
+    <section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
+      <img
+        src="https://www.wewire-harness.com/fileadmin/_processed_/a/f/csm_radhausverkabelung-wewire_911845d2a5.jpg"
+        alt="Wire harness manufacturing facility"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-black/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/20" />
+      <div className="absolute top-0 h-[3px] w-full bg-[#d60f3c]" />
 
-      {/* Background Image */}
-      <div className="absolute inset-0">
-        <img
-          src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&q=80"
-          alt="Wire harness manufacturing facility"
-          className="w-full h-full object-cover"
-        />
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-[1600px] items-end px-6 pb-16 md:pb-20">
+        <div className="max-w-4xl">
+          <small className="mb-5 block text-[12px] font-bold uppercase tracking-[0.18em] text-[#d9d9d9] md:text-[13px]">
+            Products
+          </small>
 
-        {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-black/60" />
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 h-full flex items-center">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-16">
-
-          <span className="inline-block text-sm font-semibold tracking-widest text-[var(--primary-color)] uppercase mb-4">
-            Our Products
-          </span>
-
-          <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight max-w-3xl">
-            Comprehensive Wire Harness Solutions  
-            <span className="text-[var(--primary-color)]">
-              {" "}
-              for Every Industry
-            </span>
+          <h1 className="text-4xl font-bold leading-[1.05] text-white md:text-6xl lg:text-7xl">
+            Product Platforms for Automotive, Industrial, Aerospace, and Custom Systems
           </h1>
 
-          <p className="mt-6 text-gray-200 max-w-2xl text-lg">
-            We design and manufacture high-precision wire harness systems for
-            Automotive, Industrial, Aerospace, and Custom applications —
-            built for reliability, safety, and scalability.
+          <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/85 md:text-lg">
+            Category-based harness solutions engineered for application-specific routing,
+            durability, and electrical performance requirements.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="mt-10 flex flex-col sm:flex-row gap-4">
+          <div className="mt-8 flex flex-wrap items-center gap-5">
             <a
               href="#categories"
-              className="px-8 py-4 bg-[var(--primary-color)] text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
+              className="inline-flex border-b-2 border-[#d60f3c] pb-1 text-[13px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:text-[#d60f3c]"
             >
-              Explore Categories →
+              Product Categories
             </a>
-
             <a
               href="/contact"
-              className="px-8 py-4 border border-white text-white font-semibold rounded-lg hover:bg-white hover:text-black transition-all"
+              className="inline-flex border-b border-white/60 pb-1 text-[13px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:border-[#d60f3c] hover:text-[#d60f3c]"
             >
               Request Quote
             </a>
           </div>
-
         </div>
       </div>
-
-      {/* Bottom accent line */}
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-[var(--primary-color)]" />
     </section>
   );
 };

@@ -1,224 +1,155 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useEffect, useMemo, useState } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface Slide {
-  video: string;
-  category: string;
+  type: "video" | "image";
+  media: string;
+  topline: string;
   heading: string;
-  cta: string;
+  ctaLabel: string;
+  ctaHref: string;
+  external?: boolean;
 }
 
 const Hero: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState<number>(0);
-  const [isTransitioning, setIsTransitioning] = useState<boolean>(false);
+  const slides = useMemo<Slide[]>(
+    () => [
+      {
+        type: "video",
+        media:
+          "https://www.wewire-harness.com/fileadmin/wewire/Produkte/251126-WeWi-Animation_Automobilwoche-1.mp4?rel=0",
+        topline: "Products",
+        heading: "Integrated system technology for the wheel arch",
+        ctaLabel: "Find out more",
+        ctaHref: "/products",
+      },
+      {
+        type: "image",
+        media:
+          "https://www.wewire-harness.com/fileadmin/_processed_/2/f/csm_unternehmen-polen-produktion-leitungssaetze_4837d789d3.jpg",
+        topline: "About us",
+        heading: "We develop and produce customized wire harnesses",
+        ctaLabel: "Find out more",
+        ctaHref: "/about",
+      },
+      {
+        type: "image",
+        media:
+          "https://www.wewire-harness.com/fileadmin/_processed_/7/6/csm_210906-WeWi-Bereichsbild-2021-81456__1__d5b1719355.jpg",
+        topline: "Products",
+        heading: "Cable connections, cable brackets and lots more",
+        ctaLabel: "Find out more",
+        ctaHref: "/products",
+      },
+    ],
+    []
+  );
 
-  const slides: Slide[] = [
-    {
-      video:
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
-      category: "CABLE ASSEMBLY",
-      heading: "Reliable Wire Harnesses",
-      cta: "Learn More",
-    },
-    {
-      video:
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
-      category: "MANUFACTURING",
-      heading: "Precision Engineering",
-      cta: "Explore",
-    },
-    {
-      video:
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
-      category: "INDUSTRY",
-      heading: "Smart Cabling Solutions",
-      cta: "Get Started",
-    },
-    {
-      video:
-        "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
-      category: "TECHNOLOGY",
-      heading: "Future Ready Systems",
-      cta: "Discover",
-    },
-  ];
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {
-      handleNext();
-    }, 5000);
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 10000);
 
     return () => clearInterval(timer);
-  }, [currentSlide]);
+  }, [slides.length]);
 
-  const handleNext = (): void => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-    setTimeout(() => setIsTransitioning(false), 800);
-  };
-
-  const handlePrev = (): void => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
+  const goPrev = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-    setTimeout(() => setIsTransitioning(false), 800);
   };
 
-  const handleDotClick = (index: number): void => {
-    if (!isTransitioning) {
-      setIsTransitioning(true);
-      setCurrentSlide(index);
-      setTimeout(() => setIsTransitioning(false), 800);
-    }
+  const goNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
   return (
-    <div className="relative w-full h-[75vh] md:h-[85vh] lg:h-[90vh] overflow-hidden bg-black">
-
-      {/* ===================== VIDEO BACKGROUND (CLEAN - NO COLOR) ===================== */}
+    <section className="relative h-[78vh] min-h-[560px] w-full overflow-hidden md:h-[86vh]">
       {slides.map((slide, index) => (
         <div
-          key={index}
-          className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
-          style={{
-            opacity: currentSlide === index ? 1 : 0,
-            zIndex: currentSlide === index ? 1 : 0
-          }}
+          key={slide.heading}
+          className="absolute inset-0 transition-opacity duration-700"
+          style={{ opacity: currentSlide === index ? 1 : 0 }}
         >
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover"
-            style={{ filter: 'brightness(0.9)' }}   // keeps video natural but readable
-          >
-            <source src={slide.video} type="video/mp4" />
-          </video>
-
-          {/* VERY SUBTLE DARK OVERLAY ONLY FOR TEXT READABILITY (NO COLOR) */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
+          {slide.type === "video" ? (
+            <video autoPlay loop muted playsInline className="h-full w-full object-cover">
+              <source src={slide.media} type="video/mp4" />
+            </video>
+          ) : (
+            <img src={slide.media} alt={slide.heading} className="h-full w-full object-cover" />
+          )}
+          <div className="absolute inset-0 bg-black/55" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/30 to-black/20" />
         </div>
       ))}
 
-      {/* ===================== CONTENT ===================== */}
-      <div className="relative z-10 h-full flex flex-col justify-center px-8 md:px-16 lg:px-24 max-w-7xl mx-auto">
+      <div className="absolute top-0 h-[3px] w-full bg-[#d60f3c]" />
 
-        <div className="relative h-80 overflow-hidden">
-          {slides.map((slide, index) => (
-            <div
+      <div className="relative z-10 mx-auto flex h-full w-full max-w-[1600px] items-end px-6 pb-16 md:pb-24">
+        <div className="max-w-4xl">
+          <small className="mb-5 block text-[12px] font-bold uppercase tracking-[0.18em] text-[#d9d9d9] md:text-[13px]">
+            {slides[currentSlide].topline}
+          </small>
+
+          <h1 className="max-w-3xl text-4xl font-bold leading-[1.05] text-white md:text-6xl lg:text-7xl">
+            {slides[currentSlide].heading}
+          </h1>
+
+          <div className="mt-8 flex flex-wrap items-center gap-5 md:mt-10">
+            {slides[currentSlide].external ? (
+              <a
+                href={slides[currentSlide].ctaHref}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex border-b-2 border-[#d60f3c] pb-1 text-[13px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:text-[#d60f3c]"
+              >
+                {slides[currentSlide].ctaLabel}
+              </a>
+            ) : (
+              <Link
+                to={slides[currentSlide].ctaHref}
+                className="inline-flex border-b-2 border-[#d60f3c] pb-1 text-[13px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:text-[#d60f3c]"
+              >
+                {slides[currentSlide].ctaLabel}
+              </Link>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute bottom-8 right-6 z-20 flex items-center gap-3 md:bottom-12 md:right-10">
+        <button
+          onClick={goPrev}
+          aria-label="Previous slide"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-white/40 bg-black/25 text-white backdrop-blur-sm transition-colors hover:bg-[#d60f3c]"
+        >
+          <ChevronLeft size={18} />
+        </button>
+        <button
+          onClick={goNext}
+          aria-label="Next slide"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-white/40 bg-black/25 text-white backdrop-blur-sm transition-colors hover:bg-[#d60f3c]"
+        >
+          <ChevronRight size={18} />
+        </button>
+      </div>
+
+      <div className="absolute bottom-8 left-1/2 z-20 -translate-x-1/2 md:bottom-12">
+        <div className="flex items-center gap-2 rounded-full bg-black/30 px-3 py-2 backdrop-blur-sm">
+          {slides.map((_, index) => (
+            <button
               key={index}
-              className="absolute inset-0 transition-all duration-1000 ease-out"
-              style={{
-                transform: currentSlide === index
-                  ? 'translateY(0) scale(1)'
-                  : currentSlide > index
-                    ? 'translateY(-100%) scale(0.9)'
-                    : 'translateY(100%) scale(0.9)',
-                opacity: currentSlide === index ? 1 : 0,
-                pointerEvents: currentSlide === index ? 'auto' : 'none'
-              }}
-            >
-
-              {/* CATEGORY */}
-              <div
-                className="text-sm md:text-base tracking-widest text-white/90 mb-4 font-bold flex items-center gap-3"
-                style={{ fontFamily: "'Space Mono', monospace" }}
-              >
-                <div className="w-12 h-px bg-white/60" />
-                {slide.category}
-              </div>
-
-              {/* HEADING */}
-              <h1
-                className="text-5xl md:text-7xl lg:text-8xl font-black text-white leading-none mb-8"
-                style={{
-                  fontFamily: "'Bebas Neue', 'Anton', sans-serif",
-                  letterSpacing: '0.02em',
-                }}
-              >
-                {slide.heading}
-              </h1>
-
-              {/* CTA BUTTON */}
-              <button
-                className="group relative px-8 py-4 bg-white text-black font-bold text-lg overflow-hidden transition-all duration-300 hover:px-10"
-                style={{ fontFamily: "'Space Mono', monospace" }}
-              >
-                <div className="absolute inset-0 bg-black transform translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-300" />
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300">
-                  {slide.cta}
-                </span>
-              </button>
-            </div>
-          ))}
-        </div>
-
-        {/* SLIDE COUNTER + PROGRESS */}
-        <div className="mt-12 flex items-center gap-6">
-          <div className="text-white font-bold text-lg">
-            <span className="text-4xl">
-              {String(currentSlide + 1).padStart(2, '0')}
-            </span>
-            <span className="text-gray-400 mx-2">/</span>
-            <span className="text-gray-400 text-2xl">
-              {String(slides.length).padStart(2, '0')}
-            </span>
-          </div>
-
-          <div className="flex-1 h-1 bg-white/20 rounded-full overflow-hidden max-w-xs">
-            <div
-              className="h-full bg-white rounded-full transition-all duration-300"
-              style={{
-                width: `${((currentSlide + 1) / slides.length) * 100}%`
-              }}
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* NAVIGATION ARROWS */}
-      <div className="absolute bottom-6 right-4 md:bottom-12 md:right-16 z-20 flex gap-3 md:gap-4">
-        <button
-          onClick={handlePrev}
-          disabled={isTransitioning}
-          className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-white/10 backdrop-blur-md border border-white/30 rounded-full hover:bg-white/20"
-        >
-          <ChevronLeft className="w-6 h-6 md:w-7 md:h-7 text-white" />
-        </button>
-
-        <button
-          onClick={handleNext}
-          disabled={isTransitioning}
-          className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-white/10 backdrop-blur-md border border-white/30 rounded-full hover:bg-white/20"
-        >
-          <ChevronRight className="w-6 h-6 md:w-7 md:h-7 text-white" />
-        </button>
-      </div>
-
-      {/* DOT INDICATORS */}
-      <div className="absolute bottom-6 md:bottom-12 left-1/2 transform -translate-x-1/2 z-20 flex gap-3">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => handleDotClick(index)}
-          >
-            <div
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                currentSlide === index
-                  ? 'bg-white scale-125'
-                  : 'bg-white/40'
+              onClick={() => setCurrentSlide(index)}
+              aria-label={`Go to slide ${index + 1}`}
+              className={`h-2 w-2 rounded-full transition-colors ${
+                currentSlide === index ? "bg-[#d60f3c]" : "bg-white/60"
               }`}
             />
-          </button>
-        ))}
+          ))}
+        </div>
       </div>
-
-      {/* TOP DECORATIVE LINE (KEPT SIMPLE) */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-white/20 z-10" />
-
-    </div>
+    </section>
   );
 };
 
