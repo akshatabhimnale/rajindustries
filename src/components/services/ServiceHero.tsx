@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesHero: React.FC = () => {
   return (
-    <section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
+    <section data-hero-section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
       <img
         src="https://www.wewire-harness.com/fileadmin/_processed_/a/f/csm_coroplast-group-wuppertal-laborsituation_01_f6bc7c6663.jpg"
         alt="Wire harness manufacturing facility"

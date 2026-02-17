@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://use.typekit.net/nlj5det.css");
 
 @tailwind base;
 @tailwind components;
@@ -21,7 +21,7 @@ body,
 body {
   background: var(--dark-bg);
   color: var(--text-color);
-  font-family: 'Space Grotesk', 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  font-family: "helvetica-neue-lt-pro", Arial, Verdana, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

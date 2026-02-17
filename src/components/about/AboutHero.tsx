@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutHero: React.FC = () => {
   return (
-    <section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
+    <section data-hero-section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
       <img
         src="https://www.wewire-harness.com/fileadmin/_processed_/4/a/csm_ww-entwicklungskompetenz_d3781af347.jpg"
         alt="About Raj Industries"

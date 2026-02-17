@@ -65,7 +65,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative h-[78vh] min-h-[560px] w-full overflow-hidden md:h-[86vh]">
+    <section data-hero-section className="relative h-[78vh] min-h-[560px] w-full overflow-hidden md:h-[86vh]">
       {slides.map((slide, index) => (
         <div
           key={slide.heading}

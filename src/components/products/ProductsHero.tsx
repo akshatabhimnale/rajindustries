@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductsHero: React.FC = () => {
   return (
-    <section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
+    <section data-hero-section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
       <img
         src="https://www.wewire-harness.com/fileadmin/_processed_/a/f/csm_radhausverkabelung-wewire_911845d2a5.jpg"
         alt="Wire harness manufacturing facility"
