@@ -8,8 +8,8 @@ export default function WheelArchSection() {
         <div className="relative">
           <div className="h-[290px] w-full overflow-hidden sm:h-[380px] lg:h-[470px] lg:w-[700px]">
             <img
-              src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800&q=80"
-              alt="Automotive wheel close-up"
+              src="https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg"
+              alt="Stand-alone wire harness assembly"
               className="h-full w-full object-cover object-center"
             />
           </div>
@@ -20,17 +20,16 @@ export default function WheelArchSection() {
           >
             <div className="max-w-[760px]">
               <span className="mb-4 block text-[14px] font-semibold uppercase tracking-[0.16em] text-white">
-                Products
+                Product
               </span>
 
               <h2 className="mb-6 text-[32px] font-bold leading-[1.2] text-white sm:text-[40px] lg:text-[48px]">
-                Our core competence lies in the wheel arch
+                Stand-Alone Harnesses Built for Precise Fit
               </h2>
 
               <p className="mb-6 max-w-[760px] text-[16px] leading-[1.5] text-white/95">
-                Driver assistance systems and fully automated driving lead to more and
-                more technology in the automobile - and thus also in the wheel arch: we
-                develop suitable solutions.
+                We develop highly customized harnesses for pre-assembled components,
+                optimizing routing, protection, and installation in tight spaces.
               </p>
 
               <span className="inline-flex items-center gap-3 text-[14px] font-semibold uppercase tracking-[0.16em] text-white">

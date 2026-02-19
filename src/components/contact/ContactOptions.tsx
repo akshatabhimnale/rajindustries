@@ -1,5 +1,5 @@
 import React from "react";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const contactOptions = [
   {
@@ -18,14 +18,8 @@ const contactOptions = [
     icon: <MapPin className="w-6 h-6" />,
     title: "Our Location",
     detail:
-      "Unit B4, Phase 1, Plot No. 32, D-2 Block MIDC, Chinchwad Nigdi Bhosari Road, Opposite HDFC Colony, Pimpri Chinchwad, Pune 411019.",
+      "Unit B4, Phase 1, Plot No. 32, D-2 Block MIDC, Chinchwad Nigdi Bhosari Road, Opposite HDFC Colony, Pimpri Chinchwad, Pune 411019",
     link: "#map",
-  },
-  {
-    icon: <Clock className="w-6 h-6" />,
-    title: "Working Hours",
-    detail: "Mon–Fri | 9:00 AM – 6:00 PM",
-    link: "",
   },
 ];
 

@@ -9,23 +9,23 @@ import {
 const features = [
   {
     icon: <Users className="w-6 h-6" />,
-    title: "Consultative Start",
-    desc: "Requirements alignment, DFM guidance, and material selection."
+    title: "Requirements Alignment",
+    desc: "Installation analysis, DFM guidance, and material selection."
   },
   {
     icon: <Clock className="w-6 h-6" />,
-    title: "Rapid Prototyping",
-    desc: "Quick-turn builds with iterative design validation."
+    title: "Fast Prototyping",
+    desc: "Quick-turn builds with validation and iteration."
   },
   {
     icon: <ShieldCheck className="w-6 h-6" />,
     title: "Built-In Quality",
-    desc: "Continuity, hi-pot, pull-force, and environmental testing."
+    desc: "Continuity, hi-pot, and pull-force testing."
   },
   {
     icon: <Cable className="w-6 h-6" />,
-    title: "Scale to Series",
-    desc: "Prototype to high-volume production with process control."
+    title: "Series Ready",
+    desc: "Process control for consistent fit and routing."
   }
 ];
 
@@ -45,13 +45,13 @@ const AlwaysCloseSection: FC = () => {
           </span>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-            Always Aligned With Your Program
+            Built With Your Program in Mind
           </h2>
 
           <p className="text-gray-600 text-lg leading-relaxed mb-10">
-            We work as an extension of your engineering team—coordinating design,
-            prototype validation, series production, and ongoing technical support
-            to keep programs on schedule and within spec.
+            We operate as an extension of your engineering team—optimizing routing,
+            validating prototypes, and delivering production-ready harnesses that fit
+            your installation constraints.
           </p>
 
           {/* Feature grid with icons */}

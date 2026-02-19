@@ -4,8 +4,8 @@ const ProductsHero: React.FC = () => {
   return (
     <section data-hero-section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
       <img
-        src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=2400&q=80"
-        alt="Wire harness assembly and routing on a production bench"
+        src="https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg"
+        alt="Stand-alone wire harness assembly"
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-black/60" />
@@ -15,17 +15,16 @@ const ProductsHero: React.FC = () => {
       <div className="relative z-10 mx-auto flex h-full w-full max-w-[1600px] items-end px-6 pb-16 md:pb-20">
         <div className="max-w-4xl">
           <small className="mb-5 block text-[12px] font-bold uppercase tracking-[0.18em] text-[#d9d9d9] md:text-[13px]">
-            Products
+            Product
           </small>
 
           <h1 className="text-4xl font-bold leading-[1.05] text-white md:text-6xl lg:text-7xl">
-            Wire Harness Platforms Built for Demanding Systems
+            Stand-Alone Wire Harnesses Built to Fit 100%
           </h1>
 
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/85 md:text-lg">
-            From engine bays to avionics, we design, prototype, and manufacture harness
-            assemblies that prioritize routing integrity, durability, and electrical
-            performance across the full lifecycle.
+            Highly customized, pre-assembled harnesses engineered for precise routing,
+            durability, and reliable performance across automotive and industrial systems.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-5">
@@ -33,7 +32,7 @@ const ProductsHero: React.FC = () => {
               href="#categories"
               className="inline-flex border-b-2 border-[#d60f3c] pb-1 text-[13px] font-bold uppercase tracking-[0.15em] text-white transition-colors hover:text-[#d60f3c]"
             >
-              Product Categories
+              Product Details
             </a>
             <a
               href="/contact"

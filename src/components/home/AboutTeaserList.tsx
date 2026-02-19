@@ -12,30 +12,30 @@ type AboutItem = {
 const aboutItems: AboutItem[] = [
   {
     topline: "About us",
-    title: "Who we are and how we work",
+    title: "Engineering-First Collaboration",
     description:
-      "Customer proximity is more than a word for us. We cultivate it on a daily basis. In this way, we can actively help shape the development and keep our finger on the pulse of the times.",
+      "We work closely with OEMs and Tier suppliers to deliver stand-alone harnesses that fit 100%.",
     image:
-      "https://www.wewire-harness.com/fileadmin/_processed_/4/a/csm_ww-entwicklungskompetenz_d3781af347.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg",
     to: "/about",
   },
   {
-    topline: "About us",
-    title: "Quality",
+    topline: "Process",
+    title: "From Routing to Validation",
     description:
-      "Quality is not just a meaningless phrase in our company - we live up to this claim.",
+      "3D routing, collision checks, prototypes, and validation before series builds.",
     image:
-      "https://www.wewire-harness.com/fileadmin/_processed_/a/f/csm_coroplast-group-wuppertal-laborsituation_01_f6bc7c6663.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
     to: "/about",
   },
   {
-    topline: "Careers",
-    title: "Become part of a powerful team!",
+    topline: "Quality",
+    title: "Built for Harsh Environments",
     description:
-      "The combination of family-run company and global player provides you with a range of exciting career opportunities in Germany and abroad. Our dynamic growth means that we can offer you a secure job and a wide variety of tasks.",
+      "Heat-resistant conductors, sealed connections, and robust protection systems.",
     image:
-      "https://www.wewire-harness.com/fileadmin/_processed_/6/a/csm_karriere-wewire_df9ab4ea11.jpg",
-    to: "/contact",
+      "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
+    to: "/products",
   },
 ];
 

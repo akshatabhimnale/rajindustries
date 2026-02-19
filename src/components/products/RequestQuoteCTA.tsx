@@ -14,12 +14,13 @@ const RequestQuoteCTA: React.FC = () => {
         </span>
 
         <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-          Need a Wire Harness Built to Your Specification?
+          Need a Stand-Alone Harness Built to Your Specification?
         </h2>
 
         <p className="mt-6 max-w-2xl mx-auto text-gray-300 text-lg">
-          From consultation and DFM guidance to prototyping, validation, and volume production,
-          we help OEMs and Tier suppliers move confidently from concept to series builds.
+          From requirements alignment and routing analysis to prototyping, validation,
+          and series production, we help OEMs and Tier suppliers move confidently from
+          concept to build.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
@@ -33,11 +34,11 @@ const RequestQuoteCTA: React.FC = () => {
           </a>
 
           <a
-            href="/services"
+            href="/about"
             className="px-8 py-4 border border-white text-white font-semibold 
                        rounded-lg hover:bg-white/10 transition-all"
           >
-            Explore Our Services
+            Explore Our Capabilities
           </a>
         </div>
 

@@ -10,35 +10,35 @@ type ProductItem = {
 
 const products: ProductItem[] = [
   {
-    title: "System expertise for injection molding components",
+    title: "Battery & Generator Harnesses",
     description:
-      "Whether directly molded onto the cable or as a separate part, we develop demanding system solutions.",
+      "High-current harnesses built for strict performance and safety requirements.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
     to: "/products",
   },
   {
-    title: "Wiring harnesses",
+    title: "Engine Wiring Harnesses",
     description:
-      "Decades of experience in building production-ready cable harnesses.",
-    image:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg",
-    to: "/products",
-  },
-  {
-    title: "High-Voltage Vehicle EDS",
-    description:
-      "Our high-voltage vehicle electrical distribution systems connect vehicle-specific applications of electrified vehicles and consequently support the growing market for electric mobility.",
+      "Heat-resistant conductors, sealed connections, and abrasion protection for engine bays.",
     image:
       "https://upload.wikimedia.org/wikipedia/commons/6/65/US_Navy_040406-N-8770A-003_Aviation_Machinist%27s_Mate_2nd_Class_Wilfredo_Medina%2C_of_Carson%2C_Calif.%2C_works_on_an_engine_electrical_harness_for_a_P-3C_Orion_anti-submarine_and_reconnaissance_aircraft.jpg",
     to: "/products",
   },
   {
-    title: "Wheel arch and axle wiring",
+    title: "Seat & Interior Harnesses",
     description:
-      "Integrated system technology for wheel arch applications with high routing density and robust vehicle integration.",
+      "Flexible conductors, airbag wiring support, and motion-compensation sleeving.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg",
+    to: "/products",
+  },
+  {
+    title: "Custom Pre‑Assembly Builds",
+    description:
+      "Stand‑alone harnesses tailored to your routing, packaging, and installation constraints.",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
     to: "/products",
   },
 ];
@@ -48,7 +48,7 @@ export default function ProductShowcase() {
     <section className="bg-white px-4 py-12 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-[1600px]">
         <h2 className="mb-8 text-[32px] font-bold leading-tight text-[#7f7f7f] md:mb-10 md:text-[40px]">
-          More Raj Industries Products
+          Stand-Alone Harness Capabilities
         </h2>
 
         <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-8 lg:gap-x-10">

@@ -21,14 +21,14 @@ const stats: StatCard[] = [
     image: "https://upload.wikimedia.org/wikipedia/commons/d/df/US_Navy_100622-N-6604E-023_viation_Structural_Mechanic_%28Equipment%29_2nd_Class_Stephen_Bessette_installs_a_wire_harness_on_a_replacement_canopy_for_an_F-A-18E_Super_Hornet.jpg",
   },
   {
-    label: "Industries Served",
-    value: 4,
+    label: "Harness Types",
+    value: 3,
     suffix: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/c/cc/US_Navy_090622-N-6720T-015_Aviation_Machinist%27s_Mate_1st_Class_James_Gregorio%2C_assigned_to_the_jet_engine_shop_in_the_aviation_intermediate_maintenance_department%2C_installs_a_wiring_harness_on_an_F-A-18E_Super_Hornet_engine.jpg",
   },
   {
     label: "Test Methods",
-    value: 5,
+    value: 4,
     suffix: "",
     image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg",
   },
@@ -93,8 +93,8 @@ const StatCounters: React.FC = () => {
             Raj Industries in Numbers
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            A snapshot of our engineering scale and the breadth of industries and
-            testing we support.
+            A snapshot of our engineering depth and the stand-alone harness programs
+            we support.
           </p>
         </div>
 

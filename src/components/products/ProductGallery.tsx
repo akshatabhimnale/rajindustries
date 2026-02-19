@@ -2,28 +2,28 @@ import React from "react";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
-    title: "Engine Bay Harness Routing",
+    src: "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
+    title: "High-Current Routing Assembly",
   },
   {
-    src: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1400&q=80",
-    title: "Robotics and Automation Wiring",
+    src: "https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg",
+    title: "Pre-Assembly Harness Installation",
   },
   {
-    src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=80",
-    title: "Control Panel Assemblies",
+    src: "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
+    title: "Control and Panel Harnessing",
   },
   {
-    src: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=80",
-    title: "Avionics and Cabin Systems",
+    src: "https://upload.wikimedia.org/wikipedia/commons/6/65/US_Navy_040406-N-8770A-003_Aviation_Machinist%27s_Mate_2nd_Class_Wilfredo_Medina%2C_of_Carson%2C_Calif.%2C_works_on_an_engine_electrical_harness_for_a_P-3C_Orion_anti-submarine_and_reconnaissance_aircraft.jpg",
+    title: "Engine Harness Workstation",
   },
   {
-    src: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1400&q=80",
-    title: "Custom Multi-Core Harness Builds",
+    src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/US_Navy_090622-N-6720T-015_Aviation_Machinist%27s_Mate_1st_Class_James_Gregorio%2C_assigned_to_the_jet_engine_shop_in_the_aviation_intermediate_maintenance_department%2C_installs_a_wiring_harness_on_an_F-A-18E_Super_Hornet_engine.jpg",
+    title: "Complex Multi-Branch Harness",
   },
   {
-    src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80",
-    title: "Precision Cable Assembly",
+    src: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg",
+    title: "Testing and Validation Lab",
   },
 ];
 
@@ -41,8 +41,7 @@ const ProductGallery: React.FC = () => {
             Product Gallery
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            A closer look at real-world harnessing across automotive, industrial,
-            aerospace, and custom assembly environments.
+            A closer look at stand-alone harness builds, testing, and installation workflows.
           </p>
         </div>
 

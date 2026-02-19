@@ -25,7 +25,7 @@ const competencies = [
     id: "03",
     icon: <Workflow className="w-6 h-6" />,
     title: "Manufacturing Depth",
-    desc: "Automated cutting, stripping, crimping, over-molding, and skilled manual assembly.",
+    desc: "Automated cutting, stripping, crimping, and skilled manual assembly.",
   },
   {
     id: "04",

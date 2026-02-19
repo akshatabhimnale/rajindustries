@@ -19,12 +19,12 @@ const AboutHero: React.FC = () => {
           </small>
 
           <h1 className="text-4xl font-bold leading-[1.05] text-white md:text-6xl lg:text-7xl">
-            Engineering Wire Harness Systems Since 2001
+            Stand-Alone Wire Harness Experts Since 2001
           </h1>
 
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/85 md:text-lg">
-            Raj Industries delivers design, prototyping, manufacturing, and testing for
-            automotive, EV, industrial, aerospace, and custom harness programs.
+            Raj Industries designs, prototypes, and manufactures stand-alone wire harnesses
+            for pre-assembled components with a focus on fit, reliability, and routing integrity.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-5">

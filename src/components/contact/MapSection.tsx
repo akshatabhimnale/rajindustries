@@ -20,12 +20,12 @@ const MapSection: React.FC = () => {
         <div className="relative w-full h-[450px] rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white">
 
           <iframe
-            src="https://www.google.com/maps?q=Unit%20B4%2C%20Phase%201%2C%20Plot%20No%2032%2C%20D-2%20Block%20MIDC%2C%20Chinchwad%20Nigdi%20Bhosari%20Road%2C%20Opposite%20HDFC%20Colony%2C%20Pimpri%20Chinchwad%20Pune%20411019&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30241.923815137114!2d73.76536057431639!3d18.653201800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b91a8929b9d5%3A0x9eab44357564958a!2sRaj%20Industries!5e0!3m2!1sen!2sus!4v1771505006540!5m2!1sen!2sus"
             className="w-full h-full border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             allowFullScreen
-            title="Pune Location Map"
+            title="Raj Industries Map"
           />
 
           {/* Floating Location Badge */}

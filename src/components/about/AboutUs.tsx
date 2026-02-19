@@ -20,15 +20,15 @@ const AboutUs: React.FC = () => {
 
           <p className="text-gray-600 text-lg leading-relaxed mb-6">
             Raj Industries is a B2B manufacturing partner for OEMs and Tier suppliers,
-            delivering wire harness systems and cable assemblies from concept to series production.
-            We operate from Pimpri Chinchwad, Pune 411019, India and support programs across
-            automotive, EV, industrial, aerospace, and custom applications.
+            focused on stand-alone wire harnesses for pre-assembled components.
+            We operate from Pimpri Chinchwad, Pune 411019, India and support programs
+            that require precise fit, dependable routing, and high reliability.
           </p>
 
           <p className="text-gray-600 text-lg leading-relaxed mb-8">
             Our teams combine CAD-led engineering, rapid prototyping, automated and manual
-            production, and in-process validation to deliver reliable, high-precision assemblies
-            that meet ISO 9001 and IATF 16949 quality expectations.
+            production, and in-process validation to deliver assemblies that meet
+            ISO 9001 and IATF 16949 quality expectations.
           </p>
 
           <h3 className="text-xl font-semibold text-gray-800 mb-3">
@@ -37,11 +37,11 @@ const AboutUs: React.FC = () => {
 
           <ul className="grid sm:grid-cols-2 gap-3 text-gray-700">
             <li>• Design & engineering (CAD, DFM, material selection)</li>
-            <li>• Prototyping and design validation</li>
-            <li>• Automated cutting, stripping, crimping</li>
-            <li>• Over-molding, potting, and final assembly</li>
+            <li>• 3D routing and collision checks (DMU)</li>
+            <li>• Prototype builds and design validation</li>
+            <li>• Automated cutting, stripping, and crimping</li>
             <li>• 100% continuity and hi-pot testing</li>
-            <li>• Technical support and lifecycle assistance</li>
+            <li>• Documentation and technical support</li>
           </ul>
         </div>
 
