@@ -4,7 +4,7 @@ const ContactHero: React.FC = () => {
   return (
     <section data-hero-section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
       <img
-        src="https://www.wewire-harness.com/fileadmin/global_data/Unternehmen/Qualitaet/coroplast-group-wuppertal-laborsituation_01.jpg"
+        src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg"
         alt="Wire harness factory"
         className="absolute inset-0 h-full w-full object-cover"
       />

@@ -4,8 +4,8 @@ const ProductsHero: React.FC = () => {
   return (
     <section data-hero-section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
       <img
-        src="https://www.wewire-harness.com/fileadmin/_processed_/a/f/csm_radhausverkabelung-wewire_911845d2a5.jpg"
-        alt="Wire harness manufacturing facility"
+        src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=2400&q=80"
+        alt="Wire harness assembly and routing on a production bench"
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-black/60" />
@@ -19,12 +19,13 @@ const ProductsHero: React.FC = () => {
           </small>
 
           <h1 className="text-4xl font-bold leading-[1.05] text-white md:text-6xl lg:text-7xl">
-            Product Platforms for Automotive, Industrial, Aerospace, and Custom Systems
+            Wire Harness Platforms Built for Demanding Systems
           </h1>
 
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/85 md:text-lg">
-            Category-based harness solutions engineered for application-specific routing,
-            durability, and electrical performance requirements.
+            From engine bays to avionics, we design, prototype, and manufacture harness
+            assemblies that prioritize routing integrity, durability, and electrical
+            performance across the full lifecycle.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-5">

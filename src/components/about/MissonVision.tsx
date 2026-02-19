@@ -12,15 +12,15 @@ const MissionVision: React.FC = () => {
           </span>
 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Powering the Future of Mobility
+            Reliable Harness Systems, Built Right
           </h2>
 
           <div className="w-20 h-1 bg-[var(--primary-color)] mb-6" />
 
           <p className="text-gray-600 leading-relaxed text-lg">
-            To deliver reliable, innovative, and high-precision wire-harness 
-            solutions that enable safer, smarter, and more sustainable mobility 
-            systems for automotive, EV, and industrial applications.
+            To deliver reliable, high-precision wire harness solutions that
+            support automotive, EV, industrial, and aerospace programs with
+            safety, performance, and sustainability at the core.
           </p>
         </div>
 
@@ -31,15 +31,15 @@ const MissionVision: React.FC = () => {
           </span>
 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Global Leader in Wiring Systems
+            Globally Trusted Engineering Partner
           </h2>
 
           <div className="w-20 h-1 bg-[var(--primary-color)] mb-6" />
 
           <p className="text-gray-600 leading-relaxed text-lg">
-            To become a globally recognized leader in advanced wire-harness 
-            engineering by driving innovation in automation, e-mobility, and 
-            next-generation industrial cabling technologies.
+            To become a globally recognized leader in advanced wire-harness
+            engineering through automation, Industry 4.0 adoption, and
+            next-generation cabling technologies.
           </p>
         </div>
 

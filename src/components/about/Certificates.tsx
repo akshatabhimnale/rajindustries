@@ -10,38 +10,31 @@ interface Certificate {
 const certificates: Certificate[] = [
   {
     title: "ISO 9001 Certification",
-    issuedBy: "International Standards Organization",
-    year: "2023",
+    issuedBy: "Quality Management Standard",
+    year: "Current",
     image:
-      "https://images.unsplash.com/photo-1590608897129-441dbbdcf688?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
   },
   {
     title: "IATF 16949 Certification",
-    issuedBy: "Automotive Quality Standards",
-    year: "2022",
+    issuedBy: "Automotive Quality Standard",
+    year: "Current",
     image:
-      "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg",
   },
   {
     title: "RoHS Compliance Certificate",
-    issuedBy: "Environmental Standards Board",
-    year: "2021",
+    issuedBy: "Environmental Compliance",
+    year: "Current",
     image:
-      "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
   },
   {
     title: "CE Certification",
-    issuedBy: "European Conformity Authority",
-    year: "2023",
+    issuedBy: "European Conformity",
+    year: "Current",
     image:
-      "https://images.unsplash.com/photo-1581092332557-8a79b2cf7dd2?w=900&q=80",
-  },
-  {
-    title: "Quality Excellence Award",
-    issuedBy: "Raj Industries",
-    year: "2024",
-    image:
-      "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg",
   },
 ];
 
@@ -127,8 +120,8 @@ const Certificates: React.FC = () => {
           Certifications & Awards
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Raj Industries follows globally accepted standards for quality,
-          safety, and manufacturing excellence.
+          We follow globally recognized standards for quality, safety, and
+          environmental compliance in wire harness manufacturing.
         </p>
       </div>
 

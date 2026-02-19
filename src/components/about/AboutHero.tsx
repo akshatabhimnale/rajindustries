@@ -4,8 +4,8 @@ const AboutHero: React.FC = () => {
   return (
     <section data-hero-section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
       <img
-        src="https://www.wewire-harness.com/fileadmin/_processed_/4/a/csm_ww-entwicklungskompetenz_d3781af347.jpg"
-        alt="About Raj Industries"
+        src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg"
+        alt="Wire harness engineering and assembly workspace"
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-black/60" />
@@ -19,12 +19,12 @@ const AboutHero: React.FC = () => {
           </small>
 
           <h1 className="text-4xl font-bold leading-[1.05] text-white md:text-6xl lg:text-7xl">
-            Engineering Partnerships Built for Long-Term Programs
+            Engineering Wire Harness Systems Since 2001
           </h1>
 
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/85 md:text-lg">
-            Raj Industries designs and manufactures wire harness systems for automotive,
-            industrial, and custom applications with a process focused on quality and consistency.
+            Raj Industries delivers design, prototyping, manufacturing, and testing for
+            automotive, EV, industrial, aerospace, and custom harness programs.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-5">

@@ -66,12 +66,12 @@ const Footer = () => {
                 <ul className="space-y-[11px] text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/90">
                   <li>
                     <a href="#" className="hover:text-white">
-                      People at WeWire
+                      People at Raj Industries
                     </a>
                   </li>
                   <li>
                     <a href="#" className="hover:text-white">
-                      Careers at WeWire
+                      Careers at Raj Industries
                     </a>
                   </li>
                   <li>
@@ -89,7 +89,7 @@ const Footer = () => {
                 <ul className="space-y-[11px] text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/90">
                   <li>
                     <a href="#" className="hover:text-white">
-                      WeWire News
+                      Raj Industries News
                     </a>
                   </li>
                 </ul>
@@ -131,21 +131,17 @@ const Footer = () => {
         {/* RIGHT: red contact panel */}
         <div className="bg-[#d90745] px-8 py-12 text-white sm:px-12 lg:px-8 lg:py-16">
           <div className="mx-auto max-w-[430px] lg:max-w-[390px]">
-            <img
-              src="https://www.wewire-harness.com/_assets/2da2ad70d45e9fd2f98434f152f81244/Frontend/_Default/images/structuredDataLogo/logo-wewire.svg"
-              alt="WeWire"
-              className="h-[32px] w-auto [filter:brightness(0)_invert(1)]"
-            />
+            <div className="text-[22px] font-semibold tracking-[0.08em] text-white">
+              RAJ INDUSTRIES
+            </div>
 
             <div className="mt-9 flex items-start justify-between gap-3">
               <address className="not-italic text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/95">
-                Coroplast Fritz Muller
+                Raj Industries
                 <br />
-                GmbH &amp; Co. KG
+                Industrial Area, Phase 2
                 <br />
-                Wittener StraBe 271
-                <br />
-                42279 Wuppertal
+                Manufacturing Hub, India
               </address>
             
             </div>
@@ -153,17 +149,13 @@ const Footer = () => {
             <div className="mt-14">
               <h4 className="text-[16px] font-bold leading-[1.5625] tracking-[0.05em]">Do you have any questions?</h4>
               <p className="mt-6 text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/95">
-                Please call or write to us if you have any questions about WeWire or the
-                Coroplast Group or about our products and solutions.
+                Please write to us if you have any questions about Raj Industries
+                or about our products and solutions.
               </p>
 
               <div className="mt-8 space-y-4 text-[13px] leading-[1.6923076923] tracking-[0.05em]">
-                <a href="tel:+4920226810" className="inline-block border-b border-white pb-1 hover:text-black/90">
-                  T +49 202 2681 0
-                </a>
-                <br />
-                <a href="mailto:info@wewire-harness.com" className="inline-block border-b border-white pb-1 hover:text-black/90">
-                  info@wewire-harness.com
+                <a href="mailto:info@rajindustries.com" className="inline-block border-b border-white pb-1 hover:text-black/90">
+                  info@rajindustries.com
                 </a>
               </div>
             </div>

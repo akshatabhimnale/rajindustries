@@ -12,38 +12,38 @@ const competencies = [
   {
     id: "01",
     icon: <Cable className="w-6 h-6" />,
-    title: "Full-Service Wire Systems",
-    desc: "End-to-end engineering, prototyping, and series production for automotive and mobility harnesses.",
+    title: "Design & Engineering",
+    desc: "CAD routing, circuit optimization, material selection, and DFM guidance.",
   },
   {
     id: "02",
     icon: <Settings className="w-6 h-6" />,
-    title: "System & Automation Expertise",
-    desc: "Advanced automation for wheel-arch wiring, injection-molded parts, and special harness solutions.",
+    title: "Prototyping & Validation",
+    desc: "Quick-turn prototypes with iterative design verification and cost optimization.",
   },
   {
     id: "03",
     icon: <Workflow className="w-6 h-6" />,
-    title: "Interdisciplinary Development",
-    desc: "From concept to validation — including 3D routing, pilot runs, and series optimization.",
+    title: "Manufacturing Depth",
+    desc: "Automated cutting, stripping, crimping, over-molding, and skilled manual assembly.",
   },
   {
     id: "04",
     icon: <Beaker className="w-6 h-6" />,
-    title: "Simulation & Testing",
-    desc: "Dynamic analysis of moving harness systems using state-of-the-art simulation tools.",
+    title: "Testing & Validation",
+    desc: "Continuity, hi-pot, pull force, and environmental testing in-process.",
   },
   {
     id: "05",
     icon: <Factory className="w-6 h-6" />,
-    title: "Smart Manufacturing",
-    desc: "Robotics, linked transfer lines, and digital process optimization for high precision.",
+    title: "Automation & Monitoring",
+    desc: "Robotics, smart automation, and production monitoring with defect detection.",
   },
   {
     id: "06",
     icon: <ShieldCheck className="w-6 h-6" />,
-    title: "Quality & Validation Lab",
-    desc: "Central technical center for material testing, fault analysis, and certification.",
+    title: "Lifecycle Support",
+    desc: "Installation guidance, troubleshooting, and technical documentation.",
   },
 ];
 
@@ -58,9 +58,9 @@ const CoreCompetenciesModern: FC = () => {
         </h2>
 
         <p className="text-gray-600 max-w-3xl mb-6">
-          As a specialist in advanced engineering and continuous improvement, 
-          we are shaping the future of e-mobility, autonomous driving, and 
-          in-vehicle connectivity through high-precision wire-harness systems.
+          We combine engineering, prototyping, manufacturing, and validation into
+          a single workflow so programs move from concept to series production
+          without friction.
         </p>
 
         <div className="w-20 h-1 bg-[var(--primary-color)] mb-10" />

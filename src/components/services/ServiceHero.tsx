@@ -4,8 +4,8 @@ const ServicesHero: React.FC = () => {
   return (
     <section data-hero-section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
       <img
-        src="https://www.wewire-harness.com/fileadmin/_processed_/a/f/csm_coroplast-group-wuppertal-laborsituation_01_f6bc7c6663.jpg"
-        alt="Wire harness manufacturing facility"
+        src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg"
+        alt="Electrical testing and engineering lab"
         className="absolute inset-0 h-full w-full object-cover"
       />
       <div className="absolute inset-0 bg-black/60" />
@@ -19,12 +19,13 @@ const ServicesHero: React.FC = () => {
           </small>
 
           <h1 className="text-4xl font-bold leading-[1.05] text-white md:text-6xl lg:text-7xl">
-            Design, Validation, and Scalable Production in One Flow
+            Engineering Services That Scale From Prototype to Production
           </h1>
 
           <p className="mt-5 max-w-3xl text-base leading-relaxed text-white/85 md:text-lg">
-            We support programs from requirements and prototyping through testing,
-            manufacturing, and lifecycle technical support.
+            We support wire-harness programs end-to-end: requirements alignment,
+            CAD and DFM, rapid prototyping, validation, and volume manufacturing
+            with ongoing technical support.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-5">

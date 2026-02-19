@@ -9,39 +9,39 @@ interface GalleryItem {
 const galleryItems: GalleryItem[] = [
   {
     title: "Automated Wiring Line",
-    subtitle: "High precision robotics & assembly",
+    subtitle: "High-precision cutting, crimping, and routing",
     image:
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
   },
   {
     title: "Quality Testing Lab",
-    subtitle: "Material & performance validation",
+    subtitle: "Continuity, hi-pot, pull force, and environmental tests",
     image:
-      "https://images.unsplash.com/photo-1590608897129-441dbbdcf688?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg",
   },
   {
     title: "Cable Assembly Station",
-    subtitle: "Skilled engineering workflow",
+    subtitle: "Skilled craftsmanship for custom assemblies",
     image:
-      "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg",
   },
   {
     title: "Smart Factory Floor",
-    subtitle: "Industry 4.0 manufacturing",
+    subtitle: "Automation with real-time production monitoring",
     image:
-      "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/c/cc/US_Navy_090622-N-6720T-015_Aviation_Machinist%27s_Mate_1st_Class_James_Gregorio%2C_assigned_to_the_jet_engine_shop_in_the_aviation_intermediate_maintenance_department%2C_installs_a_wiring_harness_on_an_F-A-18E_Super_Hornet_engine.jpg",
   },
   {
     title: "Robotics Integration",
-    subtitle: "Automated process control",
+    subtitle: "Automated handling and defect detection",
     image:
-      "https://images.unsplash.com/photo-1581092332557-8a79b2cf7dd2?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/6/65/US_Navy_040406-N-8770A-003_Aviation_Machinist%27s_Mate_2nd_Class_Wilfredo_Medina%2C_of_Carson%2C_Calif.%2C_works_on_an_engine_electrical_harness_for_a_P-3C_Orion_anti-submarine_and_reconnaissance_aircraft.jpg",
   },
   {
     title: "Production Monitoring",
-    subtitle: "Real-time quality tracking",
+    subtitle: "Traceability and process control",
     image:
-      "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
   },
 ];
 
@@ -53,11 +53,11 @@ const FacilityGallery: React.FC = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our Facilities
+            Facilities & Equipment
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            A glimpse into our advanced manufacturing infrastructure, automation,
-            and quality-driven production environment.
+            Automated lines, skilled assembly stations, and testing labs built
+            for precision, speed, and repeatability.
           </p>
         </div>
 

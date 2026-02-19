@@ -19,7 +19,7 @@ const QuoteSection: React.FC = () => {
           </p>
 
           <p className="mt-6 text-gray-400 text-sm tracking-widest uppercase">
-            Ali Iliköz | Head of Business Unit WeWire
+            Raj Industries | Engineering Leadership
           </p>
         </div>
       </div>

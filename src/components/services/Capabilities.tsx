@@ -11,27 +11,27 @@ const capabilities = [
   {
     icon: <Factory className="w-5 h-5 text-pink-600" />,
     title: "Automated Assembly Lines",
-    desc: "Fully automated production systems ensuring speed, accuracy, and consistency.",
+    desc: "Automated cutting, stripping, crimping, and routing for repeatable quality.",
   },
   {
     icon: <Cpu className="w-5 h-5 text-pink-600" />,
     title: "Robotics & Smart Automation",
-    desc: "Industry 4.0 robotics for precision cutting, crimping, and routing.",
+    desc: "Robotics and smart tooling for high-precision assembly and monitoring.",
   },
   {
     icon: <CheckCircle className="w-5 h-5 text-pink-600" />,
     title: "Advanced Quality Inspection",
-    desc: "Real-time monitoring and automated defect detection systems.",
+    desc: "In-process validation with defect detection and traceability.",
   },
   {
     icon: <Settings className="w-5 h-5 text-pink-600" />,
     title: "Lean Manufacturing",
-    desc: "Optimized workflows to reduce waste and improve efficiency.",
+    desc: "Optimized workflows to reduce waste and support on-time delivery.",
   },
   {
     icon: <BarChart4 className="w-5 h-5 text-pink-600" />,
     title: "High-Volume Production",
-    desc: "Scalable manufacturing for OEM and Tier supplier demands.",
+    desc: "Prototype, pilot, and high-volume production at scale.",
   },
 ];
 
@@ -51,9 +51,9 @@ const Capabilities: React.FC = () => {
           </h2>
 
           <p className="text-gray-600 mb-8 max-w-xl">
-            Our state-of-the-art facilities combine cutting-edge automation with
-            expert craftsmanship to deliver high-precision wire harness solutions
-            at scale — ensuring reliability, efficiency, and quality for every project.
+            Our facilities combine automation with skilled craftsmanship to deliver
+            high-precision harness assemblies—built for reliability, efficiency, and
+            repeatable quality from pilot runs through series production.
           </p>
 
           {/* Capability List */}
@@ -84,8 +84,8 @@ const Capabilities: React.FC = () => {
         {/* RIGHT: Image */}
         <div className="relative rounded-2xl overflow-hidden shadow-xl">
           <img
-            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&q=80"
-            alt="Wire harness manufacturing facility"
+            src="https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg"
+            alt="Electrical control panel wiring"
             className="w-full h-[450px] object-cover"
           />
 

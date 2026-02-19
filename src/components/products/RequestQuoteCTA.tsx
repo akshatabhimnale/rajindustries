@@ -14,13 +14,12 @@ const RequestQuoteCTA: React.FC = () => {
         </span>
 
         <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-          Need a Custom Wire Harness Solution?
+          Need a Wire Harness Built to Your Specification?
         </h2>
 
         <p className="mt-6 max-w-2xl mx-auto text-gray-300 text-lg">
-          Our engineering team works closely with you to understand your requirements, 
-          optimize designs, and deliver reliable, cost-effective solutions — from prototype 
-          to full-scale production.
+          From consultation and DFM guidance to prototyping, validation, and volume production,
+          we help OEMs and Tier suppliers move confidently from concept to series builds.
         </p>
 
         <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">

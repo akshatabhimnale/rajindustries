@@ -14,12 +14,12 @@ const additionalServices = [
   {
     icon: <Package className="w-6 h-6 text-pink-600" />,
     title: "Packaging",
-    desc: "Customized protective packaging tailored to your logistics needs.",
+    desc: "Custom packaging and kitting aligned to your assembly flow.",
   },
   {
     icon: <Truck className="w-6 h-6 text-pink-600" />,
     title: "Logistics",
-    desc: "Reliable supply-chain coordination and on-time delivery.",
+    desc: "Supply-chain coordination and on-time delivery support.",
   },
   {
     icon: <Headphones className="w-6 h-6 text-pink-600" />,
@@ -29,27 +29,27 @@ const additionalServices = [
   {
     icon: <Settings className="w-6 h-6 text-pink-600" />,
     title: "Custom Tooling",
-    desc: "Specialized jigs, fixtures, and tooling solutions.",
+    desc: "Jigs, fixtures, and custom tooling for repeatable builds.",
   },
   {
     icon: <ClipboardCheck className="w-6 h-6 text-pink-600" />,
     title: "Training",
-    desc: "Operator and maintenance training programs.",
+    desc: "Operator training, maintenance guidance, and handover.",
   },
   {
     icon: <Layers className="w-6 h-6 text-pink-600" />,
     title: "R&D Support",
-    desc: "Collaboration on new product development.",
+    desc: "Collaboration on new product development and pilots.",
   },
   {
     icon: <Wrench className="w-6 h-6 text-pink-600" />,
     title: "Repair Services",
-    desc: "Diagnosis and refurbishment of existing harnesses.",
+    desc: "Diagnosis, rework, and refurbishment when needed.",
   },
   {
     icon: <FileText className="w-6 h-6 text-pink-600" />,
     title: "Documentation",
-    desc: "Technical manuals, drawings, and compliance reports.",
+    desc: "Technical drawings, manuals, and compliance reports.",
   },
 ];
 
@@ -67,8 +67,8 @@ const AdditionalServicesGrid: React.FC = () => {
             Additional Services
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Beyond manufacturing, we provide end-to-end support to ensure smooth
-            integration, delivery, and long-term performance of your products.
+            Beyond manufacturing, we provide program support for smooth integration,
+            delivery, and long-term performance.
           </p>
         </div>
 

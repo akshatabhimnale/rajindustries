@@ -12,17 +12,17 @@ const products: ProductItem[] = [
   {
     title: "System expertise for injection molding components",
     description:
-      "Regardless of whether directly molded onto the cable or as a falling part, WeWire develops demanding system solutions.",
+      "Whether directly molded onto the cable or as a separate part, we develop demanding system solutions.",
     image:
-      "https://www.wewire-harness.com/fileadmin/_processed_/b/5/csm_wewire-cn-injection-mouled-components-brown_dcc07d1080.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
     to: "/products",
   },
   {
     title: "Wiring harnesses",
     description:
-      "We have many years of experience in the production of cable harnesses.",
+      "Decades of experience in building production-ready cable harnesses.",
     image:
-      "https://www.wewire-harness.com/fileadmin/_processed_/e/4/csm_wewire-cn-wire-harnesses-engine-wiring_143a9e96f0.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg",
     to: "/products",
   },
   {
@@ -30,7 +30,7 @@ const products: ProductItem[] = [
     description:
       "Our high-voltage vehicle electrical distribution systems connect vehicle-specific applications of electrified vehicles and consequently support the growing market for electric mobility.",
     image:
-      "https://www.wewire-harness.com/fileadmin/_processed_/4/3/csm_hochvolt-leitungsaetze-eingebaut_e27e71a866.png",
+      "https://upload.wikimedia.org/wikipedia/commons/6/65/US_Navy_040406-N-8770A-003_Aviation_Machinist%27s_Mate_2nd_Class_Wilfredo_Medina%2C_of_Carson%2C_Calif.%2C_works_on_an_engine_electrical_harness_for_a_P-3C_Orion_anti-submarine_and_reconnaissance_aircraft.jpg",
     to: "/products",
   },
   {
@@ -38,7 +38,7 @@ const products: ProductItem[] = [
     description:
       "Integrated system technology for wheel arch applications with high routing density and robust vehicle integration.",
     image:
-      "https://www.wewire-harness.com/fileadmin/_processed_/a/f/csm_radhausverkabelung-wewire_911845d2a5.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
     to: "/products",
   },
 ];
@@ -48,7 +48,7 @@ export default function ProductShowcase() {
     <section className="bg-white px-4 py-12 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-[1600px]">
         <h2 className="mb-8 text-[32px] font-bold leading-tight text-[#7f7f7f] md:mb-10 md:text-[40px]">
-          More WeWire Products
+          More Raj Industries Products
         </h2>
 
         <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-8 lg:gap-x-10">

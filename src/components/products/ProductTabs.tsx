@@ -17,60 +17,60 @@ const productData: ProductCategory[] = [
     label: "Automotive",
     title: "Automotive Wire Harnesses",
     description:
-      "High-quality harnesses designed for automotive applications, meeting international safety standards.",
+      "Harness systems engineered for heat, vibration, tight packaging, and reliable routing from engine bay to cabin.",
     bullets: [
-      "Engine compartment harnesses",
-      "Interior dashboard harnesses",
-      "Body and chassis harnesses",
-      "Trailer and towing harnesses",
+      "Engine compartment harnesses with high-heat routing",
+      "Instrument panel and interior harness assemblies",
+      "Body, chassis, and trailer/towing harnesses",
+      "EV and hybrid power/logic routing support",
     ],
     image:
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80",
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
   },
   {
     id: "industrial",
     label: "Industrial",
     title: "Industrial Solutions",
     description:
-      "Robust harnesses for industrial machinery and automation systems.",
+      "Rugged assemblies for machinery, automation, and control systems where uptime and serviceability matter.",
     bullets: [
-      "Control panel wiring",
-      "Machine tool harnesses",
-      "Conveyor systems",
-      "Robotics and automation",
+      "Control panel and cabinet wiring layouts",
+      "Machine tool and CNC harness assemblies",
+      "Conveyor and material handling systems",
+      "Robotics, sensors, and automation cells",
     ],
     image:
-      "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=900&q=80",
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1400&q=80",
   },
   {
     id: "aerospace",
     label: "Aerospace",
     title: "Aerospace Wiring Systems",
     description:
-      "Lightweight, high-precision harnesses for aircraft, drones, and avionics.",
+      "Lightweight, precise harnessing for avionics, cabins, and mission-critical power distribution.",
     bullets: [
-      "Avionics wiring harnesses",
-      "Cabin electrical systems",
-      "Power distribution cables",
-      "Sensor and control wiring",
+      "Avionics harness assemblies and routing",
+      "Cabin electrical and interior systems",
+      "Power distribution and grounding paths",
+      "Sensor, actuator, and control wiring",
     ],
     image:
-      "https://images.unsplash.com/photo-1590608897129-441dbbdcf688?w=900&q=80",
+      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=80",
   },
   {
     id: "custom",
     label: "Custom",
     title: "Custom Assemblies",
     description:
-      "Tailored solutions designed to meet your specific requirements.",
+      "Consultative builds for unique applications, from concept sketches to validated prototypes and production.",
     bullets: [
-      "Project consultation",
-      "Prototype development",
-      "Custom design services",
-      "Small to large volume production",
+      "Requirements alignment and DFM guidance",
+      "Prototype development and design iteration",
+      "Special materials, tooling, and fixtures",
+      "Small-batch through high-volume production",
     ],
     image:
-      "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=900&q=80",
+      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=1400&q=80",
   },
 ];
 
@@ -88,10 +88,11 @@ const ProductTabs: React.FC = () => {
         {/* HEADER */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Our Product Categories
+            Product Categories Built for Real-World Conditions
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore our complete range of wire harness solutions across industries.
+            Practical, production-ready harness platforms shaped by manufacturing, testing,
+            and field performance needs.
           </p>
         </div>
 

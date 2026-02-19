@@ -12,25 +12,25 @@ const stats: StatCard[] = [
     label: "Years of Excellence",
     value: new Date().getFullYear() - 2001,
     suffix: "+",
-    image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80",
-  },
-  {
-    label: "Global Clients",
-    value: 50,
-    suffix: "+",
-    image: "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=900&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
   },
   {
     label: "Engineers",
     value: 120,
     suffix: "+",
-    image: "https://images.unsplash.com/photo-1590608897129-441dbbdcf688?w=900&q=80",
+    image: "https://upload.wikimedia.org/wikipedia/commons/d/df/US_Navy_100622-N-6604E-023_viation_Structural_Mechanic_%28Equipment%29_2nd_Class_Stephen_Bessette_installs_a_wire_harness_on_a_replacement_canopy_for_an_F-A-18E_Super_Hornet.jpg",
   },
   {
-    label: "Countries Served",
-    value: 25,
-    suffix: "+",
-    image: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=900&q=80",
+    label: "Industries Served",
+    value: 4,
+    suffix: "",
+    image: "https://upload.wikimedia.org/wikipedia/commons/c/cc/US_Navy_090622-N-6720T-015_Aviation_Machinist%27s_Mate_1st_Class_James_Gregorio%2C_assigned_to_the_jet_engine_shop_in_the_aviation_intermediate_maintenance_department%2C_installs_a_wiring_harness_on_an_F-A-18E_Super_Hornet_engine.jpg",
+  },
+  {
+    label: "Test Methods",
+    value: 5,
+    suffix: "",
+    image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg",
   },
 ];
 
@@ -93,8 +93,8 @@ const StatCounters: React.FC = () => {
             Raj Industries in Numbers
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Over two decades of engineering excellence in wire-harness
-            manufacturing for automotive, EV, and industrial sectors.
+            A snapshot of our engineering scale and the breadth of industries and
+            testing we support.
           </p>
         </div>
 

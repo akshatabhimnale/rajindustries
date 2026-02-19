@@ -9,23 +9,23 @@ import {
 const features = [
   {
     icon: <Users className="w-6 h-6" />,
-    title: "Partnership Mindset",
-    desc: "We work side-by-side with OEMs and Tier suppliers."
+    title: "Consultative Start",
+    desc: "Requirements alignment, DFM guidance, and material selection."
   },
   {
     icon: <Clock className="w-6 h-6" />,
-    title: "Fast Response",
-    desc: "Rapid prototyping and quick engineering changes."
+    title: "Rapid Prototyping",
+    desc: "Quick-turn builds with iterative design validation."
   },
   {
     icon: <ShieldCheck className="w-6 h-6" />,
-    title: "Quality First",
-    desc: "Certified processes and strict quality control."
+    title: "Built-In Quality",
+    desc: "Continuity, hi-pot, pull-force, and environmental testing."
   },
   {
     icon: <Cable className="w-6 h-6" />,
-    title: "Custom Harnessing",
-    desc: "Tailored solutions for automotive & industrial needs."
+    title: "Scale to Series",
+    desc: "Prototype to high-volume production with process control."
   }
 ];
 
@@ -45,14 +45,13 @@ const AlwaysCloseSection: FC = () => {
           </span>
 
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-6">
-            Always Close to Our Customers
+            Always Aligned With Your Program
           </h2>
 
           <p className="text-gray-600 text-lg leading-relaxed mb-10">
-            We don’t just manufacture wire harnesses — we build long-term
-            engineering partnerships. From concept to series production,
-            our teams collaborate closely with you to deliver reliable,
-            high-performance cabling solutions.
+            We work as an extension of your engineering team—coordinating design,
+            prototype validation, series production, and ongoing technical support
+            to keep programs on schedule and within spec.
           </p>
 
           {/* Feature grid with icons */}
@@ -83,8 +82,8 @@ const AlwaysCloseSection: FC = () => {
         {/* RIGHT IMAGE */}
         <div className="relative rounded-2xl overflow-hidden float-card card-shadow border border-black/5">
           <img
-            src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1200&q=80"
-            alt="Wire harness assembly line"
+            src="https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg"
+            alt="Industrial control wiring and assembly"
             className="w-full h-[420px] object-cover"
           />
 
@@ -95,7 +94,7 @@ const AlwaysCloseSection: FC = () => {
           <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md 
                           px-4 py-2 rounded-lg shadow-md text-sm font-semibold 
                           text-gray-800">
-            Trusted by 50+ Global Clients
+            OEM & Tier Supplier Focused
           </div>
         </div>
       </div>

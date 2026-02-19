@@ -13,37 +13,37 @@ const services = [
     icon: <PenTool className="w-6 h-6" />,
     title: "Design & Engineering",
     description:
-      "Our expert engineering team develops high-precision, manufacturable wire harness designs tailored to your technical and business needs.",
+      "CAD-driven harness architecture with DFM, material selection, and routing optimized for your application environment.",
     image:
-      "https://images.unsplash.com/photo-1590608897129-441dbbdcf688?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
     points: [
-      "CAD design and modeling",
-      "Circuit analysis and optimization",
-      "Material selection",
-      "DFM consultation"
+      "CAD design, schematics, and 3D routing",
+      "Circuit analysis and load optimization",
+      "Connector and material selection",
+      "DFM consultation and cost-down"
     ]
   },
   {
     icon: <Zap className="w-6 h-6" />,
     title: "Prototyping",
     description:
-      "We provide rapid prototyping services to validate designs before full-scale production, minimizing risk and development time.",
+      "Rapid prototypes to validate fit, routing, and performance before series builds.",
     image:
-      "https://images.unsplash.com/photo-1526947425960-945c6e72858f?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg",
     points: [
-      "Quick turnaround prototypes",
+      "Quick-turn prototype builds",
       "Design verification testing",
-      "Iterative improvements",
-      "Cost optimization"
+      "Iterative design updates",
+      "Cost optimization feedback"
     ]
   },
   {
     icon: <Factory className="w-6 h-6" />,
     title: "Manufacturing",
     description:
-      "Our state-of-the-art facilities combine automation and skilled craftsmanship to deliver high-quality wire harnesses at scale.",
+      "Automated and manual assembly lines for reliable, repeatable production.",
     image:
-      "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/6/65/US_Navy_040406-N-8770A-003_Aviation_Machinist%27s_Mate_2nd_Class_Wilfredo_Medina%2C_of_Carson%2C_Calif.%2C_works_on_an_engine_electrical_harness_for_a_P-3C_Orion_anti-submarine_and_reconnaissance_aircraft.jpg",
     points: [
       "High-volume production",
       "Automated cutting & stripping",
@@ -55,9 +55,9 @@ const services = [
     icon: <CheckCircle className="w-6 h-6" />,
     title: "Quality Testing",
     description:
-      "Every harness undergoes rigorous testing to ensure safety, reliability, and compliance with industry standards.",
+      "In-process and final validation to ensure reliability and compliance.",
     image:
-      "https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg",
     points: [
       "100% continuity testing",
       "Hi-pot testing",
@@ -69,23 +69,23 @@ const services = [
     icon: <Puzzle className="w-6 h-6" />,
     title: "Custom Solutions",
     description:
-      "We design tailor-made wire harness systems for complex and specialized applications across multiple industries.",
+      "Consultative builds for complex programs and application-specific needs.",
     image:
-      "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
     points: [
       "Application-specific designs",
-      "Complex assemblies",
-      "Special materials",
-      "Custom packaging"
+      "Complex multi-branch assemblies",
+      "Special materials and shielding",
+      "Custom packaging and kitting"
     ]
   },
   {
     icon: <Headphones className="w-6 h-6" />,
     title: "Technical Support",
     description:
-      "We support our customers throughout the product lifecycle with expert guidance, troubleshooting, and training.",
+      "Lifecycle support for installation, troubleshooting, and documentation.",
     image:
-      "https://images.unsplash.com/photo-1581092332557-8a79b2cf7dd2?w=900&q=80",
+      "https://upload.wikimedia.org/wikipedia/commons/c/cc/US_Navy_090622-N-6720T-015_Aviation_Machinist%27s_Mate_1st_Class_James_Gregorio%2C_assigned_to_the_jet_engine_shop_in_the_aviation_intermediate_maintenance_department%2C_installs_a_wiring_harness_on_an_F-A-18E_Super_Hornet_engine.jpg",
     points: [
       "Installation guidance",
       "Troubleshooting support",
@@ -106,7 +106,7 @@ const ServiceCards: React.FC = () => {
             Our Core Services
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            End-to-end wire harness solutions — from design to lifecycle support.
+            End-to-end wire harness services — from concept and prototyping to testing and support.
           </p>
         </div>
 

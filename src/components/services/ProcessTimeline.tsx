@@ -12,31 +12,31 @@ const steps = [
     id: "01",
     icon: <MessageSquare className="w-7 h-7 text-pink-600" />,
     title: "Consultation",
-    desc: "We align with your technical requirements, application needs, and production goals."
+    desc: "Align on requirements, application constraints, and program targets."
   },
   {
     id: "02",
     icon: <PencilRuler className="w-7 h-7 text-pink-600" />,
     title: "Engineering Design",
-    desc: "Our engineers develop CAD models, schematics, and DFM-optimized designs."
+    desc: "CAD, schematics, and DFM to optimize routing and manufacturability."
   },
   {
     id: "03",
     icon: <Beaker className="w-7 h-7 text-pink-600" />,
     title: "Prototype Development",
-    desc: "Rapid prototypes are built and validated through rigorous testing."
+    desc: "Prototype builds with validation feedback loops."
   },
   {
     id: "04",
     icon: <CheckCircle className="w-7 h-7 text-pink-600" />,
     title: "Testing & Validation",
-    desc: "Electrical, mechanical, and environmental tests ensure reliability."
+    desc: "Continuity, hi-pot, pull force, and environmental tests."
   },
   {
     id: "05",
     icon: <Factory className="w-7 h-7 text-pink-600" />,
     title: "Series Production",
-    desc: "Full-scale automated manufacturing with strict quality control."
+    desc: "Automated and manual production with in-process quality control."
   }
 ];
 
@@ -54,8 +54,8 @@ const ProcessFlow: React.FC = () => {
         </h2>
 
         <p className="text-gray-600 max-w-2xl mx-auto mb-16">
-          From initial concept to mass production, we follow a structured,
-          transparent, and quality-driven process.
+          A structured, transparent workflow that takes programs from concept
+          to production with quality checkpoints at every stage.
         </p>
 
         {/* PROCESS CONTAINER */}

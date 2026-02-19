@@ -2,27 +2,27 @@ import React from "react";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&q=80",
-    title: "Automotive Engine Harness",
+    src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=80",
+    title: "Engine Bay Harness Routing",
   },
   {
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=80",
-    title: "EV Battery Wiring",
+    src: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1400&q=80",
+    title: "Robotics and Automation Wiring",
   },
   {
-    src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=900&q=80",
-    title: "Industrial Control Harness",
+    src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=80",
+    title: "Control Panel Assemblies",
   },
   {
-    src: "https://images.unsplash.com/photo-1581092160562-40aa08e6d9e5?w=900&q=80",
-    title: "Aerospace Cabling",
+    src: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1400&q=80",
+    title: "Avionics and Cabin Systems",
   },
   {
-    src: "https://images.unsplash.com/photo-1581092160904-5c0b6a3b3c01?w=900&q=80",
-    title: "Custom Multi-Core Harness",
+    src: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=1400&q=80",
+    title: "Custom Multi-Core Harness Builds",
   },
   {
-    src: "https://images.unsplash.com/photo-1581092160545-ec65a5a0f5b7?w=900&q=80",
+    src: "https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1400&q=80",
     title: "Precision Cable Assembly",
   },
 ];
@@ -41,8 +41,8 @@ const ProductGallery: React.FC = () => {
             Product Gallery
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Explore our precision-engineered wire harness solutions across
-            automotive, industrial, aerospace, and custom applications.
+            A closer look at real-world harnessing across automotive, industrial,
+            aerospace, and custom assembly environments.
           </p>
         </div>
 
