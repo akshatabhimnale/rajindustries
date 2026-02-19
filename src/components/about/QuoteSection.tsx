@@ -6,7 +6,7 @@ const QuoteSection: React.FC = () => {
       <div className="max-w-5xl mx-auto flex gap-8 bg-white rounded-2xl p-8 md:p-10 float-card card-shadow border border-black/5">
 
         {/* Big red quotation mark */}
-        <div className="text-[#e31b3b] text-7xl leading-none font-serif">
+        <div className="text-[#e31b3b] text-7xl leading-none">
           ”
         </div>
 

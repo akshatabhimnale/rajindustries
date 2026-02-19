@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full overflow-hidden [font-family:'helvetica-neue-lt-pro',Arial,Verdana,sans-serif]">
+    <footer className="w-full overflow-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-[70%_30%]">
         {/* LEFT: dark gray navigation area */}
         <div className="bg-[#666666] px-8 py-12 text-white sm:px-12 lg:px-14 lg:py-16">

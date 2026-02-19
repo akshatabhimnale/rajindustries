@@ -71,9 +71,9 @@ const Header = () => {
   return (
     <header
       className={[
-        "sticky top-0 z-50 bg-white [font-family:'Helvetica_Neue',Arial,Verdana,sans-serif]",
-        "transition-transform duration-300",
-        isHidden ? "-translate-y-full" : "translate-y-0",
+        "sticky top-0 z-50 bg-white",
+        "lg:transition-transform lg:duration-300",
+        open ? "lg:translate-y-0" : isHidden ? "lg:-translate-y-full" : "lg:translate-y-0",
         isSticky ? "shadow-[0_5px_15px_rgba(26,26,26,0.2)]" : "",
       ].join(" ")}
     >

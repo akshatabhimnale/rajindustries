@@ -41,7 +41,7 @@ const aboutItems: AboutItem[] = [
 
 export default function AboutTeaserList() {
   return (
-    <section className="bg-white px-4 py-12 sm:px-6 sm:py-16 [font-family:'Helvetica_Neue',Arial,Verdana,sans-serif]">
+    <section className="bg-white px-4 py-12 sm:px-6 sm:py-16">
       <div className="mx-auto max-w-[1600px]">
         <h2 className="mb-8 text-[32px] font-bold leading-tight text-[#7f7f7f] md:mb-10 md:text-[40px]">
           About us

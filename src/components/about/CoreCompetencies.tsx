@@ -74,7 +74,7 @@ const CoreCompetenciesModern: FC = () => {
                          float-card card-shadow hover:border-[var(--primary-color)]/40"
             >
               {/* Top-right number */}
-              <span className="absolute top-4 right-4 text-gray-400 text-sm font-mono">
+              <span className="absolute top-4 right-4 text-gray-400 text-sm">
                 {item.id}
               </span>
 

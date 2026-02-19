@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export default function WheelArchSection() {
   return (
-    <section className="bg-[#e7e7e7] px-4 py-14 sm:px-6 lg:py-20 [font-family:'Helvetica_Neue',Arial,Verdana,sans-serif]">
+    <section className="bg-[#e7e7e7] px-4 py-14 sm:px-6 lg:py-20">
       <div className="mx-auto max-w-[1260px]">
         <div className="relative">
           <div className="h-[290px] w-full overflow-hidden sm:h-[380px] lg:h-[470px] lg:w-[700px]">
