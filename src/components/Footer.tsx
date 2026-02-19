@@ -139,9 +139,11 @@ const Footer = () => {
               <address className="not-italic text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/95">
                 Raj Industries
                 <br />
-                Industrial Area, Phase 2
+                Unit B4, Phase 1, Plot No. 32, D-2 Block MIDC
                 <br />
-                Manufacturing Hub, India
+                Chinchwad Nigdi Bhosari Road, Opposite HDFC Colony
+                <br />
+                Pimpri Chinchwad, Pune 411019
               </address>
             
             </div>
@@ -154,8 +156,16 @@ const Footer = () => {
               </p>
 
               <div className="mt-8 space-y-4 text-[13px] leading-[1.6923076923] tracking-[0.05em]">
-                <a href="mailto:info@rajindustries.com" className="inline-block border-b border-white pb-1 hover:text-black/90">
-                  info@rajindustries.com
+                <a href="mailto:raj.industries14@yahoo.com" className="inline-block border-b border-white pb-1 hover:text-black/90">
+                  raj.industries14@yahoo.com
+                </a>
+                <br />
+                <a href="tel:+919762893857" className="inline-block border-b border-white pb-1 hover:text-black/90">
+                  +91 9762893857
+                </a>
+                <br />
+                <a href="tel:+919011021342" className="inline-block border-b border-white pb-1 hover:text-black/90">
+                  +91 9011021342
                 </a>
               </div>
             </div>

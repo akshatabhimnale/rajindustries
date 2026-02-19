@@ -21,8 +21,8 @@ const AboutUs: React.FC = () => {
           <p className="text-gray-600 text-lg leading-relaxed mb-6">
             Raj Industries is a B2B manufacturing partner for OEMs and Tier suppliers,
             delivering wire harness systems and cable assemblies from concept to series production.
-            We operate from Pune, Maharashtra, India and support programs across automotive,
-            EV, industrial, aerospace, and custom applications.
+            We operate from Pimpri Chinchwad, Pune 411019, India and support programs across
+            automotive, EV, industrial, aerospace, and custom applications.
           </p>
 
           <p className="text-gray-600 text-lg leading-relaxed mb-8">

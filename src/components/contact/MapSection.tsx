@@ -10,8 +10,9 @@ const MapSection: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             Visit Our Facility
           </h2>
-          <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
-            Our office is located in Pune, Maharashtra. You can view the location on the map below.
+          <p className="text-gray-600 mt-3 max-w-3xl mx-auto">
+            Unit B4, Phase 1, Plot No. 32, D-2 Block MIDC, Chinchwad Nigdi Bhosari Road,
+            Opposite HDFC Colony, Pimpri Chinchwad, Pune 411019.
           </p>
         </div>
 
@@ -19,7 +20,7 @@ const MapSection: React.FC = () => {
         <div className="relative w-full h-[450px] rounded-xl shadow-lg overflow-hidden border border-gray-200 bg-white">
 
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.17005851687!2d73.6981553041223!3d18.52454504095413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1770706255075!5m2!1sen!2sin"
+            src="https://www.google.com/maps?q=Unit%20B4%2C%20Phase%201%2C%20Plot%20No%2032%2C%20D-2%20Block%20MIDC%2C%20Chinchwad%20Nigdi%20Bhosari%20Road%2C%20Opposite%20HDFC%20Colony%2C%20Pimpri%20Chinchwad%20Pune%20411019&output=embed"
             className="w-full h-full border-0"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
@@ -30,7 +31,7 @@ const MapSection: React.FC = () => {
           {/* Floating Location Badge */}
           <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md 
                           px-5 py-3 rounded-lg shadow-md text-sm font-semibold text-gray-800">
-            📍 Pune, Maharashtra, India
+            📍 Pimpri Chinchwad, Pune 411019
           </div>
         </div>
       </div>

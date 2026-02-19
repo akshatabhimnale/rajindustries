@@ -5,19 +5,20 @@ const contactOptions = [
   {
     icon: <Mail className="w-6 h-6" />,
     title: "Email Us",
-    detail: "info@rajindustries.com",
-    link: "mailto:info@rajindustries.com",
+    detail: "raj.industries14@yahoo.com",
+    link: "mailto:raj.industries14@yahoo.com",
   },
   {
     icon: <Phone className="w-6 h-6" />,
     title: "Call Us",
-    detail: "+91 XXX XXX XXXX",
-    link: "tel:+91XXXXXXXXXX",
+    detail: "+91 9762893857\n+91 9011021342",
+    link: "tel:+919762893857",
   },
   {
     icon: <MapPin className="w-6 h-6" />,
     title: "Our Location",
-    detail: "Pune, Maharashtra, India",
+    detail:
+      "Unit B4, Phase 1, Plot No. 32, D-2 Block MIDC, Chinchwad Nigdi Bhosari Road, Opposite HDFC Colony, Pimpri Chinchwad, Pune 411019.",
     link: "#map",
   },
   {
@@ -45,10 +46,13 @@ const ContactOptions: React.FC = () => {
 
         {/* Single Contact Card */}
         <div className="bg-white rounded-2xl border border-black/5 float-card card-shadow px-6 py-8">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {contactOptions.map((item, index) => (
-              <div key={index} className="flex items-center gap-4">
-                <div className="w-11 h-11 flex items-center justify-center icon-box rounded-lg">
+              <div
+                key={index}
+                className="flex items-start gap-4 rounded-xl border border-gray-100 bg-gray-50/60 p-5"
+              >
+                <div className="w-12 h-12 flex items-center justify-center icon-box rounded-lg shrink-0">
                   {item.icon}
                 </div>
 
@@ -59,20 +63,16 @@ const ContactOptions: React.FC = () => {
                   {item.link ? (
                     <a
                       href={item.link}
-                      className="text-gray-900 font-semibold hover:text-[var(--primary-color)] transition-colors"
+                      className="text-gray-900 font-semibold leading-relaxed hover:text-[var(--primary-color)] transition-colors whitespace-pre-line"
                     >
                       {item.detail}
                     </a>
                   ) : (
-                    <p className="text-gray-900 font-semibold">
+                    <p className="text-gray-900 font-semibold leading-relaxed whitespace-pre-line">
                       {item.detail}
                     </p>
                   )}
                 </div>
-
-                {index < contactOptions.length - 1 && (
-                  <div className="hidden lg:block text-gray-300 px-4">|</div>
-                )}
               </div>
             ))}
           </div>
