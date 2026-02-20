@@ -16,29 +16,11 @@ const Hero: React.FC = () => {
   const slides = useMemo<Slide[]>(
     () => [
       {
-        type: "image",
+        type: "video",
         media:
-          "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
+          "https://www.wewire-harness.com/fileadmin/wewire/Produkte/251126-WeWi-Animation_Automobilwoche-1.mp4?rel=0",
         topline: "Product",
         heading: "Stand-Alone Wire Harnesses Built to Fit 100%",
-        ctaLabel: "Find out more",
-        ctaHref: "/products",
-      },
-      {
-        type: "image",
-        media:
-          "https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg",
-        topline: "About us",
-        heading: "Engineering Collaboration From Concept to Series",
-        ctaLabel: "Find out more",
-        ctaHref: "/about",
-      },
-      {
-        type: "image",
-        media:
-          "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
-        topline: "Product",
-        heading: "High-Current and High-Reliability Harness Builds",
         ctaLabel: "Find out more",
         ctaHref: "/products",
       },
