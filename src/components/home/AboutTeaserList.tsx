@@ -16,7 +16,7 @@ const aboutItems: AboutItem[] = [
     description:
       "We work closely with OEMs and Tier suppliers to deliver stand-alone harnesses that fit 100%.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg",
+      "https://images.unsplash.com/photo-1764866085369-44c7ef1a18f3?auto=format&fit=crop&w=2000&q=80",
     to: "/about",
   },
   {
@@ -25,7 +25,7 @@ const aboutItems: AboutItem[] = [
     description:
       "3D routing, collision checks, prototypes, and validation before series builds.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
+      "https://images.unsplash.com/photo-1603114595741-e60bf9486e04?auto=format&fit=crop&w=2000&q=80",
     to: "/about",
   },
   {
@@ -34,7 +34,7 @@ const aboutItems: AboutItem[] = [
     description:
       "Heat-resistant conductors, sealed connections, and robust protection systems.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
+      "https://images.unsplash.com/photo-1767961124255-0211254231a6?auto=format&fit=crop&w=2000&q=80",
     to: "/products",
   },
 ];

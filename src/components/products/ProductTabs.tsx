@@ -45,7 +45,7 @@ const ProductTabs: React.FC = () => {
             <div>
               <div className="relative overflow-hidden rounded-xl shadow-md">
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg"
+                  src="https://images.unsplash.com/photo-1603114595741-e60bf9486e04?auto=format&fit=crop&w=2000&q=80"
                   alt="Stand-alone wire harness assembly"
                   className="h-[360px] w-full object-cover"
                 />

@@ -4,7 +4,7 @@ const ProductsHero: React.FC = () => {
   return (
     <section data-hero-section className="relative h-[68vh] min-h-[500px] w-full overflow-hidden md:h-[78vh]">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg"
+        src="https://images.unsplash.com/photo-1603114595741-e60bf9486e04?auto=format&fit=crop&w=2000&q=80"
         alt="Stand-alone wire harness assembly"
         className="absolute inset-0 h-full w-full object-cover"
       />

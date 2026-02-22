@@ -12,25 +12,25 @@ const stats: StatCard[] = [
     label: "Years of Excellence",
     value: new Date().getFullYear() - 2001,
     suffix: "+",
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
+    image: "https://images.unsplash.com/photo-1767961124255-0211254231a6?auto=format&fit=crop&w=2000&q=80",
   },
   {
     label: "Engineers",
     value: 120,
     suffix: "+",
-    image: "https://upload.wikimedia.org/wikipedia/commons/d/df/US_Navy_100622-N-6604E-023_viation_Structural_Mechanic_%28Equipment%29_2nd_Class_Stephen_Bessette_installs_a_wire_harness_on_a_replacement_canopy_for_an_F-A-18E_Super_Hornet.jpg",
+    image: "https://images.unsplash.com/photo-1751846545116-838fe2e7e815?auto=format&fit=crop&w=2000&q=80",
   },
   {
     label: "Harness Types",
     value: 3,
     suffix: "",
-    image: "https://upload.wikimedia.org/wikipedia/commons/c/cc/US_Navy_090622-N-6720T-015_Aviation_Machinist%27s_Mate_1st_Class_James_Gregorio%2C_assigned_to_the_jet_engine_shop_in_the_aviation_intermediate_maintenance_department%2C_installs_a_wiring_harness_on_an_F-A-18E_Super_Hornet_engine.jpg",
+    image: "https://images.unsplash.com/photo-1638707023303-20b161e73428?auto=format&fit=crop&w=2000&q=80",
   },
   {
     label: "Test Methods",
     value: 4,
     suffix: "",
-    image: "https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg",
+    image: "https://images.unsplash.com/photo-1764866085369-44c7ef1a18f3?auto=format&fit=crop&w=2000&q=80",
   },
 ];
 

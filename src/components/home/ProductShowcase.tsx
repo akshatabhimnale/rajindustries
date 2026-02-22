@@ -14,7 +14,7 @@ const products: ProductItem[] = [
     description:
       "High-current harnesses built for strict performance and safety requirements.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
+      "https://images.unsplash.com/photo-1767961124255-0211254231a6?auto=format&fit=crop&w=2000&q=80",
     to: "/products",
   },
   {
@@ -22,7 +22,7 @@ const products: ProductItem[] = [
     description:
       "Heat-resistant conductors, sealed connections, and abrasion protection for engine bays.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/6/65/US_Navy_040406-N-8770A-003_Aviation_Machinist%27s_Mate_2nd_Class_Wilfredo_Medina%2C_of_Carson%2C_Calif.%2C_works_on_an_engine_electrical_harness_for_a_P-3C_Orion_anti-submarine_and_reconnaissance_aircraft.jpg",
+      "https://images.unsplash.com/photo-1751846545116-838fe2e7e815?auto=format&fit=crop&w=2000&q=80",
     to: "/products",
   },
   {
@@ -30,7 +30,7 @@ const products: ProductItem[] = [
     description:
       "Flexible conductors, airbag wiring support, and motion-compensation sleeving.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg",
+      "https://images.unsplash.com/photo-1561138804-bff5b4ec2965?auto=format&fit=crop&w=2000&q=80",
     to: "/products",
   },
   {
@@ -38,7 +38,7 @@ const products: ProductItem[] = [
     description:
       "Stand‑alone harnesses tailored to your routing, packaging, and installation constraints.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
+      "https://images.unsplash.com/photo-1603114595741-e60bf9486e04?auto=format&fit=crop&w=2000&q=80",
     to: "/products",
   },
 ];

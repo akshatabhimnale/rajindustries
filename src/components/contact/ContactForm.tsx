@@ -196,7 +196,7 @@ const ContactForm: React.FC = () => {
         {/* RIGHT: IMAGE */}
         <div className="relative rounded-2xl overflow-hidden shadow-xl">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg"
+            src="https://images.unsplash.com/photo-1603114595741-e60bf9486e04?auto=format&fit=crop&w=2000&q=80"
             alt="Wire harness assembly"
             className="w-full h-[480px] object-cover"
           />

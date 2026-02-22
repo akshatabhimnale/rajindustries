@@ -82,7 +82,7 @@ const AlwaysCloseSection: FC = () => {
         {/* RIGHT IMAGE */}
         <div className="relative rounded-2xl overflow-hidden float-card card-shadow border border-black/5">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg"
+            src="https://images.unsplash.com/photo-1603114595741-e60bf9486e04?auto=format&fit=crop&w=2000&q=80"
             alt="Industrial control wiring and assembly"
             className="w-full h-[420px] object-cover"
           />

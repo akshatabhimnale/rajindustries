@@ -48,7 +48,7 @@ const AboutUs: React.FC = () => {
         {/* RIGHT: FACTORY IMAGE */}
         <div className="relative rounded-2xl overflow-hidden float-card card-shadow border border-black/5">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg"
+            src="https://images.unsplash.com/photo-1561138804-bff5b4ec2965?auto=format&fit=crop&w=2000&q=80"
             alt="Wire harness manufacturing and assembly line"
             className="w-full h-[480px] object-cover"
           />

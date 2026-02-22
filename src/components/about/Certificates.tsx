@@ -13,28 +13,28 @@ const certificates: Certificate[] = [
     issuedBy: "Quality Management Standard",
     year: "Current",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
+      "https://images.unsplash.com/photo-1603114595741-e60bf9486e04?auto=format&fit=crop&w=2000&q=80",
   },
   {
     title: "IATF 16949 Certification",
     issuedBy: "Automotive Quality Standard",
     year: "Current",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg",
+      "https://images.unsplash.com/photo-1561138804-bff5b4ec2965?auto=format&fit=crop&w=2000&q=80",
   },
   {
     title: "RoHS Compliance Certificate",
     issuedBy: "Environmental Compliance",
     year: "Current",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
+      "https://images.unsplash.com/photo-1767961124255-0211254231a6?auto=format&fit=crop&w=2000&q=80",
   },
   {
     title: "CE Certification",
     issuedBy: "European Conformity",
     year: "Current",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg",
+      "https://images.unsplash.com/photo-1764866085369-44c7ef1a18f3?auto=format&fit=crop&w=2000&q=80",
   },
 ];
 

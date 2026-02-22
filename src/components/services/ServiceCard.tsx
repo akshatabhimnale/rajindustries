@@ -15,7 +15,7 @@ const services = [
     description:
       "CAD-driven harness architecture with DFM, material selection, and routing optimized for your application environment.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg",
+      "https://images.unsplash.com/photo-1603114595741-e60bf9486e04?auto=format&fit=crop&w=2000&q=80",
     points: [
       "CAD design, schematics, and 3D routing",
       "Circuit analysis and load optimization",
@@ -29,7 +29,7 @@ const services = [
     description:
       "Rapid prototypes to validate fit, routing, and performance before series builds.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/d/d2/US_Navy_100816-N-3327M-047_Aviation_Electrician%27s_Mate_Airman_Hugh_Ratsch%2C_from_Montegomery%2C_Ala.%2C_installs_the_electrical_harnesses.jpg",
+      "https://images.unsplash.com/photo-1561138804-bff5b4ec2965?auto=format&fit=crop&w=2000&q=80",
     points: [
       "Quick-turn prototype builds",
       "Design verification testing",
@@ -43,7 +43,7 @@ const services = [
     description:
       "Automated and manual assembly lines for reliable, repeatable production.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/6/65/US_Navy_040406-N-8770A-003_Aviation_Machinist%27s_Mate_2nd_Class_Wilfredo_Medina%2C_of_Carson%2C_Calif.%2C_works_on_an_engine_electrical_harness_for_a_P-3C_Orion_anti-submarine_and_reconnaissance_aircraft.jpg",
+      "https://images.unsplash.com/photo-1751846545116-838fe2e7e815?auto=format&fit=crop&w=2000&q=80",
     points: [
       "High-volume production",
       "Automated cutting & stripping",
@@ -57,7 +57,7 @@ const services = [
     description:
       "In-process and final validation to ensure reliability and compliance.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Engineering_Labs_Equipment_%28KSC-20201006-PH-ILW01_0054%29.jpg",
+      "https://images.unsplash.com/photo-1764866085369-44c7ef1a18f3?auto=format&fit=crop&w=2000&q=80",
     points: [
       "100% continuity testing",
       "Hi-pot testing",
@@ -71,7 +71,7 @@ const services = [
     description:
       "Consultative builds for complex programs and application-specific needs.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/4/42/Wiring_assemblies_at_a_junction_box_on_the_fire_wall_of_a_B-25_bomber.jpg",
+      "https://images.unsplash.com/photo-1767961124255-0211254231a6?auto=format&fit=crop&w=2000&q=80",
     points: [
       "Application-specific designs",
       "Complex multi-branch assemblies",
@@ -85,7 +85,7 @@ const services = [
     description:
       "Lifecycle support for installation, troubleshooting, and documentation.",
     image:
-      "https://upload.wikimedia.org/wikipedia/commons/c/cc/US_Navy_090622-N-6720T-015_Aviation_Machinist%27s_Mate_1st_Class_James_Gregorio%2C_assigned_to_the_jet_engine_shop_in_the_aviation_intermediate_maintenance_department%2C_installs_a_wiring_harness_on_an_F-A-18E_Super_Hornet_engine.jpg",
+      "https://images.unsplash.com/photo-1638707023303-20b161e73428?auto=format&fit=crop&w=2000&q=80",
     points: [
       "Installation guidance",
       "Troubleshooting support",

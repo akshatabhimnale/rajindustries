@@ -8,123 +8,65 @@ const Footer = () => {
         {/* LEFT: dark gray navigation area */}
         <div className="bg-[#666666] px-8 py-12 text-white sm:px-12 lg:px-14 lg:py-16">
           <div className="mx-auto max-w-[1080px]">
-            <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16">
-              <div>
-                <h4 className="mb-5 text-[13px] font-bold uppercase tracking-[0.15em] text-white/95">Products</h4>
-                <ul className="space-y-[11px] text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/90">
-                  <li>
-                    <Link to="/products" className="hover:text-white">
-                      Wheel arch and axle wiring
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/products" className="hover:text-white">
-                      Injection-molded components
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/products" className="hover:text-white">
-                      Stand alone wiring harnesses
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="mb-5 text-[13px] font-bold uppercase tracking-[0.15em] text-white/95">About Us</h4>
-                <ul className="space-y-[11px] text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/90">
-                  <li>
-                    <Link to="/about" className="hover:text-white">
-                      Who We Are
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/about" className="hover:text-white">
-                      Suppliers
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/about" className="hover:text-white">
-                      Quality &amp; Certificates
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/about" className="hover:text-white">
-                      Compliance
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/contact" className="hover:text-white">
-                      Contact
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="mb-5 text-[13px] font-bold uppercase tracking-[0.15em] text-white/95">Careers</h4>
-                <ul className="space-y-[11px] text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/90">
-                  <li>
-                    <a href="#" className="hover:text-white">
-                      People at Raj Industries
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white">
-                      Careers at Raj Industries
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="hover:text-white">
-                      Job Vacancies
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-12">
+            <div>
+              <h4 className="mb-5 text-[13px] font-bold uppercase tracking-[0.15em] text-white/95">Product</h4>
+              <ul className="space-y-[11px] text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/90">
+                <li>
+                  <Link to="/products" className="hover:text-white">
+                    Stand-Alone Wire Harnesses
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/products" className="hover:text-white">
+                    Technical Specifications
+                  </Link>
+                </li>
+              </ul>
             </div>
 
-            <div className="mt-16 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:max-w-[66%]">
-              <div>
-                <h4 className="mb-5 text-[13px] font-bold uppercase tracking-[0.15em] text-white/95">Newsroom</h4>
-                <ul className="space-y-[11px] text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/90">
-                  <li>
-                    <a href="#" className="hover:text-white">
-                      Raj Industries News
-                    </a>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="mb-5 text-[13px] font-bold uppercase tracking-[0.15em] text-white/95">Follow Us</h4>
-                <ul className="space-y-[11px] text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/90">
-                  <li>
-                    <a href="#" className="flex items-center gap-5 hover:text-white" aria-label="LinkedIn">
-                      <FaLinkedin className="text-[18px]" />
-                      <span>LinkedIn</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="flex items-center gap-5 hover:text-white" aria-label="Facebook">
-                      <FaFacebookF className="text-[18px]" />
-                      <span>Facebook</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="flex items-center gap-5 hover:text-white" aria-label="YouTube">
-                      <FaYoutube className="text-[18px]" />
-                      <span>YouTube</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="flex items-center gap-5 hover:text-white" aria-label="Xing">
-                      <FaXing className="text-[18px]" />
-                      <span>Xing</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div>
+              <h4 className="mb-5 text-[13px] font-bold uppercase tracking-[0.15em] text-white/95">Company</h4>
+              <ul className="space-y-[11px] text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/90">
+                <li>
+                  <Link to="/about" className="hover:text-white">
+                    About Raj Industries
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/careers" className="hover:text-white">
+                    Careers
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-white">
+                    Visit &amp; Contact
+                  </Link>
+                </li>
+              </ul>
             </div>
+
+            <div>
+              <h4 className="mb-5 text-[13px] font-bold uppercase tracking-[0.15em] text-white/95">Navigation</h4>
+              <ul className="space-y-[11px] text-[13px] leading-[1.6923076923] tracking-[0.05em] text-white/90">
+                <li>
+                  <Link to="/" className="hover:text-white">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/products" className="hover:text-white">
+                    Product Details
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/careers" className="hover:text-white">
+                    Apply Now
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
           </div>
         </div>
 

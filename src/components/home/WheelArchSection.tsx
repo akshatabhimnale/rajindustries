@@ -8,7 +8,7 @@ export default function WheelArchSection() {
         <div className="relative">
           <div className="h-[290px] w-full overflow-hidden sm:h-[380px] lg:h-[470px] lg:w-[700px]">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg"
+              src="https://images.unsplash.com/photo-1603114595741-e60bf9486e04?auto=format&fit=crop&w=2000&q=80"
               alt="Stand-alone wire harness assembly"
               className="h-full w-full object-cover object-center"
             />
