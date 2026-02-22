@@ -70,13 +70,16 @@ const Careers: React.FC = () => {
 
   return (
     <>
-      <section data-hero-section className="relative h-[60vh] min-h-[420px] w-full overflow-hidden md:h-[70vh]">
+      <section
+        data-hero-section
+        className="relative h-[60vh] min-h-[420px] w-full overflow-hidden md:h-[70vh]"
+      >
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/2/25/Panel_wiring_1.jpg"
-          alt="Engineering team at work"
+          src="https://images.unsplash.com/photo-1485217988980-11786ced9454?auto=format&fit=crop&w=1600&q=80"
+          alt="Team collaborating in a modern office setting"
           className="absolute inset-0 h-full w-full object-cover"
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/70" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/45 to-black/20" />
         <div className="absolute top-0 h-[3px] w-full bg-[#d60f3c]" />
 
